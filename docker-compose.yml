@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      - PYTHON_ENV=development
+      - LOG_LEVEL=INFO
+      - LANGUAGE=pt_BR
+      - FALLBACK_LANGUAGE=en
+    networks:
+      - symbeon-network
+
+  terminal:
+    build: .
+    command: python src/interface/terminal/websocket_server.py
+    ports:
+      - '8765:8765'
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - api
+    networks:
+      - symbeon-network
+
+networks:
+  symbeon-network:
+    driver: bridge
