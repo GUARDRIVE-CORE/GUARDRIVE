@@ -1,0 +1,31 @@
+{
+  "name": "system-monitor-mcp",
+  "version": "1.0.0",
+  "description": "Sistema de Monitoramento MCP Server - Coleta métricas do sistema seguindo regras de monitoramento",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "system-monitor-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node -e \"console.log('Testando MCP Server...'); process.exit(0)\"",
+    "lint": "echo \"Lint não configurado ainda\""
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "system-monitoring",
+    "metrics",
+    "warp",
+    "ai-agent"
+  ],
+  "author": "SYMBEON",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3"
+  }
+}

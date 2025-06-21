@@ -1,0 +1,43 @@
+{
+  "name": "System Monitor",
+  "description": "Monitora métricas do sistema (CPU, RAM, Disco) seguindo regras de monitoramento estabelecidas",
+  "command": "node",
+  "args": ["C:\\Users\\laiss\\mcp-servers\\system-monitor\\index.js"],
+  "cwd": "C:\\Users\\laiss\\mcp-servers\\system-monitor",
+  "env": {},
+  "capabilities": {
+    "tools": [
+      {
+        "name": "get_system_metrics",
+        "description": "Coleta métricas atuais do sistema (CPU, RAM, Disco)",
+        "examples": [
+          "Verificar métricas atuais do sistema",
+          "Como está o desempenho do computador?",
+          "Mostrar status de CPU, RAM e disco"
+        ]
+      },
+      {
+        "name": "save_metrics_to_file",
+        "description": "Salva métricas do sistema em arquivo CSV diário",
+        "examples": [
+          "Salvar métricas para análise posterior",
+          "Registrar dados de monitoramento",
+          "Criar log de performance do sistema"
+        ]
+      },
+      {
+        "name": "get_system_health_report",
+        "description": "Gera relatório completo de saúde do sistema com análise",
+        "examples": [
+          "Gerar relatório de saúde completo",
+          "Analisar status geral do sistema",
+          "Verificar se há problemas de performance"
+        ]
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "author": "Lais X",
+  "tags": ["monitoring", "system", "performance", "health", "metrics"]
+}
+

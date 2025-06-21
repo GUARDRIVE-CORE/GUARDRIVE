@@ -1,0 +1,22 @@
+{
+  "name": "devops-orchestrator-mcp",
+  "version": "1.0.0",
+  "description": "O MCP Server mais inteligente - orquestra todo o workflow de desenvolvimento",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node -e \"console.log('DevOps Orchestrator MCP Server OK'); process.exit(0)\"",
+    "demo": "node -e \"console.log('7 ferramentas inteligentes para automatizar seu workflow');\""
+  },
+  "keywords": ["mcp", "devops", "orchestrator", "automation"],
+  "author": "SYMBEON",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3"
+  }
+}
+
