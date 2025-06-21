@@ -1,0 +1,51 @@
+{
+  "name": "@symbeon/mcp-servers",
+  "version": "1.0.0",
+  "description": "Enterprise-grade MCP Servers collection for maximizing productivity and governance in development",
+  "private": true,
+  "workspaces": [
+    "devops-orchestrator",
+    "system-monitor"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:devops && npm run install:monitor",
+    "install:devops": "cd devops-orchestrator && npm install",
+    "install:monitor": "cd system-monitor && npm install",
+    "test:all": "npm run test:devops && npm run test:monitor",
+    "test:devops": "cd devops-orchestrator && npm test",
+    "test:monitor": "cd system-monitor && npm test",
+    "lint": "echo \"Linting all packages...\"",
+    "clean": "rm -rf */node_modules && rm -rf node_modules",
+    "setup": "npm run install:all && npm run test:all"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "devops",
+    "orchestrator",
+    "automation",
+    "warp",
+    "terminal",
+    "ai-agent",
+    "symbeon",
+    "enterprise"
+  ],
+  "author": "SYMBEON",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symbeon/mcp-servers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/symbeon/mcp-servers/issues"
+  },
+  "homepage": "https://github.com/symbeon/mcp-servers#readme",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3"
+  }
+}
+

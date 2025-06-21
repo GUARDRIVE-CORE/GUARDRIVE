@@ -1,0 +1,96 @@
+{
+  "name": "DevOps Orchestrator",
+  "description": "O MCP Server mais inteligente - orquestra todo o workflow de desenvolvimento seguindo regras estabelecidas",
+  "command": "node",
+  "args": ["C:\\Users\\laiss\\mcp-servers\\devops-orchestrator\\index.js"],
+  "cwd": "C:\\Users\\laiss\\mcp-servers\\devops-orchestrator",
+  "env": {},
+  "capabilities": {
+    "tools": [
+      {
+        "name": "start_dev_session",
+        "description": "Inicia sessão de desenvolvimento com checklist completo seguindo Session Rules",
+        "examples": [
+          "Iniciar sessão de desenvolvimento",
+          "Começar a trabalhar no projeto",
+          "Verificar ambiente de desenvolvimento",
+          "Fazer checklist inicial"
+        ]
+      },
+      {
+        "name": "end_dev_session",
+        "description": "Finaliza sessão seguindo Session Rules com auto-commit e limpeza",
+        "examples": [
+          "Finalizar sessão de desenvolvimento",
+          "Encerrar trabalho e salvar tudo",
+          "Fazer cleanup do ambiente",
+          "Salvar progresso e limpar"
+        ]
+      },
+      {
+        "name": "create_feature_branch",
+        "description": "Cria branch seguindo convenções de Branching Rules",
+        "examples": [
+          "Criar branch para nova funcionalidade",
+          "Criar branch feature/autenticação",
+          "Nova branch para implementar login",
+          "Criar branch para correção de bug"
+        ]
+      },
+      {
+        "name": "smart_commit",
+        "description": "Commit inteligente seguindo Conventional Commits",
+        "examples": [
+          "Fazer commit das alterações",
+          "Commit feat: nova funcionalidade",
+          "Commitear fix: correção de bug",
+          "Fazer commit seguindo convenções"
+        ]
+      },
+      {
+        "name": "quality_gate",
+        "description": "Executa verificação completa de qualidade (lint, prettier, tests)",
+        "examples": [
+          "Verificar qualidade do código",
+          "Executar quality gate",
+          "Rodar testes e lint",
+          "Verificar se tudo está funcionando"
+        ]
+      },
+      {
+        "name": "fix_code_style",
+        "description": "Corrige automaticamente problemas de estilo de código",
+        "examples": [
+          "Corrigir estilo do código",
+          "Executar prettier e eslint fix",
+          "Formatar código automaticamente",
+          "Aplicar correções de lint"
+        ]
+      },
+      {
+        "name": "prepare_pr",
+        "description": "Prepara PR seguindo PR Rules com template e checklist",
+        "examples": [
+          "Preparar PR para revisão",
+          "Criar template de pull request",
+          "Gerar PR com checklist",
+          "Preparar para code review"
+        ]
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "author": "SYMBEON",
+  "tags": [
+    "devops",
+    "orchestrator",
+    "automation",
+    "git",
+    "quality",
+    "session-management",
+    "workflow",
+    "intelligent",
+    "rules-based"
+  ]
+}
+

@@ -1,0 +1,9 @@
+{
+  "DevOps Orchestrator": {
+    "command": "node",
+    "args": ["C:\\Users\\laiss\\mcp-servers\\devops-orchestrator\\index.js"],
+    "env": {},
+    "working_directory": "C:\\Users\\laiss\\mcp-servers\\devops-orchestrator"
+  }
+}
+
