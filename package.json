@@ -1,6 +1,6 @@
 {
-  "name": "@symbeon/mcp-servers",
-  "version": "1.0.0",
+  "name": "@guardrive-core/mcp-servers",
+  "version": "1.0.2",
   "description": "Enterprise-grade MCP Servers collection for maximizing productivity and governance in development",
   "private": true,
   "workspaces": [
@@ -27,10 +27,10 @@
     "warp",
     "terminal",
     "ai-agent",
-    "symbeon",
+    "guardrive",
     "enterprise"
   ],
-  "author": "SYMBEON",
+  "author": "GUARDRIVE-CORE",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0",
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/symbeon/mcp-servers.git"
+    "url": "git+https://github.com/GUARDRIVE-CORE/GUARDRIVE.git"
   },
   "bugs": {
-    "url": "https://github.com/symbeon/mcp-servers/issues"
+    "url": "https://github.com/GUARDRIVE-CORE/GUARDRIVE/issues"
   },
-  "homepage": "https://github.com/symbeon/mcp-servers#readme",
+  "homepage": "https://github.com/GUARDRIVE-CORE/GUARDRIVE#readme",
   "devDependencies": {
     "@modelcontextprotocol/sdk": "^1.12.3"
   }

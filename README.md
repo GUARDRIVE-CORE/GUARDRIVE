@@ -1,10 +1,10 @@
-# 🤖 SYMBEON MCP Servers Collection
+# 🛡️ GUARDRIVE MCP Servers Collection
 
 **Enterprise-grade MCP Servers para maximizar produtividade e governança no desenvolvimento**
 
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![SYMBEON](https://img.shields.io/badge/SYMBEON-Enterprise-orange.svg)](https://symbeon.com)
+[![GUARDRIVE](https://img.shields.io/badge/GUARDRIVE-Enterprise-blue.svg)](https://github.com/GUARDRIVE-CORE)
 
 ---
 
@@ -186,7 +186,7 @@ npm test
 
 ## 🤝 **Contribuição**
 
-### **Para o Time SYMBEON**
+### **Para o Time GUARDRIVE**
 1. **Fork** este repositório
 2. **Crie** uma branch: `git checkout -b feature/nova-funcionalidade`
 3. **Commit** suas mudanças: `git commit -m 'feat: adicionar nova funcionalidade'`
@@ -210,16 +210,17 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-## 🏢 **SYMBEON**
+## 🛡️ **GUARDRIVE**
 
-**Desenvolvido com 💙 pela equipe SYMBEON**
+**Desenvolvido com 💙 pela equipe GUARDRIVE-CORE**
 
-- **Versão**: 1.0.0
-- **Data**: 2025-06-20
+- **Versão**: 1.0.2
+- **Data**: 2025-06-26
 - **Arquitetura**: Enterprise MCP Servers
 - **Stack**: Node.js, MCP Protocol, Warp Terminal
+- **Organização**: [GUARDRIVE-CORE](https://github.com/GUARDRIVE-CORE)
 
 ---
 
-> *"Transformando desenvolvimento em automação inteligente"*
+> *"Protegendo e otimizando seus workflows de desenvolvimento"*
 
