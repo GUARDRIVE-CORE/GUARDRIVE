@@ -16,6 +16,21 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Notifications (Slack/Teams/Email)
 - Analytics Dashboard
 
+## [1.0.2] - 2025-06-26
+
+### Fixed
+- 🔧 **Correção de branding** - Migração completa de SYMBEON para GUARDRIVE
+- 📝 **Documentação atualizada** - README, package.json e todas as referências
+- 🏷️ **Release management** - Configuração correta de tags e releases
+- 🔗 **URLs corrigidas** - Links para repositório oficial GUARDRIVE-CORE
+
+## [1.0.1] - 2025-06-25
+
+### Added
+- 📚 **Documentação MCP** - Guias completos de integração
+- 🔐 **Melhorias de segurança** - .gitignore abrangente
+- 🛠️ **Scripts de release** - Automação de versionamento
+
 ## [1.0.0] - 2025-06-20
 
 ### Added
@@ -85,7 +100,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-**Mantido por**: SYMBEON  
+**Mantido por**: GUARDRIVE-CORE  
 **Formato**: [Keep a Changelog](https://keepachangelog.com/)  
 **Versionamento**: [Semantic Versioning](https://semver.org/)
 
