@@ -7,6 +7,17 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+- 🚀 **MCP Próprio Independente** - Implementação do MODEL CONTEXT PROTOCOL próprio
+  - CLI independente de plataforma (`guardrive-mcp`)
+  - Bridge para compatibilidade com Warp Terminal
+  - Sistema de plugins extensível
+  - Suporte cross-platform (Windows, Linux, macOS)
+
+### Changed
+- 🔄 **Arquitetura MCP** - Refatoração para permitir uso com ou sem Warp Terminal
+- 📦 **Scripts de configuração** - Setup unificado para ambos os modos de uso
+
 ### Planejado
 - Backup Orchestrator MCP Server
 - Security Auditor MCP Server
