@@ -1,0 +1,208 @@
+CONTRATO DE COCRIAÇÃO
+“Sistema Integrado de Monitoramento de Uso de Cinto de Segurança”
+O presente contrato tem como objeto a co-criação e o desenvolvimento em coautoria de um sistema
+integrado de monitoramento do uso do cinto de segurança. Este sistema, que visa a implementação
+de uma solução tecnológica inovadora, que integrará sensores, um microcontrolador e um
+dispositivo visual externo, projetado para sinalizar de forma clara e visível o status do uso do cinto de
+segurança. O sistema será compatível com câmeras urbanas e outros dispositivos de fiscalização,
+promovendo, assim, a segurança no trânsito e a conformidade com a legislação vigente.
+COAUTOR 1: Adriano Paulo Carneiro Rosas Santos, brasileiro, portador do CPF nº 019.694.40589.
+COAUTOR 2: João Manoel Oliveira Silva, brasileiro, portador do CPF nº 056.402.125-35.
+
+1. Do Objeto do Contrato
+1.1. O presente contrato tem por objeto a co-criação e o desenvolvimento em coautoria de um
+sistema embarcado de monitoramento inteligente do uso do cinto de segurança. Tal sistema
+integrará sensores, um microcontrolador e um dispositivo visual externo, projetado para sinalizar
+de forma clara e visível o status do uso do cinto de segurança, tanto para câmeras urbanas
+quanto para outros dispositivos de fiscalização.
+1.2. Adicionalmente, o sistema deverá possibilitar a comunicação eficiente com sistemas de
+controle e auditoria, tanto públicos quanto privados, visando a integração urbana e a otimização da
+fiscalização do uso do cinto de segurança.
+
+2. FUNÇÃO DE CADA COAUTOR
+2.1. Coautor 1, Adriano Paulo Carneiro Rosas Santos, será responsável por liderar e coordenar as
+atividades relacionadas à prospecção, validação e articulação do projeto no âmbito institucional e
+prático.
+2.2. As responsabilidades específicas do Coautor 1 incluem, mas não se limitam a: a) Proposição
+da ideia original e definição dos objetivos do projeto; b) Levantamento e análise da problemática
+relacionada ao uso do cinto de segurança, incluindo dados estatísticos, legislação vigente e estudos
+de caso; c) Utilização da experiência de campo como agente de segurança e transporte para
+identificar as necessidades e desafios enfrentados na prática; d) Aplicação do conhecimento prático
+sobre o uso do cinto de segurança e seus impactos em situações reais, incluindo acidentes e
+fiscalização; e) Articulação institucional com autoridades competentes, órgãos públicos e outras
+entidades relevantes para obter apoio, licenças e autorizações necessárias; f) Validação da solução
+proposta em campo, por meio de testes e demonstrações em ambientes controlados e reais; g)
+Elaboração de relatórios e apresentações sobre o progresso do projeto, resultados obtidos e
+próximos passos; h) Representação do projeto em eventos, reuniões e outras atividades de
+divulgação; i) Identificação e avaliação de riscos e oportunidades relacionados ao projeto, propondo
+soluções e estratégias para mitigá-los ou aproveitá-los; j) Manutenção de comunicação constante
+e transparente com o Coautor 2, informando sobre o andamento das atividades, resultados e
+desafios.
+
+2.3. Coautor 2, João Manoel Oliveira Silva, será responsável por liderar e coordenar as atividades
+relacionadas ao desenvolvimento técnico, modelagem e estruturação do projeto.
+2.4. As responsabilidades específicas do Coautor 2 incluem, mas não se limitam a: a) Modelagem
+conceitual do sistema, definindo suas funcionalidades, componentes e interações; b) Criação da
+arquitetura digital do sistema, especificando os hardwares, softwares e protocolos de comunicação;
+c) Produção de documentação técnica detalhada, incluindo diagramas, especificações e manuais
+de uso; d) Prototipagem lógica e simbólica do sistema, utilizando ferramentas e tecnologias
+adequadas; e) Automação com inteligência artificial (IA), implementando algoritmos e modelos para
+otimizar o funcionamento do sistema; f) Elaboração de banco de testes para avaliar o desempenho
+e a confiabilidade do sistema; g) Criação da identidade visual do sistema, incluindo logotipos, cores
+e elementos gráficos; h) Estruturação estratégica do modelo de negócios, definindo o público-alvo,
+proposta de valor e estratégias de comercialização; i) Estruturação estratégica da propriedade
+intelectual, incluindo o registro de patentes e outras formas de proteção; j) Manutenção de
+comunicação constante e transparente com o Coautor 1, informando sobre o andamento das
+atividades, resultados e desafios.
+
+3. PROPRIEDADE INTELECTUAL
+
+3.1. A propriedade intelectual do sistema de monitoramento inteligente do uso do cinto de
+segurança, objeto deste contrato, incluindo, mas não se limitando a, patentes, modelos de utilidade,
+desenhos industriais, direitos autorais sobre o software embarcado, documentação técnica,
+identidade visual e qualquer outra forma de proteção legalmente reconhecida, será detida em
+condomínio pelos COAUTORES.
+3.2. . A participação de cada COAUTOR na titularidade da propriedade intelectual será de 50%
+(cinquenta por cento), independentemente da natureza da contribuição individual de cada um para
+o desenvolvimento do projeto, conforme estabelecido na Cláusula 3 deste instrumento.
+3.3. Os direitos de propriedade intelectual abrangem todas as formas de exploração econômica e
+institucional do sistema, incluindo, mas não se limitando a, o direito de fabricar, usar, vender,
+importar, licenciar, ceder, distribuir, comercializar, divulgar, promover e explorar economicamente
+o sistema em qualquer território, por qualquer meio ou forma, seja ela conhecida ou que venha a
+ser inventada no futuro.
+3.4. O registro de patente, caso aplicável, será requerido em nome de ambos os COAUTORES, ou
+de quem estes indicarem em comum acordo, assegurando a co-titularidade da propriedade
+intelectual, em conformidade com a legislação brasileira de propriedade industrial (Lei nº 9.279/96).
+3.5. Qualquer decisão relativa à exploração da propriedade intelectual, incluindo, mas não se
+limitando a, licenciamento, comercialização, cessão, ou qualquer outra forma de transferência de
+direitos, deverá ser tomada em comum acordo entre os COAUTORES, exigindo-se a anuência
+expressa de ambos.
+3.6. Em caso de licenciamento da tecnologia, os rendimentos serão distribuídos igualmente entre
+os COAUTORES, após a dedução de eventuais custos operacionais e despesas relacionadas à
+proteção e exploração da propriedade intelectual.
+3.7. Os COAUTORES se comprometem a cooperar mutuamente na proteção da propriedade
+intelectual, incluindo a adoção de medidas para evitar a sua violação por terceiros, e a notificar a
+outra parte sobre qualquer suspeita de infração.
+
+3.8. A cessão da propriedade intelectual a terceiros, seja ela total ou parcial, somente poderá
+ocorrer mediante consentimento expresso e por escrito de ambos os COAUTORES,
+estabelecendo-se as condições da cessão em instrumento específico.
+3.9. A presente cláusula permanecerá em vigor mesmo após o término ou rescisão deste contrato,
+em relação aos direitos de propriedade intelectual já existentes ou que venham a ser gerados em
+decorrência do projeto.
+
+4. DIREITOS E RESPONSABILIDADES DAS PARTES
+4.1. As partes reconhecem e se comprometem a reconhecer mutuamente, de forma expressa e
+inequívoca, todas as contribuições, sejam elas de natureza intelectual, técnica, estratégica ou de
+qualquer outra espécie, que forem efetivamente realizadas ao longo do desenvolvimento do
+projeto, incluindo, mas não se limitando a, ideias, conceitos, protótipos, códigos, documentos,
+relatórios, apresentações e qualquer outro material relevante para o avanço do projeto. O
+reconhecimento mútuo deverá ser formalizado em todos os documentos e materiais de
+divulgação do projeto, através da menção clara e precisa da coautoria, de acordo com a
+participação de cada parte, conforme definido na Cláusula 3 deste contrato.
+4.2. Nenhuma das partes poderá, sob qualquer pretexto ou circunstância, explorar, divulgar,
+comercializar, licenciar ou, de qualquer forma, utilizar o projeto, ou qualquer parte dele, de maneira
+isolada, individual ou independente, sem a prévia e expressa autorização, por escrito, da outra
+parte. A autorização deverá especificar o escopo da utilização pretendida, o prazo de validade e as
+condições de remuneração, se houver. A violação desta cláusula implicará em responsabilidade
+civil e criminal, nos termos da legislação vigente, além da imediata rescisão contratual e perda dos
+direitos sobre o projeto pela parte infratora.
+4.3. Toda e qualquer negociação, tratativa, proposta, acordo ou contrato com terceiros, sejam eles
+pessoas físicas ou jurídicas, públicas ou privadas, que envolva o projeto, incluindo, mas não se
+limitando a, parcerias, investimentos, licenciamentos, cessões, vendas ou qualquer outra forma de
+exploração comercial, deverá ser realizada em comum acordo entre as partes. As decisões deverão
+ser tomadas de forma conjunta, mediante consenso, e formalizadas por escrito. A parte que iniciar
+ou receber qualquer proposta de terceiros deverá informar imediatamente a outra parte,
+apresentando todos os detalhes relevantes para a tomada de decisão conjunta. A ausência de
+acordo entre as partes implicará na impossibilidade de prosseguir com a negociação.
+4.4. As partes se comprometem a atuar com ética, boa-fé, transparência e profissionalismo em
+todas as suas relações e atividades relacionadas ao projeto, em conformidade com o artigo 422 do
+Código Civil Brasileiro. Deverão agir com lealdade e respeito mútuo, buscando sempre o benefício
+comum e o sucesso do projeto. Qualquer conduta que viole os princípios da boa-fé, da ética e da
+transparência poderá ensejar a rescisão contratual por justa causa, além das perdas e danos
+eventualmente apurados.
+4.5. As partes se obrigam a manter a confidencialidade de todas as informações confidenciais
+relacionadas ao projeto, incluindo, mas não se limitando a, informações técnicas, estratégicas,
+financeiras e comerciais, que forem compartilhadas entre si ou com terceiros, durante a vigência
+deste contrato e mesmo após o seu término. A obrigação de confidencialidade perdurará por prazo
+indeterminado. A violação desta cláusula implicará em responsabilidade civil e criminal, nos termos
+da legislação vigente.
+
+5. CLÁUSULA DE DILUIÇÃO ESTRATÉGICA
+5.1. As partes reconhecem a possibilidade de diluição das cotas do projeto para viabilizar a entrada
+de investidores, parceiros estratégicos ou programas de fomento, visando o desenvolvimento e
+aprimoramento do sistema de monitoramento inteligente do uso do cinto de segurança.
+5.2. A diluição das cotas, conforme prevista, estará condicionada à apresentação de proposta
+formal, detalhada e por escrito, por parte do potencial investidor ou parceiro estratégico, contendo
+informações sobre o aporte de capital, o plano de negócios, as responsabilidades e os benefícios
+esperados para o projeto.
+5.3. A decisão de diluir as cotas e a aceitação da proposta serão tomadas em conjunto pelos
+coautores, mediante análise criteriosa dos termos apresentados, considerando o impacto da
+entrada do novo participante no desenvolvimento do projeto, na propriedade intelectual e nos
+interesses de cada parte.
+5.4. Caso seja aprovada a entrada de investidores ou parceiros estratégicos, a distribuição das
+cotas do projeto será alterada conforme os seguintes percentuais:
+5.4.1. Coautor 1: 30% das cotas totais.
+5.4.2. Coautor 2: 30% das cotas totais.
+5.4.3. Participações externas estratégicas: até 40% das cotas totais. A distribuição exata dessas
+cotas entre os novos participantes será definida na adenda contratual específica, conforme os
+termos da negociação.
+5.5. A diluição das cotas e a consequente alteração da participação societária serão formalizadas
+por meio de adenda contratual, a ser assinada por todos os coautores e pelos novos participantes,
+se houver, que deverá detalhar as novas condições de participação, as responsabilidades e os
+direitos de cada parte.
+5.6. A adenda contratual mencionada no item anterior deverá ser elaborada em conformidade com
+as disposições legais aplicáveis, incluindo, mas não se limitando, ao Código Civil Brasileiro,
+especialmente no que diz respeito à alteração do contrato social e à proteção dos direitos dos
+coautores.
+5.7. A entrada de novos participantes e a diluição das cotas não implicarão, por si só, na alteração
+das responsabilidades e atribuições dos coautores estabelecidas neste contrato, salvo disposição
+expressa em contrário na adenda contratual.
+5.8. A diluição das cotas não poderá ocorrer em desacordo com os princípios da boa-fé, da
+transparência e da ética, devendo sempre ser preservados os interesses do projeto e dos
+coautores.
+5.9. Em caso de discordância entre os coautores quanto à diluição das cotas ou aos termos da
+adenda contratual, as partes se comprometem a buscar uma solução amigável, por meio de
+negociação direta ou mediação, antes de recorrer às vias judiciais.
+5.10. A presente cláusula deverá ser interpretada em consonância com as demais cláusulas deste
+contrato, de modo a garantir a segurança jurídica e a proteção dos direitos de todas as partes
+envolvidas.
+
+6. VIGÊNCIA
+6.1. O presente contrato vigorará por prazo indeterminado, iniciando seus efeitos a partir da data
+de sua assinatura por ambas as partes, conforme estabelecido no preâmbulo.
+6.2. O contrato poderá ser modificado a qualquer tempo, mediante a elaboração e assinatura de
+aditivo contratual, formalizado por escrito e subscrito por todos os COAUTORES, com a
+concordância expressa de todas as partes envolvidas. As alterações contratuais entrarão em vigor
+a partir da data estabelecida no respectivo aditivo, que fará parte integrante deste instrumento.
+6.3. A rescisão do contrato poderá ocorrer por mútuo acordo entre as partes, formalizado por
+escrito, com a devida comunicação e anuência de todos os COAUTORES. A rescisão por mútuo
+acordo implicará na definição dos termos e condições para a extinção das obrigações contratuais,
+incluindo a destinação da propriedade intelectual e a divisão dos resultados obtidos até a data da
+rescisão.
+6.4. Em caso de descumprimento de quaisquer das cláusulas contratuais por uma das partes, a
+parte prejudicada poderá notificar a parte infratora, concedendo-lhe um prazo razoável para a
+correção da falha. Caso a parte infratora não corrija a falha no prazo estipulado, a parte prejudicada
+poderá rescindir o contrato, mediante notificação formal, com as consequências legais cabíveis.
+6.5. A rescisão unilateral, por qualquer das partes, sem justa causa e em desacordo com os termos
+estabelecidos neste contrato, poderá ensejar indenização à parte prejudicada, conforme a
+legislação vigente e os princípios do direito contratual, resguardando-se o direito de ambas as
+partes de buscar as medidas judiciais cabíveis para a reparação de eventuais perdas e danos.
+6.6. A substituição deste contrato por um novo instrumento, que poderá abranger novas condições,
+termos ou a participação de terceiros, dependerá do comum acordo entre as partes, formalizado
+por escrito e assinado por todos os COAUTORES. O novo instrumento contratual substituirá
+integralmente o presente contrato, a partir da data de sua assinatura, revogando todas as cláusulas
+e condições anteriores.
+
+7. FORO
+7.1. As partes, de comum acordo e em observância ao disposto no artigo 63 do Código de Processo
+Civil, elegem o foro da cidade de Salvador-ba para dirimir quaisquer dúvidas, litígios ou
+controvérsias que possam surgir em decorrência do presente contrato, incluindo, mas não se
+limitando a, questões relacionadas à interpretação, execução, rescisão, validade ou qualquer outro
+aspecto que envolva os direitos e obrigações estabelecidos neste instrumento.
+7.2. O foro eleito será o competente para processar e julgar quaisquer ações judiciais, medidas
+extrajudiciais ou procedimentos arbitrais relacionados ao presente contrato, excluindo-se, por
+conseguinte, qualquer outro foro, por mais privilegiado que seja ou que venha a ser, por força de
+lei ou domicílio das partes.
+7.3. As partes renunci
+(Content truncated due to size limit. Use line ranges to read in chunks)

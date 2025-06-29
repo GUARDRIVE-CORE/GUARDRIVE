@@ -1,0 +1,46 @@
+
+4. Sistema de acordo com a reivindicação 1, caracterizado pelo dispositivo visual externo compreender:
+   a) display QR dinâmico atualizado periodicamente;
+   b) indicadores LED RGB para exibição visual do status;
+   c) invólucro resistente com classificação IP67;
+   d) sistema anti-falsificação com elementos físicos e digitais.
+
+5. Sistema de acordo com a reivindicação 1, caracterizado pelo sistema de registro blockchain compreender:
+   a) assinatura digital dos dados pelo microcontrolador seguro;
+   b) registro em blockchain privada com timestamp, geolocalização, status do cinto, identificadores e assinatura;
+   c) smart contracts para automação de verificação de conformidade;
+   d) ancoragem periódica em blockchain pública;
+   e) interface de consulta para entidades autorizadas.
+
+6. Sistema de acordo com a reivindicação 1, caracterizado pelas interfaces de comunicação compreenderem:
+   a) Bluetooth de baixa energia (BLE);
+   b) Wi-Fi;
+   c) Celular (4G/5G);
+   d) LoRaWAN (opcional);
+   e) CAN Bus/OBD-II;
+   f) NFC.
+
+7. Método para monitoramento, verificação externa e certificação do uso de cinto de segurança, caracterizado por compreender as etapas de:
+   a) detectar a presença do ocupante no assento através de sensores de pressão;
+   b) monitorar a conexão e tensão do cinto através de sensores específicos;
+   c) verificar o posicionamento correto do cinto sobre o corpo do ocupante;
+   d) processar os dados dos sensores utilizando algoritmos de inteligência artificial;
+   e) determinar o status do cinto (correto, incorreto, não utilizado);
+   f) exibir o status através de um código QR dinâmico e indicadores LED;
+   g) registrar os dados em blockchain com assinatura digital;
+   h) permitir verificação externa por entidades autorizadas.
+
+8. Método de acordo com a reivindicação 7, caracterizado por compreender adicionalmente as etapas de:
+   a) criptografar os dados antes da transmissão;
+   b) selecionar automaticamente a interface de comunicação mais adequada;
+   c) sincronizar dados com servidores remotos quando conectividade disponível;
+   d) gerar relatórios de conformidade baseados no histórico registrado;
+   e) detectar e alertar sobre tentativas de fraude ou adulteração.
+
+## RESUMO
+
+A presente invenção refere-se a um sistema integrado de monitoramento e verificação externa do uso de cinto de segurança com certificação blockchain, compreendendo um módulo sensor adaptativo que monitora o uso correto do cinto através de múltiplos sensores, um microcontrolador seguro que processa os dados utilizando algoritmos de inteligência artificial, um dispositivo visual externo que exibe um código QR dinâmico e indicadores LED para verificação instantânea, um sistema de registro blockchain que armazena os dados de forma imutável e auditável, e interfaces de comunicação para integração com sistemas veiculares e infraestrutura urbana. O sistema permite verificação externa confiável por autoridades e gestores sem necessidade de acesso ao interior do veículo, detecção precisa do uso correto do cinto, registro imutável para fins de conformidade e seguros, resistência a fraudes, e integração com ecossistemas urbanos inteligentes, contribuindo para a fiscalização eficiente, a redução de acidentes e a promoção da cultura de segurança no trânsito.
+
+## DESENHOS
+
+[Nota: Os desenhos seriam incluídos aqui, com as figuras mencionadas na descrição detalhada.]
