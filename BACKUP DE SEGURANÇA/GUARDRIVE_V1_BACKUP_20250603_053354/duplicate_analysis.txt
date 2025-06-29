@@ -1,0 +1,168 @@
+Group: __init__.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\__init__.py
+    Size: 299 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\ai\__init__.py
+    Size: 58 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\__init__.py
+    Size: 66 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\core\__init__.py
+    Size: 60 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\esg\__init__.py
+    Size: 59 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\interfaces\__init__.py
+    Size: 66 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\monitoring\__init__.py
+    Size: 66 bytes
+    LastModified: 05/25/2025 20:30:10
+
+Group: api.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\interfaces\api_0.py
+    Size: 2929 bytes
+    LastModified: 05/25/2025 20:31:44
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\interfaces\api.py
+    Size: 2929 bytes
+    LastModified: 05/25/2025 20:31:44
+
+Group: CarbonToken.sol
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts\CarbonToken_0.sol
+    Size: 7163 bytes
+    LastModified: 05/25/2025 19:44:36
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts\CarbonToken.sol
+    Size: 7163 bytes
+    LastModified: 05/25/2025 19:44:36
+
+Group: config.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\core\config_0.py
+    Size: 805 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\core\config.py
+    Size: 805 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\interfaces\config_0.py
+    Size: 819 bytes
+    LastModified: 05/25/2025 20:31:44
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\interfaces\config.py
+    Size: 819 bytes
+    LastModified: 05/25/2025 20:31:44
+
+Group: contracts.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts_0.py
+    Size: 2151 bytes
+    LastModified: 05/25/2025 20:30:44
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts.py
+    Size: 2151 bytes
+    LastModified: 05/25/2025 20:30:44
+
+Group: design_system_guarddrive.md
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\design\design_system_guarddrive_0.md
+    Size: 13907 bytes
+    LastModified: 05/25/2025 19:44:36
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\design\design_system_guarddrive.md
+    Size: 13907 bytes
+    LastModified: 05/25/2025 19:44:36
+
+Group: documentacao_tecnica_interfaces.md
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\technical\documentacao_tecnica_interfaces_0.md
+    Size: 31956 bytes
+    LastModified: 05/25/2025 19:44:36
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\technical\documentacao_tecnica_interfaces.md
+    Size: 31956 bytes
+    LastModified: 05/25/2025 19:44:36
+
+Group: full_example.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\examples\full_example_0.py
+    Size: 2867 bytes
+    LastModified: 05/25/2025 20:34:34
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\examples\full_example.py
+    Size: 2867 bytes
+    LastModified: 05/25/2025 20:34:34
+
+Group: getting_started.md
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\guides\getting_started_0.md
+    Size: 1982 bytes
+    LastModified: 05/25/2025 20:34:34
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\docs\guides\getting_started.md
+    Size: 1982 bytes
+    LastModified: 05/25/2025 20:34:34
+
+Group: monitor.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\monitoring\monitor_0.py
+    Size: 1147 bytes
+    LastModified: 05/25/2025 20:30:10
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\monitoring\monitor.py
+    Size: 1147 bytes
+    LastModified: 05/25/2025 20:30:10
+
+Group: prediction.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\ai\prediction_0.py
+    Size: 7470 bytes
+    LastModified: 05/25/2025 20:33:04
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\ai\prediction.py
+    Size: 7470 bytes
+    LastModified: 05/25/2025 20:33:04
+
+Group: README.md
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\README_0.md
+    Size: 890 bytes
+    LastModified: 05/25/2025 20:28:34
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\README_1.md
+    Size: 890 bytes
+    LastModified: 05/25/2025 20:28:34
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\README.md
+    Size: 890 bytes
+    LastModified: 05/25/2025 20:28:34
+
+Group: SafetyNFT.sol
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts\SafetyNFT_0.sol
+    Size: 8629 bytes
+    LastModified: 05/25/2025 19:44:36
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\blockchain\contracts\SafetyNFT.sol
+    Size: 8629 bytes
+    LastModified: 05/25/2025 19:44:36
+
+Group: setup.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\setup_0.py
+    Size: 751 bytes
+    LastModified: 05/25/2025 20:28:34
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\setup.py
+    Size: 751 bytes
+    LastModified: 05/25/2025 20:28:34
+
+Group: telemetry.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\monitoring\telemetry_0.py
+    Size: 4638 bytes
+    LastModified: 05/25/2025 20:33:04
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\monitoring\telemetry.py
+    Size: 4638 bytes
+    LastModified: 05/25/2025 20:33:04
+
+Group: tokenization.py
+Files:
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\esg\tokenization_0.py
+    Size: 4896 bytes
+    LastModified: 05/25/2025 20:31:44
+  - Path: C:\Users\João\Desktop\PROJETOS\GUARDRIVE\GUARDRIVE_V1\sdk\src\esg\tokenization.py
+    Size: 4896 bytes
+    LastModified: 05/25/2025 20:31:44
+
