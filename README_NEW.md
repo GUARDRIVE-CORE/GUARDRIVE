@@ -1,8 +1,10 @@
 # GUARDRIVE - Plataforma Inteligente com Blockchain & ESG
 
 [![Platform](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/GUARDRIVE-CORE/GUARDRIVE)
-[![SDK](https://img.shields.io/badge/sdk-python-blue)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)
-[![MCP](https://img.shields.io/badge/mcp-universal-orange)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)
+[![Rust](https://img.shields.io/badge/rust-performance--critical-orange)](https://www.rust-lang.org)
+[![Python](https://img.shields.io/badge/python-business--logic-blue)](https://python.org)
+[![JavaScript](https://img.shields.io/badge/javascript-frontend--api-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![MCP](https://img.shields.io/badge/mcp-universal-purple)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 > **🚀 Sistema veicular inteligente com blockchain, tokenização ESG e ecosystem MCP universal**
@@ -16,18 +18,18 @@ A organização GUARDRIVE-CORE mantém um ecossistema integrado e organizado:
 #### 🔥 **[GUARDRIVE](https://github.com/GUARDRIVE-CORE/GUARDRIVE)** (Este repositório)
 - **Descrição**: Plataforma principal com blockchain & ESG tokenization
 - **Função**: Core da aplicação, workspace de desenvolvimento
-- **Tecnologias**: JavaScript, Python, Blockchain, ESG
+- **Tecnologias**: 🦀 Rust, 🐍 Python, 🟨 JavaScript, ⛓️ Blockchain, 🌱 ESG
 
 #### 🔌 **[GUARDRIVE-MCP](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)**
 - **Descrição**: Universal Model Context Protocol servers
 - **Função**: Ecosystem MCP para AI-IDE integration
-- **Tecnologias**: JavaScript, Node.js, MCP Protocol
+- **Tecnologias**: 🟨 JavaScript, Node.js, MCP Protocol (+ 🦀 Rust bridge planned)
 - **Clientes**: Warp, VS Code, Cursor, Claude Desktop
 
 #### 🐍 **[GUARDRIVE-SDK](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)** ✅ Oficial
 - **Descrição**: SDK Python oficial para integração
 - **Função**: SDK unificado para todas as integrações
-- **Tecnologias**: Python 3.9+, AsyncIO, Pydantic V2
+- **Tecnologias**: 🐍 Python 3.9+, AsyncIO, Pydantic V2 (+ 🦀 Rust FFI)
 
 #### 📚 **[guardrive-examples](https://github.com/GUARDRIVE-CORE/guardrive-examples)**
 - **Descrição**: Hub de exemplos e guias
@@ -41,28 +43,54 @@ A organização GUARDRIVE-CORE mantém um ecossistema integrado e organizado:
 - **Motivo**: Consolidação - repositórios idênticos
 - **Ação**: Use `GUARDRIVE-SDK` (nome mais claro)
 
-## 🏗️ **Arquitetura do Projeto**
+## 🏗️ **Arquitetura Multi-Linguagem**
 
 ```
-GUARDRIVE PLATFORM
+GUARDRIVE PLATFORM (Multi-Language Architecture)
 ├── 🔥 Core Application
-│   ├── blockchain/          # Blockchain integration
-│   ├── esg/                 # ESG tokenization
-│   ├── ai/                  # AI/ML modules
-│   └── monitoring/          # System monitoring
+│   ├── 🦀 rust/                     # High-Performance Components
+│   │   ├── neural-evolution/        # AI & Neural Networks
+│   │   ├── distributed-cache/       # High-speed caching
+│   │   ├── real-time-monitoring/    # Low-latency telemetry
+│   │   ├── plugin-system/           # Extensible plugins
+│   │   └── device-firmware/         # Embedded systems
+│   ├── 🐍 python/                   # Business Logic & ML
+│   │   ├── blockchain/              # Blockchain integration
+│   │   ├── esg/                     # ESG tokenization
+│   │   ├── ai-training/             # ML model training
+│   │   └── data-analysis/           # Analytics
+│   ├── 🟨 javascript/               # Frontend & APIs
+│   │   ├── web-interface/           # React/Next.js UI
+│   │   ├── node-apis/               # Backend APIs
+│   │   └── real-time-ui/            # WebSocket interfaces
+│   └── ⛓️ smart-contracts/          # Solidity contracts
 ├── 🔌 MCP Ecosystem (GUARDRIVE-MCP)
-│   ├── devops-orchestrator/ # DevOps automation
-│   ├── system-monitor/      # Metrics & health
-│   └── warp-bridge/         # Universal bridge
-├── 🐍 SDK Integration (GUARDRIVE-SDK)
-│   ├── python/              # Python SDK
-│   ├── javascript/          # JS SDK (planned)
-│   └── examples/            # Integration examples
+│   ├── devops-orchestrator/         # DevOps automation (JS)
+│   ├── system-monitor/              # Metrics & health (JS + Rust bridge)
+│   ├── warp-bridge/                 # Universal bridge (JS)
+│   └── rust-performance-server/     # Ultra-fast MCP (Rust) [planned]
+├── 🛠️ SDK Multi-Language
+│   ├── 🐍 guardrive-sdk-python/    # Python SDK (official)
+│   ├── 🦀 guardrive-sdk-rust/      # Rust SDK (high-perf) [planned]
+│   ├── 🟨 guardrive-sdk-js/        # JavaScript SDK [planned]
+│   ├── 🔗 ffi-bindings/            # Cross-language bindings
+│   └── 🌐 wasm-modules/            # WebAssembly builds
 └── 📚 Documentation & Examples
-    ├── tutorials/           # How-to guides  
-    ├── api-docs/            # API documentation
-    └── integrations/        # Integration guides
+    ├── tutorials/                   # Multi-language guides
+    ├── api-docs/                    # API documentation
+    ├── rust-examples/               # Rust integration examples
+    └── performance-benchmarks/      # Language performance comparisons
 ```
+
+### 🎯 **Technology Stack by Layer**
+
+| Layer | Technology | Primary Use | Performance |
+|-------|------------|-------------|-------------|
+| **🦀 Performance Critical** | **Rust** | Neural evolution, real-time monitoring, cache | **Ultra-High** |
+| **🐍 Business Logic** | **Python** | AI/ML training, ESG calculations, data analysis | **High** |
+| **🟨 Frontend/API** | **JavaScript/TypeScript** | Web UI, Node.js APIs, MCP servers | **Medium** |
+| **⛓️ Smart Contracts** | **Solidity** | Blockchain, tokenization, DeFi | **Chain-dependent** |
+| **🔗 Integration** | **FFI/WASM** | Cross-language bindings, web integration | **Variable** |
 
 ## 🚀 **Quick Start**
 
