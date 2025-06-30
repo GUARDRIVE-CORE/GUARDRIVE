@@ -1,17 +1,19 @@
 #!/usr/bin/env node
 
 /**
- * GUARDRIVE MCP - Warp Bridge
+ * GUARDRIVE MCP - Warp Bridge (Simplificado)
  * 
- * Este arquivo serve como ponte entre o MCP próprio GUARDRIVE e o Warp Terminal.
- * Ele recebe comandos no formato MCP do Warp e os traduz para a CLI independente.
+ * Versão simplificada que não usa bibliotecas externas.
  * 
- * @version 0.1.0
+ * @version 0.1.2
  */
 
 const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
+
+// Log de inicialização
+console.error('GUARDRIVE MCP Bridge iniciando (versão simplificada)...');
 
 // Diretório raiz do MCP GUARDRIVE
 const MCP_ROOT = __dirname;
@@ -31,8 +33,21 @@ async function handleMcpRequest(request) {
       `${new Date().toISOString()} - Recebido: ${JSON.stringify(parsed)}\n`);
     
     if (parsed.jsonrpc === '2.0') {
+      // Responder ao método 'initialize'
+      if (parsed.method === 'initialize') {
+        sendMcpResponse(parsed.id, {
+          protocolVersion: '2024-11-05',
+          capabilities: {
+            tools: {}
+          },
+          serverInfo: {
+            name: 'guardrive-mcp-custom',
+            version: '0.1.2'
+          }
+        });
+      }
       // Responder ao método 'listTools'
-      if (parsed.method === 'listTools') {
+      else if (parsed.method === 'listTools') {
         sendMcpResponse(parsed.id, {
           tools: [
             {
