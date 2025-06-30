@@ -1,7 +1,7 @@
 {
-  "name": "guardrive-mcp",
-  "version": "0.1.0",
-  "description": "CLI independente para os servidores GUARDRIVE MCP (MODEL CONTEXT PROTOCOL)",
+  "name": "@guardrive/mcp-servers",
+  "version": "0.2.0",
+  "description": "Universal Model Context Protocol servers for AI-IDE integration - DevOps, Monitoring, and more",
   "main": "cli.js",
   "bin": {
     "guardrive-mcp": "./cli.js"
@@ -16,13 +16,25 @@
     "mcp",
     "model-context-protocol",
     "guardrive",
-    "cli",
+    "ai-ide",
     "devops",
-    "orchestrator",
-    "monitor"
+    "monitoring",
+    "universal",
+    "warp",
+    "vscode",
+    "cursor",
+    "claude"
   ],
   "author": "GUARDRIVE-CORE",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP.git"
+  },
+  "homepage": "https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP",
+  "bugs": {
+    "url": "https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP/issues"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.0.0",
