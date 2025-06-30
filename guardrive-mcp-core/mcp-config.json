@@ -1,0 +1,12 @@
+{
+  "guardrive-mcp-custom": {
+    "command": "node 'C:\\Users\\João\\Desktop\\PROJETOS\\GUARDRIVE\\guardrive-mcp-core\\cli.js'",
+    "env": {
+      "GUARDRIVE_MCP_MODE": "bridge",
+      "NODE_ENV": "production"
+    },
+    "working_directory": null,
+    "start_on_launch": true
+  }
+}
+
