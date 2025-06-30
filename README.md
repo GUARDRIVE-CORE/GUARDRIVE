@@ -1,7 +1,14 @@
-# Projeto GuarDrive - Estrutura Organizacional
+# GUARDRIVE - Plataforma Inteligente com Blockchain & ESG
 
-## Descrição
-Este é o projeto GuarDrive, um sistema veicular inteligente com blockchain e tokenização ESG.
+[![Platform](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/GUARDRIVE-CORE/GUARDRIVE)
+[![SDK](https://img.shields.io/badge/sdk-python-blue)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)
+[![MCP](https://img.shields.io/badge/mcp-universal-orange)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)
+
+> **🚀 Sistema veicular inteligente com blockchain, tokenização ESG e ecosystem MCP universal**
+
+## 🌟 Ecossistema GUARDRIVE-CORE
+
+A organização GUARDRIVE-CORE mantém um ecossistema integrado de repositórios:
 
 ## Estrutura de Diretórios
 
