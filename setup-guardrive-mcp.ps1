@@ -1,5 +1,5 @@
 # Script de configuracao do GUARDRIVE MCP
-# Configura tanto o MCP independente quanto a integracao com o Warp Terminal
+# Configura o ecosistema MCP para desenvolvimento GUARDRIVE com suporte multi-plataforma
 
 # Definir constantes
 $GUARDRIVE_ROOT = $PSScriptRoot
@@ -22,7 +22,7 @@ function Show-Header {
 }
 
 # Exibir cabeçalho principal
-Show-Header "🛡️  GUARDRIVE MCP - CONFIGURAÇÃO UNIFICADA"
+Show-Header "🛡️  GUARDRIVE MCP - CONFIGURAÇÃO MULTI-PLATAFORMA"
 
 # Verificar se o Node.js está instalado
 try {
@@ -69,10 +69,13 @@ node "$cliJs" %*
 
 Write-Host "✅ CLI disponível em: $cliLink" -ForegroundColor Green
 
-# 2. Configurar integração com Warp
-Show-Header "2. Configurando Integração com Warp"
+# 2. Configurar integração com clientes MCP
+Show-Header "2. Configurando Integração Multi-Cliente"
 
-# Verificar pasta de configuração do Warp
+# Configurar para múltiplos clientes MCP
+Write-Host "📋 Configurando para clientes: Warp, VS Code, Cursor, Claude Desktop" -ForegroundColor Yellow
+
+# Warp Terminal
 if (-not (Test-Path $WARP_CONFIG_PATH)) {
     New-Item -ItemType Directory -Path $WARP_CONFIG_PATH | Out-Null
     Write-Host "✅ Diretório de configuração do Warp criado" -ForegroundColor Green
@@ -128,10 +131,11 @@ Write-Host "   📋 MCP Independente:" -ForegroundColor Yellow
 Write-Host "   • Via script: .\bin\guardrive-mcp.cmd <comando>" -ForegroundColor White
 Write-Host "   • Exemplo: .\bin\guardrive-mcp.cmd start-session" -ForegroundColor White
 Write-Host ""
-Write-Host "   📋 Via Warp Terminal:" -ForegroundColor Yellow
-Write-Host "   • Abra o Warp e use comandos como:" -ForegroundColor White
-Write-Host "     - 'Iniciar sessão de desenvolvimento'" -ForegroundColor White
-Write-Host "     - 'Verificar métricas do sistema'" -ForegroundColor White
+Write-Host "   📋 Via Clientes MCP:" -ForegroundColor Yellow
+Write-Host "   • Warp Terminal: 'Iniciar sessão de desenvolvimento'" -ForegroundColor White
+Write-Host "   • VS Code: Ctrl+Shift+P → GUARDRIVE MCP" -ForegroundColor White
+Write-Host "   • Cursor: Use Chat com comandos GUARDRIVE" -ForegroundColor White
+Write-Host "   • Claude Desktop: Ferramentas GUARDRIVE disponíveis" -ForegroundColor White
 Write-Host ""
 Write-Host "🔄 Para atualizar a configuração no futuro, execute este script novamente." -ForegroundColor Magenta
 Write-Host ""

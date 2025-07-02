@@ -1,6 +1,6 @@
-# 🛡️ GUARDRIVE MCP Servers - Complete Development Guide
+# 🛡️ GUARDRIVE MCP Integration - Complete Development Guide
 
-**Guia completo para desenvolvimento, configuração e uso dos MCP Servers GUARDRIVE**
+**Guia completo para integração MCP do ecossistema GUARDRIVE com plataformas de desenvolvimento**
 
 ## 📋 **Índice**
 
@@ -19,12 +19,12 @@
 ## 🚀 **Quick Start**
 
 ### **Pré-requisitos**
-- Windows 10/11
+- Sistema operacional: Windows 10/11, Linux, macOS
 - Node.js ≥ 18.0.0
 - Git ≥ 2.40
-- Warp Terminal
-- GitHub CLI (gh)
-- PowerShell 5.1+
+- Terminal compatível com MCP (Warp, VS Code, Cursor, Claude Desktop)
+- GitHub CLI (gh) - opcional
+- PowerShell 5.1+ (Windows) ou Bash (Linux/macOS)
 
 ### **Instalação Rápida**
 ```bash
@@ -45,18 +45,19 @@ npm run system-monitor:test
 
 ---
 
-## 🎯 **Estratégia Organization-First**
+## 🎯 **Estratégia de Integração Universal**
 
-### **Repositórios e Fluxo**
+### **Arquitetura MCP Multi-Plataforma**
 
 ```mermaid
 graph LR
-    A[GUARDRIVE-CORE/GUARDRIVE] --> B[Repositório Principal]
-    C[NEO_SH1W4/guardrive] --> D[Fork Pessoal]
-    D --> E[Desenvolvimento]
-    E --> F[Pull Request]
-    F --> A
-    A --> G[Release Oficial]
+    A[GUARDRIVE Core] --> B[MCP Universal Bridge]
+    B --> C[Warp Terminal]
+    B --> D[VS Code]
+    B --> E[Cursor]
+    B --> F[Claude Desktop]
+    B --> G[API Standalone]
+    H[GUARDRIVE-MCP] --> B
 ```
 
 ### **Estrutura de Desenvolvimento**
