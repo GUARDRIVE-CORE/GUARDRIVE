@@ -222,10 +222,10 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 ## 🔗 **Important Links**
 
-- **Organization**: [GUARDRIVE-CORE](https://github.com/GUARDRIVE-CORE)
-- **Website**: [guardrive.dev](https://guardrive.dev) *(under development)*
-- **Documentation**: [docs.guardrive.dev](https://docs.guardrive.dev) *(under development)*
-- **Discord**: [Join our community](https://discord.gg/guardrive) *(under development)*
+- **🏠 Official Website**: [guardrive-core.github.io/GUARDRIVE](https://guardrive-core.github.io/GUARDRIVE/) *(Live & Active)*
+- **🏢 Organization**: [GUARDRIVE-CORE](https://github.com/GUARDRIVE-CORE)
+- **📚 Documentation**: [docs.guardrive.dev](https://docs.guardrive.dev) *(under development)*
+- **💬 Discord**: [Join our community](https://discord.gg/guardrive) *(under development)*
 
 ---
 
