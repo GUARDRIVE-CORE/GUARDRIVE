@@ -5,6 +5,7 @@
 ### Stack Tecnológico Recomendado
 
 #### Frontend Web
+
 - **Framework**: Next.js 14+ (React 18+)
 - **Styling**: Tailwind CSS + Headless UI
 - **State Management**: Zustand + React Query
@@ -13,6 +14,7 @@
 - **Blockchain**: Web3.js + Ethers.js
 
 #### Mobile App
+
 - **Framework**: React Native + Expo
 - **Navigation**: React Navigation 6
 - **State**: Redux Toolkit + RTK Query
@@ -21,6 +23,7 @@
 - **Blockchain**: WalletConnect + Mobile Web3
 
 #### Backend Integration
+
 - **API**: RESTful + GraphQL
 - **Real-time**: WebSockets + Server-Sent Events
 - **Authentication**: JWT + OAuth 2.0
@@ -75,91 +78,94 @@ guardrive-frontend/
 ### 1. Design System Base
 
 #### Tokens de Design
+
 ```typescript
 // design-tokens.ts
 export const tokens = {
   colors: {
     primary: {
-      50: '#ECFDF5',
-      500: '#00D4AA',
-      900: '#064E3B'
+      50: "#ECFDF5",
+      500: "#00D4AA",
+      900: "#064E3B",
     },
     secondary: {
-      50: '#EFF6FF',
-      500: '#1E3A8A',
-      900: '#1E3A8A'
+      50: "#EFF6FF",
+      500: "#1E3A8A",
+      900: "#1E3A8A",
     },
     accent: {
-      50: '#FFFBEB',
-      500: '#F59E0B',
-      900: '#92400E'
+      50: "#FFFBEB",
+      500: "#F59E0B",
+      900: "#92400E",
     },
     neutral: {
-      50: '#F9FAFB',
-      500: '#6B7280',
-      900: '#111827'
-    }
+      50: "#F9FAFB",
+      500: "#6B7280",
+      900: "#111827",
+    },
   },
   spacing: {
-    xs: '0.25rem',
-    sm: '0.5rem',
-    md: '1rem',
-    lg: '1.5rem',
-    xl: '2rem',
-    '2xl': '3rem'
+    xs: "0.25rem",
+    sm: "0.5rem",
+    md: "1rem",
+    lg: "1.5rem",
+    xl: "2rem",
+    "2xl": "3rem",
   },
   typography: {
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      mono: ['JetBrains Mono', 'monospace']
+      sans: ["Inter", "sans-serif"],
+      mono: ["JetBrains Mono", "monospace"],
     },
     fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem'
-    }
-  }
-}
+      xs: "0.75rem",
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+    },
+  },
+};
 ```
 
 #### Componentes UI Base
+
 ```typescript
 // components/ui/Button.tsx
 interface ButtonProps {
-  variant: 'primary' | 'secondary' | 'accent' | 'ghost'
-  size: 'sm' | 'md' | 'lg'
-  loading?: boolean
-  icon?: React.ReactNode
-  children: React.ReactNode
+  variant: "primary" | "secondary" | "accent" | "ghost";
+  size: "sm" | "md" | "lg";
+  loading?: boolean;
+  icon?: React.ReactNode;
+  children: React.ReactNode;
 }
 
 // components/ui/Card.tsx
 interface CardProps {
-  title?: string
-  subtitle?: string
-  action?: React.ReactNode
-  children: React.ReactNode
-  className?: string
+  title?: string;
+  subtitle?: string;
+  action?: React.ReactNode;
+  children: React.ReactNode;
+  className?: string;
 }
 
 // components/ui/MetricCard.tsx
 interface MetricCardProps {
-  title: string
-  value: string | number
-  unit?: string
-  trend?: 'up' | 'down' | 'stable'
-  trendValue?: string
-  icon?: React.ReactNode
+  title: string;
+  value: string | number;
+  unit?: string;
+  trend?: "up" | "down" | "stable";
+  trendValue?: string;
+  icon?: React.ReactNode;
 }
 ```
 
 ### 2. Componentes de Dashboard
 
 #### Dashboard Principal
+
 ```typescript
 // components/dashboard/DashboardOverview.tsx
 export const DashboardOverview = () => {
@@ -202,6 +208,7 @@ export const DashboardOverview = () => {
 ```
 
 #### Gráficos e Visualizações
+
 ```typescript
 // components/charts/EmissionChart.tsx
 export const EmissionChart = ({ data }: { data: EmissionData[] }) => {
@@ -213,16 +220,16 @@ export const EmissionChart = ({ data }: { data: EmissionData[] }) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line 
-          type="monotone" 
-          dataKey="emissions" 
-          stroke="#F59E0B" 
+        <Line
+          type="monotone"
+          dataKey="emissions"
+          stroke="#F59E0B"
           name="Emissões"
         />
-        <Line 
-          type="monotone" 
-          dataKey="offset" 
-          stroke="#00D4AA" 
+        <Line
+          type="monotone"
+          dataKey="offset"
+          stroke="#00D4AA"
           name="Compensação"
         />
       </LineChart>
@@ -234,6 +241,7 @@ export const EmissionChart = ({ data }: { data: EmissionData[] }) => {
 ### 3. Componentes de Mapa
 
 #### Mapa de Frota
+
 ```typescript
 // components/maps/FleetMap.tsx
 export const FleetMap = ({ vehicles }: { vehicles: Vehicle[] }) => {
@@ -265,11 +273,12 @@ export const FleetMap = ({ vehicles }: { vehicles: Vehicle[] }) => {
 ### 4. Componentes Blockchain
 
 #### Wallet Connection
+
 ```typescript
 // components/blockchain/WalletConnect.tsx
 export const WalletConnect = () => {
   const { connect, disconnect, account, isConnected } = useWallet()
-  
+
   return (
     <div className="flex items-center space-x-4">
       {isConnected ? (
@@ -292,11 +301,12 @@ export const WalletConnect = () => {
 ```
 
 #### Token Display
+
 ```typescript
 // components/blockchain/TokenBalance.tsx
 export const TokenBalance = ({ address }: { address: string }) => {
   const { data: balance, isLoading } = useTokenBalance(address)
-  
+
   return (
     <Card>
       <div className="flex items-center justify-between">
@@ -324,90 +334,89 @@ export const TokenBalance = ({ address }: { address: string }) => {
 ### 1. Serviços de API
 
 #### API Client Base
+
 ```typescript
 // services/api.ts
 class ApiClient {
-  private baseURL: string
-  private token?: string
+  private baseURL: string;
+  private token?: string;
 
   constructor(baseURL: string) {
-    this.baseURL = baseURL
+    this.baseURL = baseURL;
   }
 
   setAuthToken(token: string) {
-    this.token = token
+    this.token = token;
   }
 
-  async request<T>(
-    endpoint: string, 
-    options: RequestInit = {}
-  ): Promise<T> {
-    const url = `${this.baseURL}${endpoint}`
+  async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+    const url = `${this.baseURL}${endpoint}`;
     const headers = {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
       ...(this.token && { Authorization: `Bearer ${this.token}` }),
-      ...options.headers
-    }
+      ...options.headers,
+    };
 
-    const response = await fetch(url, { ...options, headers })
-    
+    const response = await fetch(url, { ...options, headers });
+
     if (!response.ok) {
-      throw new Error(`API Error: ${response.status}`)
+      throw new Error(`API Error: ${response.status}`);
     }
 
-    return response.json()
+    return response.json();
   }
 }
 
-export const apiClient = new ApiClient(process.env.NEXT_PUBLIC_API_URL!)
+export const apiClient = new ApiClient(process.env.NEXT_PUBLIC_API_URL!);
 ```
 
 #### Serviços Específicos
+
 ```typescript
 // services/fleet.ts
 export class FleetService {
   static async getVehicles(fleetId: string): Promise<Vehicle[]> {
-    return apiClient.request(`/fleets/${fleetId}/vehicles`)
+    return apiClient.request(`/fleets/${fleetId}/vehicles`);
   }
 
   static async getVehicleMetrics(vehicleId: string): Promise<VehicleMetrics> {
-    return apiClient.request(`/vehicles/${vehicleId}/metrics`)
+    return apiClient.request(`/vehicles/${vehicleId}/metrics`);
   }
 
   static async updateVehicleConfig(
-    vehicleId: string, 
-    config: VehicleConfig
+    vehicleId: string,
+    config: VehicleConfig,
   ): Promise<void> {
     return apiClient.request(`/vehicles/${vehicleId}/config`, {
-      method: 'PUT',
-      body: JSON.stringify(config)
-    })
+      method: "PUT",
+      body: JSON.stringify(config),
+    });
   }
 }
 
 // services/esg.ts
 export class ESGService {
   static async getEmissionMetrics(
-    fleetId: string, 
-    period: DateRange
+    fleetId: string,
+    period: DateRange,
   ): Promise<EmissionMetrics> {
     return apiClient.request(
-      `/fleets/${fleetId}/emissions?from=${period.from}&to=${period.to}`
-    )
+      `/fleets/${fleetId}/emissions?from=${period.from}&to=${period.to}`,
+    );
   }
 
   static async getTokenBalance(address: string): Promise<TokenBalance> {
-    return apiClient.request(`/tokens/balance/${address}`)
+    return apiClient.request(`/tokens/balance/${address}`);
   }
 
   static async mintTokens(
-    vehicleId: string, 
-    amount: number
+    vehicleId: string,
+    amount: number,
   ): Promise<Transaction> {
-    return apiClient.request('/tokens/mint', {
-      method: 'POST',
-      body: JSON.stringify({ vehicleId, amount })
-    })
+    return apiClient.request("/tokens/mint", {
+      method: "POST",
+      body: JSON.stringify({ vehicleId, amount }),
+    });
   }
 }
 ```
@@ -415,20 +424,21 @@ export class ESGService {
 ### 2. Estado Global
 
 #### Store Configuration
+
 ```typescript
 // store/index.ts
-import { create } from 'zustand'
-import { devtools, persist } from 'zustand/middleware'
+import { create } from "zustand";
+import { devtools, persist } from "zustand/middleware";
 
 interface AppState {
-  user: User | null
-  selectedFleet: Fleet | null
-  theme: 'light' | 'dark'
-  
+  user: User | null;
+  selectedFleet: Fleet | null;
+  theme: "light" | "dark";
+
   // Actions
-  setUser: (user: User | null) => void
-  setSelectedFleet: (fleet: Fleet | null) => void
-  setTheme: (theme: 'light' | 'dark') => void
+  setUser: (user: User | null) => void;
+  setSelectedFleet: (fleet: Fleet | null) => void;
+  setTheme: (theme: "light" | "dark") => void;
 }
 
 export const useAppStore = create<AppState>()(
@@ -437,55 +447,58 @@ export const useAppStore = create<AppState>()(
       (set) => ({
         user: null,
         selectedFleet: null,
-        theme: 'light',
-        
+        theme: "light",
+
         setUser: (user) => set({ user }),
         setSelectedFleet: (fleet) => set({ selectedFleet: fleet }),
-        setTheme: (theme) => set({ theme })
+        setTheme: (theme) => set({ theme }),
       }),
       {
-        name: 'guardrive-store',
-        partialize: (state) => ({ 
+        name: "guardrive-store",
+        partialize: (state) => ({
           theme: state.theme,
-          selectedFleet: state.selectedFleet 
-        })
-      }
-    )
-  )
-)
+          selectedFleet: state.selectedFleet,
+        }),
+      },
+    ),
+  ),
+);
 ```
 
 ### 3. Hooks Customizados
 
 #### Data Fetching Hooks
+
 ```typescript
 // hooks/useVehicles.ts
 export const useVehicles = (fleetId?: string) => {
   return useQuery({
-    queryKey: ['vehicles', fleetId],
-    queryFn: () => fleetId ? FleetService.getVehicles(fleetId) : null,
+    queryKey: ["vehicles", fleetId],
+    queryFn: () => (fleetId ? FleetService.getVehicles(fleetId) : null),
     enabled: !!fleetId,
-    refetchInterval: 30000 // Atualiza a cada 30 segundos
-  })
-}
+    refetchInterval: 30000, // Atualiza a cada 30 segundos
+  });
+};
 
 // hooks/useRealTimeMetrics.ts
 export const useRealTimeMetrics = (vehicleId: string) => {
-  const [metrics, setMetrics] = useState<VehicleMetrics | null>(null)
+  const [metrics, setMetrics] = useState<VehicleMetrics | null>(null);
 
   useEffect(() => {
-    const ws = new WebSocket(`${process.env.NEXT_PUBLIC_WS_URL}/vehicles/${vehicleId}/metrics`)
-    
+    const ws = new WebSocket(
+      `${process.env.NEXT_PUBLIC_WS_URL}/vehicles/${vehicleId}/metrics`,
+    );
+
     ws.onmessage = (event) => {
-      const data = JSON.parse(event.data)
-      setMetrics(data)
-    }
+      const data = JSON.parse(event.data);
+      setMetrics(data);
+    };
 
-    return () => ws.close()
-  }, [vehicleId])
+    return () => ws.close();
+  }, [vehicleId]);
 
-  return metrics
-}
+  return metrics;
+};
 ```
 
 ## Configuração de Desenvolvimento
@@ -493,6 +506,7 @@ export const useRealTimeMetrics = (vehicleId: string) => {
 ### 1. Configuração do Projeto Web
 
 #### package.json
+
 ```json
 {
   "name": "guardrive-web",
@@ -529,28 +543,30 @@ export const useRealTimeMetrics = (vehicleId: string) => {
 ```
 
 #### next.config.js
+
 ```javascript
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true
+    appDir: true,
   },
   images: {
-    domains: ['api.guardrive.com']
+    domains: ["api.guardrive.com"],
   },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
     NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL,
-    NEXT_PUBLIC_MAPBOX_TOKEN: process.env.NEXT_PUBLIC_MAPBOX_TOKEN
-  }
-}
+    NEXT_PUBLIC_MAPBOX_TOKEN: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
 ```
 
 ### 2. Configuração do Projeto Mobile
 
 #### package.json (Mobile)
+
 ```json
 {
   "name": "guardrive-mobile",
@@ -582,6 +598,7 @@ module.exports = nextConfig
 ### 1. Docker Configuration
 
 #### Dockerfile (Web)
+
 ```dockerfile
 FROM node:18-alpine AS base
 WORKDIR /app
@@ -602,6 +619,7 @@ CMD ["npm", "start"]
 ### 2. GitHub Actions
 
 #### .github/workflows/deploy.yml
+
 ```yaml
 name: Deploy GuardDrive Web
 
@@ -614,22 +632,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
-      
+          node-version: "18"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Run tests
         run: npm test
-      
+
       - name: Build application
         run: npm run build
-      
+
       - name: Deploy to production
         run: |
           # Deploy commands here
@@ -638,9 +656,9 @@ jobs:
 ---
 
 **Metadados de Rastreabilidade:**
+
 - Documento: Arquitetura de Integração GuardDrive FleetShield
 - Versão: 1.0
 - Data: 08/06/2025
 - Autor: Sistema de Desenvolvimento GuardDrive
 - Integração: Frontend Web + Mobile + Backend
-

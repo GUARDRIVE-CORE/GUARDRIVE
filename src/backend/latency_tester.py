@@ -1,9 +1,9 @@
-import time
 import json
 import logging
+import queue
 import random
 import threading
-import queue
+import time
 from datetime import datetime
 
 # Configuração de logging

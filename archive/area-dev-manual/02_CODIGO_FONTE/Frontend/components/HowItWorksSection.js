@@ -1,18 +1,23 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { 
-  FiSettings, 
-  FiWifi, 
-  FiDatabase, 
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  FiSettings,
+  FiWifi,
+  FiDatabase,
   FiShield,
   FiTrendingUp,
   FiDollarSign,
   FiArrowRight,
-  FiCheck
-} from 'react-icons/fi';
-import { colors, breakpoints, Container, Section } from '../styles/GlobalStyles';
+  FiCheck,
+} from "react-icons/fi";
+import {
+  colors,
+  breakpoints,
+  Container,
+  Section,
+} from "../styles/GlobalStyles";
 
 const HowItWorksWrapper = styled(Section)`
   background: ${colors.white};
@@ -47,14 +52,16 @@ const ProcessStep = styled(motion.div)`
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
   }
-  
-  ${props => props.reverse && `
+
+  ${(props) =>
+    props.reverse &&
+    `
     @media (min-width: ${breakpoints.tablet}) {
       direction: rtl;
       
@@ -66,7 +73,9 @@ const ProcessStep = styled(motion.div)`
 `;
 
 const StepContent = styled.div`
-  ${props => props.reverse && `
+  ${(props) =>
+    props.reverse &&
+    `
     @media (min-width: ${breakpoints.tablet}) {
       text-align: right;
     }
@@ -92,7 +101,7 @@ const StepTitle = styled.h3`
   font-size: 2rem;
   color: ${colors.gray900};
   margin-bottom: 1rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 1.75rem;
   }
@@ -118,7 +127,7 @@ const StepFeature = styled.li`
   gap: 0.75rem;
   font-size: 1rem;
   color: ${colors.gray700};
-  
+
   svg {
     color: ${colors.secondary};
     font-size: 1.25rem;
@@ -136,15 +145,15 @@ const StepVisual = styled.div`
   min-height: 300px;
   position: relative;
   overflow: hidden;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${props => props.gradient || colors.primaryGradient};
+    background: ${(props) => props.gradient || colors.primaryGradient};
     opacity: 0.05;
   }
 `;
@@ -166,12 +175,12 @@ const IconItem = styled(motion.div)`
   background: ${colors.white};
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  
+
   svg {
     font-size: 2.5rem;
-    color: ${props => props.color || colors.primary};
+    color: ${(props) => props.color || colors.primary};
   }
-  
+
   span {
     font-size: 0.875rem;
     font-weight: 600;
@@ -184,11 +193,11 @@ const FlowArrow = styled(motion.div)`
   display: flex;
   justify-content: center;
   margin: 2rem 0;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     transform: rotate(90deg);
   }
-  
+
   svg {
     font-size: 2rem;
     color: ${colors.gray400};
@@ -226,13 +235,13 @@ const TechItem = styled(motion.div)`
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  
+
   h4 {
     color: ${colors.secondary};
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
   }
-  
+
   p {
     color: ${colors.gray300};
     font-size: 0.875rem;
@@ -242,97 +251,101 @@ const TechItem = styled(motion.div)`
 const HowItWorksSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const steps = [
     {
       number: 1,
-      title: 'Instalação e Configuração',
-      description: 'Instalação simples do dispositivo GuardDrive em qualquer veículo da frota. Configuração automática via aplicativo móvel.',
+      title: "Instalação e Configuração",
+      description:
+        "Instalação simples do dispositivo GuardDrive em qualquer veículo da frota. Configuração automática via aplicativo móvel.",
       features: [
-        'Instalação plug-and-play em 5 minutos',
-        'Configuração automática via QR Code',
-        'Compatível com 99% dos veículos',
-        'Suporte técnico especializado'
+        "Instalação plug-and-play em 5 minutos",
+        "Configuração automática via QR Code",
+        "Compatível com 99% dos veículos",
+        "Suporte técnico especializado",
       ],
       icons: [
-        { icon: FiSettings, label: 'Configuração', color: colors.primary },
-        { icon: FiWifi, label: 'Conectividade', color: colors.secondary },
-        { icon: FiShield, label: 'Segurança', color: colors.accent },
-        { icon: FiCheck, label: 'Validação', color: colors.success }
-      ]
+        { icon: FiSettings, label: "Configuração", color: colors.primary },
+        { icon: FiWifi, label: "Conectividade", color: colors.secondary },
+        { icon: FiShield, label: "Segurança", color: colors.accent },
+        { icon: FiCheck, label: "Validação", color: colors.success },
+      ],
     },
     {
       number: 2,
-      title: 'Coleta e Transmissão de Dados',
-      description: 'Monitoramento contínuo de métricas de segurança, comportamento e emissões. Transmissão segura via blockchain.',
+      title: "Coleta e Transmissão de Dados",
+      description:
+        "Monitoramento contínuo de métricas de segurança, comportamento e emissões. Transmissão segura via blockchain.",
       features: [
-        'Sensores avançados de múltiplas variáveis',
-        'Transmissão em tempo real via 4G/5G',
-        'Criptografia de ponta a ponta',
-        'Backup automático na blockchain'
+        "Sensores avançados de múltiplas variáveis",
+        "Transmissão em tempo real via 4G/5G",
+        "Criptografia de ponta a ponta",
+        "Backup automático na blockchain",
       ],
       icons: [
-        { icon: FiDatabase, label: 'Coleta', color: colors.primary },
-        { icon: FiWifi, label: 'Transmissão', color: colors.secondary },
-        { icon: FiShield, label: 'Criptografia', color: colors.accent },
-        { icon: FiCheck, label: 'Validação', color: colors.success }
-      ]
+        { icon: FiDatabase, label: "Coleta", color: colors.primary },
+        { icon: FiWifi, label: "Transmissão", color: colors.secondary },
+        { icon: FiShield, label: "Criptografia", color: colors.accent },
+        { icon: FiCheck, label: "Validação", color: colors.success },
+      ],
     },
     {
       number: 3,
-      title: 'Processamento e Certificação',
-      description: 'Análise inteligente dos dados coletados, geração de métricas ESG e certificação blockchain imutável.',
+      title: "Processamento e Certificação",
+      description:
+        "Análise inteligente dos dados coletados, geração de métricas ESG e certificação blockchain imutável.",
       features: [
-        'IA avançada para análise de padrões',
-        'Cálculo automático de métricas ESG',
-        'Certificação blockchain imutável',
-        'Conformidade com padrões internacionais'
+        "IA avançada para análise de padrões",
+        "Cálculo automático de métricas ESG",
+        "Certificação blockchain imutável",
+        "Conformidade com padrões internacionais",
       ],
       icons: [
-        { icon: FiDatabase, label: 'Processamento', color: colors.primary },
-        { icon: FiTrendingUp, label: 'Análise', color: colors.secondary },
-        { icon: FiShield, label: 'Certificação', color: colors.accent },
-        { icon: FiCheck, label: 'Conformidade', color: colors.success }
-      ]
+        { icon: FiDatabase, label: "Processamento", color: colors.primary },
+        { icon: FiTrendingUp, label: "Análise", color: colors.secondary },
+        { icon: FiShield, label: "Certificação", color: colors.accent },
+        { icon: FiCheck, label: "Conformidade", color: colors.success },
+      ],
     },
     {
       number: 4,
-      title: 'Tokenização e Monetização',
-      description: 'Conversão automática de impacto ambiental em tokens negociáveis. Acesso a mercados de créditos de carbono.',
+      title: "Tokenização e Monetização",
+      description:
+        "Conversão automática de impacto ambiental em tokens negociáveis. Acesso a mercados de créditos de carbono.",
       features: [
-        'Tokenização automática de créditos',
-        'Marketplace integrado para negociação',
-        'Liquidez garantida via DEX',
-        'Relatórios financeiros automatizados'
+        "Tokenização automática de créditos",
+        "Marketplace integrado para negociação",
+        "Liquidez garantida via DEX",
+        "Relatórios financeiros automatizados",
       ],
       icons: [
-        { icon: FiDollarSign, label: 'Tokenização', color: colors.primary },
-        { icon: FiTrendingUp, label: 'Valorização', color: colors.secondary },
-        { icon: FiDatabase, label: 'Marketplace', color: colors.accent },
-        { icon: FiCheck, label: 'Liquidez', color: colors.success }
-      ]
-    }
+        { icon: FiDollarSign, label: "Tokenização", color: colors.primary },
+        { icon: FiTrendingUp, label: "Valorização", color: colors.secondary },
+        { icon: FiDatabase, label: "Marketplace", color: colors.accent },
+        { icon: FiCheck, label: "Liquidez", color: colors.success },
+      ],
+    },
   ];
 
   const technologies = [
     {
-      title: 'Blockchain',
-      description: 'Hyperledger Besu para máxima segurança e escalabilidade'
+      title: "Blockchain",
+      description: "Hyperledger Besu para máxima segurança e escalabilidade",
     },
     {
-      title: 'IoT Avançado',
-      description: 'Sensores de última geração com conectividade 5G'
+      title: "IoT Avançado",
+      description: "Sensores de última geração com conectividade 5G",
     },
     {
-      title: 'Inteligência Artificial',
-      description: 'Machine Learning para análise preditiva e otimização'
+      title: "Inteligência Artificial",
+      description: "Machine Learning para análise preditiva e otimização",
     },
     {
-      title: 'ESG Framework',
-      description: 'Conformidade com GRI, SASB, TCFD e GHG Protocol'
-    }
+      title: "ESG Framework",
+      description: "Conformidade com GRI, SASB, TCFD e GHG Protocol",
+    },
   ];
 
   return (
@@ -351,8 +364,8 @@ const HowItWorksSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Um processo simples e automatizado que transforma sua frota em um ativo 
-            sustentável e verificável em apenas 4 etapas.
+            Um processo simples e automatizado que transforma sua frota em um
+            ativo sustentável e verificável em apenas 4 etapas.
           </SectionSubtitle>
         </SectionHeader>
 
@@ -387,9 +400,9 @@ const HowItWorksSection = () => {
                         color={iconItem.color}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={inView ? { opacity: 1, scale: 1 } : {}}
-                        transition={{ 
-                          duration: 0.6, 
-                          delay: index * 0.2 + iconIndex * 0.1 + 0.4 
+                        transition={{
+                          duration: 0.6,
+                          delay: index * 0.2 + iconIndex * 0.1 + 0.4,
                         }}
                         whileHover={{ scale: 1.05 }}
                       >
@@ -422,8 +435,8 @@ const HowItWorksSection = () => {
           <TechStack>
             <TechTitle>Tecnologias de Ponta</TechTitle>
             <TechDescription>
-              Construído com as mais avançadas tecnologias para garantir 
-              máxima segurança, escalabilidade e confiabilidade.
+              Construído com as mais avançadas tecnologias para garantir máxima
+              segurança, escalabilidade e confiabilidade.
             </TechDescription>
             <TechGrid>
               {technologies.map((tech, index) => (
@@ -447,4 +460,3 @@ const HowItWorksSection = () => {
 };
 
 export default HowItWorksSection;
-

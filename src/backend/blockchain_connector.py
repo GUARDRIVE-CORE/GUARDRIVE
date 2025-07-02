@@ -1,8 +1,8 @@
-import time
 import json
 import logging
-import threading
 import os
+import threading
+import time
 from datetime import datetime
 
 # Configuração de logging

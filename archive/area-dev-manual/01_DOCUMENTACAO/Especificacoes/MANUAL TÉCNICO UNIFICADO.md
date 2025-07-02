@@ -1,9 +1,10 @@
 # MANUAL TÉCNICO UNIFICADO
+
 # SealSafe Selfbelt
 
 **Sistema Adaptativo de Segurança Veicular com Verificação Blockchain**
 
-*Documento para Submissão ao INPI (Brasil) e PCT Internacional*
+_Documento para Submissão ao INPI (Brasil) e PCT Internacional_
 
 ---
 
@@ -25,7 +26,7 @@
 **Número de Figuras:** 8  
 **Prioridade Unionista:** Não aplicável  
 **Inventor(es):** [Nome dos Inventores]  
-**Procurador:** [Nome do Procurador] - OAB/XX XXX.XXX  
+**Procurador:** [Nome do Procurador] - OAB/XX XXX.XXX
 
 ---
 
@@ -74,24 +75,28 @@ A presente invenção se aplica ao campo de sistemas embarcados veiculares para 
 Os sistemas atuais de monitoramento de cintos de segurança apresentam limitações significativas:
 
 ### 3.1. Sistemas Convencionais de Alerta
+
 - Limitados a alertas sonoros e visuais internos ao veículo
 - Não oferecem verificação externa ou auditável
 - Facilmente burlados com adaptadores ou extensores
 - Não registram histórico de uso para análise posterior
 
 ### 3.2. Sistemas de Câmeras de Fiscalização
+
 - Dependem de visibilidade externa e condições de iluminação
 - Não detectam uso incorreto (posicionamento inadequado)
 - Não fornecem registro contínuo ou verificável
 - Exigem infraestrutura externa complexa e custosa
 
 ### 3.3. Sistemas de Telemetria Veicular
+
 - Focados principalmente em localização e comportamento de direção
 - Não verificam especificamente o uso correto de cintos
 - Dados não são verificáveis externamente em tempo real
 - Falta de registro imutável para auditoria
 
 ### 3.4. Patentes e Publicações Relevantes
+
 - US10XXXXXX - "Vehicle Safety Belt Monitoring System" (2018)
   - Limitado a monitoramento interno sem verificação externa
 - EP30XXXXXX - "Smart Seatbelt System with Sensors" (2019)
@@ -130,14 +135,14 @@ O problema técnico resolvido pela presente invenção é a falta de um sistema 
 O SealSafe Selfbelt é um dispositivo adaptativo que se acopla ao sistema de cintos de segurança veiculares, monitorando seu uso correto através de múltiplos sensores, processando os dados localmente com IA embarcada, permitindo verificação externa via QR dinâmico e LED visual, e registrando os dados de forma imutável em blockchain.
 
 ![Arquitetura do Sistema](https://private-us-east-1.manuscdn.com/sessionFile/aLZbcSb3w7gm1GYf7gSAuy/sandbox/v0iG1z0yIv7q9JbhYunH8p-images_1748096253331_na1fn_L2hvbWUvdWJ1bnR1L0d1YXJkRHJpdmUvZG9jdW1lbnRhY2FvL3NlbGZiZWx0X3N5c3RlbV9hcmNoaXRlY3R1cmVfcmVmaW5lZA.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYUxaYmNTYjN3N2dtMUdZZjdnU0F1eS9zYW5kYm94L3YwaUcxejB5SXY3cTlKYmhZdW5IOHAtaW1hZ2VzXzE3NDgwOTYyNTMzMzFfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwwZDFZWEprUkhKcGRtVXZaRzlqZFcxbGJuUmhZMkZ2TDNObGJHWmlaV3gwWDNONWMzUmxiVjloY21Ob2FYUmxZM1IxY21WZmNtVm1hVzVsWkEucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=WPbBJGm3dtfMEnXspXS4hlhIWbSs6d5VlKai-FDTCVWnEhOA6V8-q3CfJQ0mb2XqkPltyaPYLKw-LdP4NwTIdrGXK3TYTB4lYnmYpMuPzK~uW9ZmSqnS-L6NPOOvoi2TN8~wvfDae6D1ByrbGfmkjXtFEal6ly7wEZfGwZuGhvY2-ozRQBmQkuqqThpH5pF~ApX6lkXNA4Bal9B2m-cb01xolDuE3XeG0ho5VHY1g6regiosS8ir9X5RjeLAe4PGl8dr1KqCq68J0XMFCnGrrWV5Kd7vNNhT4uXhn~v29ZVGUiQdGOtyiGpIssXcVkehVFE32hFeCBQHrk1tesUsTQ__)
-*Figura 1: Arquitetura do Sistema SealSafe Selfbelt*
+_Figura 1: Arquitetura do Sistema SealSafe Selfbelt_
 
 ### 5.2. Componentes Principais
 
 #### 5.2.1. Hardware
 
 ![Componentes do Hardware](https://private-us-east-1.manuscdn.com/sessionFile/aLZbcSb3w7gm1GYf7gSAuy/sandbox/v0iG1z0yIv7q9JbhYunH8p-images_1748096253331_na1fn_L2hvbWUvdWJ1bnR1L0d1YXJkRHJpdmUvZG9jdW1lbnRhY2FvL3NlbGZiZWx0X2hhcmR3YXJlX2V4cGxvZGVkX3JlZmluZWQ.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYUxaYmNTYjN3N2dtMUdZZjdnU0F1eS9zYW5kYm94L3YwaUcxejB5SXY3cTlKYmhZdW5IOHAtaW1hZ2VzXzE3NDgwOTYyNTMzMzFfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwwZDFZWEprUkhKcGRtVXZaRzlqZFcxbGJuUmhZMkZ2TDNObGJHWmlaV3gwWDJoaGNtUjNZWEpsWDJWNGNHeHZaR1ZrWDNKbFptbHVaV1EucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=pMaZhFv~9bIudHJApDLtLMGeyNojdfEecpmsY85OJbrlrxngExi~4Tr~3WmqhLwYk-MIyN1blbFnmZ5GEjDz1BSgYwlRCfK3w-tDYLvQU5-F3nvcPKPRkkkvvBOzVjzjztvaR7WbOsu2Rog04miHBIUQeVjA-5TmuQKMOHzF9XEzrPFp4tf5YP5VE5yOMH~zmm4UUwe1bKJF51OtFumyJ9mBTn3r3P9KKdEjkDQVEMV7kZQmcLyprUExzMJtsb-UxuIjseTk~SRuLHBUS~WX07hajpDS-ekqF3hkIFQXt7QHMR-VFAeNMLXOIA6NhP-u3Zbyk3DwuLjcyPJz68iZfQ__)
-*Figura 2: Componentes do Hardware SealSafe Selfbelt*
+_Figura 2: Componentes do Hardware SealSafe Selfbelt_
 
 - **Sensores de Pressão e Tensão**: Detectam a presença do ocupante e a tensão correta do cinto
 - **Sensores de Posicionamento**: Verificam o posicionamento adequado do cinto no corpo
@@ -350,28 +355,36 @@ O SealSafe Selfbelt é um dispositivo adaptativo que se acopla ao sistema de cin
 ## 8. DESENHOS E DIAGRAMAS
 
 ### 8.1. Figura 1: Arquitetura do Sistema SealSafe Selfbelt
-*Ver imagem na seção 5.1*
+
+_Ver imagem na seção 5.1_
 
 ### 8.2. Figura 2: Componentes do Hardware SealSafe Selfbelt
-*Ver imagem na seção 5.2.1*
+
+_Ver imagem na seção 5.2.1_
 
 ### 8.3. Figura 3: Arquitetura de Software
-*Diagrama de camadas mostrando a estrutura do software embarcado*
+
+_Diagrama de camadas mostrando a estrutura do software embarcado_
 
 ### 8.4. Figura 4: Fluxo de Dados e Verificação
-*Fluxograma detalhando o processo de coleta, processamento e verificação de dados*
+
+_Fluxograma detalhando o processo de coleta, processamento e verificação de dados_
 
 ### 8.5. Figura 5: Implementação Blockchain
-*Diagrama da arquitetura blockchain e processo de registro de dados*
+
+_Diagrama da arquitetura blockchain e processo de registro de dados_
 
 ### 8.6. Figura 6: Modos de Implementação
-*Ilustrações dos diferentes modos de implementação: retrofit e OEM*
+
+_Ilustrações dos diferentes modos de implementação: retrofit e OEM_
 
 ### 8.7. Figura 7: Interface de Verificação
-*Mockup da interface de verificação para autoridades e gestores*
+
+_Mockup da interface de verificação para autoridades e gestores_
 
 ### 8.8. Figura 8: Mapa de Sensores e Variáveis
-*Diagrama detalhado da disposição e funcionamento dos sensores*
+
+_Diagrama detalhado da disposição e funcionamento dos sensores_
 
 ---
 
@@ -458,32 +471,32 @@ Os resultados após 12 meses incluíram aumento de 35% na eficiência da fiscali
 
 O sistema SealSafe Selfbelt monitora e registra as seguintes variáveis:
 
-| Categoria | Variável | Sensor | Frequência | Precisão |
-|-----------|----------|--------|------------|----------|
-| **Ocupante** | Presença | Pressão | Contínua | 99.9% |
-| **Ocupante** | Posição | Pressão + IR | 1 Hz | 95% |
-| **Cinto** | Conexão | Tensão | Contínua | 99.9% |
-| **Cinto** | Tensão | Tensão | 1 Hz | 98% |
-| **Cinto** | Posicionamento | Tensão + IR | 1 Hz | 95% |
-| **Veículo** | Movimento | Acelerômetro | 10 Hz | 99% |
-| **Veículo** | Velocidade | OBD-II/CAN | 1 Hz | 99% |
-| **Veículo** | Aceleração | Acelerômetro | 10 Hz | 98% |
-| **Veículo** | Frenagem | Acelerômetro | 10 Hz | 98% |
-| **Ambiente** | Temperatura | Temperatura | 0.1 Hz | 97% |
-| **Sistema** | Bateria | Voltagem | 0.01 Hz | 99% |
-| **Sistema** | Conectividade | Sinal | 0.1 Hz | 95% |
+| Categoria    | Variável       | Sensor       | Frequência | Precisão |
+| ------------ | -------------- | ------------ | ---------- | -------- |
+| **Ocupante** | Presença       | Pressão      | Contínua   | 99.9%    |
+| **Ocupante** | Posição        | Pressão + IR | 1 Hz       | 95%      |
+| **Cinto**    | Conexão        | Tensão       | Contínua   | 99.9%    |
+| **Cinto**    | Tensão         | Tensão       | 1 Hz       | 98%      |
+| **Cinto**    | Posicionamento | Tensão + IR  | 1 Hz       | 95%      |
+| **Veículo**  | Movimento      | Acelerômetro | 10 Hz      | 99%      |
+| **Veículo**  | Velocidade     | OBD-II/CAN   | 1 Hz       | 99%      |
+| **Veículo**  | Aceleração     | Acelerômetro | 10 Hz      | 98%      |
+| **Veículo**  | Frenagem       | Acelerômetro | 10 Hz      | 98%      |
+| **Ambiente** | Temperatura    | Temperatura  | 0.1 Hz     | 97%      |
+| **Sistema**  | Bateria        | Voltagem     | 0.01 Hz    | 99%      |
+| **Sistema**  | Conectividade  | Sinal        | 0.1 Hz     | 95%      |
 
 ### 11.2. Correlação com Métricas ESG
 
-| Variável SealSafe | Métrica ESG | Impacto | ODS ONU |
-|-------------------|-------------|---------|---------|
-| Taxa de uso correto | Segurança ocupacional | Redução de 45% em lesões | 3, 8, 11 |
-| Conformidade regulatória | Governança | Redução de 95% em multas | 16, 17 |
-| Comportamento de risco | Segurança pública | Identificação precoce de riscos | 3, 11 |
-| Dados de uso | Transparência | Relatórios verificáveis | 16, 17 |
-| Economia em saúde | Impacto social | Redução de custos públicos | 3, 8 |
-| Eficiência de fiscalização | Governança pública | Aumento de 35% em eficiência | 11, 16 |
-| Redução de acidentes | Sustentabilidade urbana | Redução de 28% em acidentes graves | 3, 11 |
+| Variável SealSafe          | Métrica ESG             | Impacto                            | ODS ONU  |
+| -------------------------- | ----------------------- | ---------------------------------- | -------- |
+| Taxa de uso correto        | Segurança ocupacional   | Redução de 45% em lesões           | 3, 8, 11 |
+| Conformidade regulatória   | Governança              | Redução de 95% em multas           | 16, 17   |
+| Comportamento de risco     | Segurança pública       | Identificação precoce de riscos    | 3, 11    |
+| Dados de uso               | Transparência           | Relatórios verificáveis            | 16, 17   |
+| Economia em saúde          | Impacto social          | Redução de custos públicos         | 3, 8     |
+| Eficiência de fiscalização | Governança pública      | Aumento de 35% em eficiência       | 11, 16   |
+| Redução de acidentes       | Sustentabilidade urbana | Redução de 28% em acidentes graves | 3, 11    |
 
 ### 11.3. Dashboard ESG
 
@@ -533,6 +546,7 @@ O sistema é compatível com veículos autônomos, permitindo:
 O SealSafe Selfbelt representa uma inovação significativa no campo da segurança veicular, resolvendo o problema crítico da verificação externa do uso correto de cintos de segurança. Através da combinação de sensores avançados, IA embarcada, verificação externa via QR dinâmico e registro blockchain, o sistema oferece uma solução completa para monitoramento, verificação e registro, contribuindo para a redução de fatalidades em acidentes de trânsito e fornecendo dados valiosos para todo o ecossistema de mobilidade.
 
 As principais inovações técnicas incluem:
+
 - Sistema de verificação externa em tempo real via QR dinâmico e LED
 - Registro imutável em blockchain para auditoria e conformidade
 - IA embarcada para detecção precisa do uso correto
@@ -575,4 +589,4 @@ Os inventores declaram que a invenção aqui descrita é nova, possui atividade 
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-SS-SB-DOC-2025-001-PCT-BR*
+_Metadata de Rastreabilidade Simbólica: GD-SS-SB-DOC-2025-001-PCT-BR_

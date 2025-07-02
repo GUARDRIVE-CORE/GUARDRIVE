@@ -82,12 +82,15 @@ O logotipo da GuardDrive combina um símbolo e um logotipo textual:
 ### Slogans
 
 #### Versão Técnica
+
 "Segurança veicular inteligente para um futuro conectado"
 
 #### Versão Emocional
+
 "Protegendo vidas, conectando o futuro"
 
 #### Versão Institucional
+
 "Inovação em segurança para a mobilidade do amanhã"
 
 ## Elementos Gráficos

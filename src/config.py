@@ -5,8 +5,9 @@ Central configuration management for the GUARDRIVE platform
 
 import os
 from typing import Optional
-from pydantic_settings import BaseSettings
+
 from pydantic import Field
+from pydantic_settings import BaseSettings
 
 
 class GuardriveSettings(BaseSettings):

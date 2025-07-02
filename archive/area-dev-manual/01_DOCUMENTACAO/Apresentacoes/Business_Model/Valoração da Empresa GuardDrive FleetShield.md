@@ -1,6 +1,7 @@
 # Valoração da Empresa GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield
 - **Versão**: 1.0
 - **Data**: 02/06/2025
@@ -13,6 +14,7 @@ Este documento apresenta uma análise abrangente do valor de mercado da empresa 
 Com base nas análises realizadas, o valor eixo da GuardDrive FleetShield é estimado em **R$ 5.000.000,00** (cinco milhões de reais) no estágio atual de desenvolvimento. Este valor considera o potencial de mercado, a propriedade intelectual desenvolvida, as barreiras de entrada criadas e as projeções de receita para os próximos 5 anos.
 
 A estrutura societária proposta, com 40% para cada sócio fundador e 20% reservados para investidores, resulta em:
+
 - João Manoel Oliveira Silva: 40% = R$ 2.000.000,00
 - Adriano Paulo Carneiro Rosas Santos: 40% = R$ 2.000.000,00
 - Reserva para investidores: 20% = R$ 1.000.000,00
@@ -39,28 +41,31 @@ A combinação destas metodologias permite uma valoração equilibrada que consi
 
 Considerando o estágio atual da empresa (pré-receita com propriedade intelectual desenvolvida), atribuímos os seguintes pesos para cada metodologia:
 
-| Metodologia | Peso | Justificativa |
-|-------------|------|---------------|
-| Múltiplos de Mercado | 25% | Relevante para benchmark, mas limitado pela fase inicial |
-| Fluxo de Caixa Descontado | 30% | Captura potencial futuro, mas com incertezas significativas |
-| Valoração de PI | 30% | Componente crítico no estágio atual de desenvolvimento |
-| Custo de Replicação | 15% | Estabelece piso de valoração, mas subestima potencial |
+| Metodologia               | Peso | Justificativa                                               |
+| ------------------------- | ---- | ----------------------------------------------------------- |
+| Múltiplos de Mercado      | 25%  | Relevante para benchmark, mas limitado pela fase inicial    |
+| Fluxo de Caixa Descontado | 30%  | Captura potencial futuro, mas com incertezas significativas |
+| Valoração de PI           | 30%  | Componente crítico no estágio atual de desenvolvimento      |
+| Custo de Replicação       | 15%  | Estabelece piso de valoração, mas subestima potencial       |
 
 ## 3. Análise de Mercado e Oportunidade
 
 ### 3.1. Tamanho do Mercado Endereçável
 
 #### 3.1.1. Mercado Total Endereçável (TAM)
+
 - **Mercado global de segurança veicular**: US$ 93 bilhões (2025), CAGR de 12,6%
 - **Mercado global de IoT automotivo**: US$ 104 bilhões (2025), CAGR de 19,3%
 - **Mercado global de blockchain automotivo**: US$ 5,6 bilhões (2025), CAGR de 31,2%
 
 #### 3.1.2. Mercado Disponível Servível (SAM)
+
 - **Mercado brasileiro de segurança veicular**: R$ 12 bilhões (2025)
 - **Frotas corporativas no Brasil**: 8,5 milhões de veículos
 - **Mercado de seguros automotivos**: R$ 37 bilhões (2025)
 
 #### 3.1.3. Mercado Obtível Servível (SOM)
+
 - **Ano 1**: 0,05% do SAM = R$ 6 milhões
 - **Ano 3**: 0,5% do SAM = R$ 60 milhões
 - **Ano 5**: 2% do SAM = R$ 240 milhões
@@ -68,14 +73,17 @@ Considerando o estágio atual da empresa (pré-receita com propriedade intelectu
 ### 3.2. Análise Competitiva
 
 #### 3.2.1. Concorrentes Diretos
+
 Não identificamos concorrentes diretos oferecendo a combinação exata de verificação externa, certificação blockchain e tokenização ESG para segurança veicular.
 
 #### 3.2.2. Concorrentes Indiretos
+
 - **Empresas de telemetria veicular**: Oferecem monitoramento, mas sem verificação externa ou blockchain
 - **Soluções de IoT automotivo**: Focadas em manutenção preditiva e eficiência, não em segurança verificável
 - **Plataformas de gestão de frotas**: Funcionalidades limitadas para verificação de segurança
 
 #### 3.2.3. Vantagens Competitivas da GuardDrive FleetShield
+
 1. **Propriedade intelectual protegida**: Patente pendente para sistema de verificação externa
 2. **Tecnologia blockchain proprietária**: Sistema de certificação imutável e auditável
 3. **Integração com ecossistema ESG**: Tokenização de métricas de segurança e sustentabilidade
@@ -94,13 +102,13 @@ Não identificamos concorrentes diretos oferecendo a combinação exata de verif
 
 ### 4.1. Empresas Comparáveis
 
-| Empresa | Setor | Estágio | Valuation | Múltiplo Receita | Múltiplo EBITDA |
-|---------|-------|---------|-----------|------------------|-----------------|
-| MixTelematics | Telemetria Veicular | Estabelecida | US$ 180M | 2,1x | 8,5x |
-| Samsara | IoT Industrial/Veicular | Crescimento | US$ 10,5B | 15,2x | N/A |
-| Azuga | Gestão de Frotas | Média | US$ 250M | 4,3x | 12,1x |
-| Nauto | Segurança Veicular AI | Startup | US$ 500M | 25x | N/A |
-| VeChain | Blockchain Supply Chain | Crescimento | US$ 1,2B | 18x | N/A |
+| Empresa       | Setor                   | Estágio      | Valuation | Múltiplo Receita | Múltiplo EBITDA |
+| ------------- | ----------------------- | ------------ | --------- | ---------------- | --------------- |
+| MixTelematics | Telemetria Veicular     | Estabelecida | US$ 180M  | 2,1x             | 8,5x            |
+| Samsara       | IoT Industrial/Veicular | Crescimento  | US$ 10,5B | 15,2x            | N/A             |
+| Azuga         | Gestão de Frotas        | Média        | US$ 250M  | 4,3x             | 12,1x           |
+| Nauto         | Segurança Veicular AI   | Startup      | US$ 500M  | 25x              | N/A             |
+| VeChain       | Blockchain Supply Chain | Crescimento  | US$ 1,2B  | 18x              | N/A             |
 
 ### 4.2. Ajustes para Comparabilidade
 
@@ -128,6 +136,7 @@ Considerando o estágio atual (pré-comercialização), aplicamos um fator de de
 ### 5.1. Premissas Financeiras
 
 #### 5.1.1. Receitas
+
 - **Modelo de receita**: Combinação de hardware (venda única), software (assinatura) e tokens (transações)
 - **Preço médio**: R$ 1.200 por unidade de hardware + R$ 35/mês por veículo (software) + 5% das transações de tokens
 - **Crescimento de unidades**:
@@ -138,6 +147,7 @@ Considerando o estágio atual (pré-comercialização), aplicamos um fator de de
   - Ano 5: 25.000 unidades
 
 #### 5.1.2. Custos e Despesas
+
 - **Custo de hardware**: 40% do preço de venda
 - **Custo de software**: 15% da receita de assinaturas
 - **P&D**: 25% da receita total nos anos 1-2, reduzindo para 15% nos anos 4-5
@@ -145,35 +155,37 @@ Considerando o estágio atual (pré-comercialização), aplicamos um fator de de
 - **G&A**: 15% da receita total
 
 #### 5.1.3. Investimentos (CAPEX)
+
 - **Ano 1**: R$ 1,5 milhão (desenvolvimento inicial)
 - **Ano 2**: R$ 2,0 milhões (expansão de capacidade)
 - **Anos 3-5**: 8% da receita anual
 
 #### 5.1.4. Capital de Giro
+
 - 15% da receita anual
 
 ### 5.2. Projeções Financeiras (em R$ mil)
 
-| Item | Ano 1 | Ano 2 | Ano 3 | Ano 4 | Ano 5 |
-|------|-------|-------|-------|-------|-------|
-| Receita Hardware | 600 | 2.400 | 6.000 | 14.400 | 30.000 |
-| Receita Software | 105 | 945 | 3.150 | 8.820 | 21.000 |
-| Receita Tokens | 25 | 200 | 750 | 2.400 | 6.000 |
-| **Receita Total** | **730** | **3.545** | **9.900** | **25.620** | **57.000** |
-| Custos Diretos | (256) | (1.102) | (2.873) | (7.083) | (15.150) |
-| **Lucro Bruto** | **474** | **2.443** | **7.028** | **18.537** | **41.850** |
-| P&D | (183) | (886) | (1.980) | (3.843) | (8.550) |
-| Marketing e Vendas | (219) | (1.064) | (2.970) | (5.124) | (11.400) |
-| G&A | (110) | (532) | (1.485) | (3.843) | (8.550) |
-| **EBITDA** | **(37)** | **(39)** | **593** | **5.727** | **13.350** |
-| Depreciação | (300) | (400) | (792) | (2.050) | (4.560) |
-| **EBIT** | **(337)** | **(439)** | **(199)** | **3.677** | **8.790** |
-| IR/CS (34%) | 0 | 0 | 0 | (1.250) | (2.989) |
-| **Lucro Líquido** | **(337)** | **(439)** | **(199)** | **2.427** | **5.801** |
-| (+) Depreciação | 300 | 400 | 792 | 2.050 | 4.560 |
-| (-) CAPEX | (1.500) | (2.000) | (792) | (2.050) | (4.560) |
-| (-) Δ Capital de Giro | (110) | (422) | (953) | (2.358) | (4.707) |
-| **Fluxo de Caixa Livre** | **(1.647)** | **(2.461)** | **(1.152)** | **69** | **1.094** |
+| Item                     | Ano 1       | Ano 2       | Ano 3       | Ano 4      | Ano 5      |
+| ------------------------ | ----------- | ----------- | ----------- | ---------- | ---------- |
+| Receita Hardware         | 600         | 2.400       | 6.000       | 14.400     | 30.000     |
+| Receita Software         | 105         | 945         | 3.150       | 8.820      | 21.000     |
+| Receita Tokens           | 25          | 200         | 750         | 2.400      | 6.000      |
+| **Receita Total**        | **730**     | **3.545**   | **9.900**   | **25.620** | **57.000** |
+| Custos Diretos           | (256)       | (1.102)     | (2.873)     | (7.083)    | (15.150)   |
+| **Lucro Bruto**          | **474**     | **2.443**   | **7.028**   | **18.537** | **41.850** |
+| P&D                      | (183)       | (886)       | (1.980)     | (3.843)    | (8.550)    |
+| Marketing e Vendas       | (219)       | (1.064)     | (2.970)     | (5.124)    | (11.400)   |
+| G&A                      | (110)       | (532)       | (1.485)     | (3.843)    | (8.550)    |
+| **EBITDA**               | **(37)**    | **(39)**    | **593**     | **5.727**  | **13.350** |
+| Depreciação              | (300)       | (400)       | (792)       | (2.050)    | (4.560)    |
+| **EBIT**                 | **(337)**   | **(439)**   | **(199)**   | **3.677**  | **8.790**  |
+| IR/CS (34%)              | 0           | 0           | 0           | (1.250)    | (2.989)    |
+| **Lucro Líquido**        | **(337)**   | **(439)**   | **(199)**   | **2.427**  | **5.801**  |
+| (+) Depreciação          | 300         | 400         | 792         | 2.050      | 4.560      |
+| (-) CAPEX                | (1.500)     | (2.000)     | (792)       | (2.050)    | (4.560)    |
+| (-) Δ Capital de Giro    | (110)       | (422)       | (953)       | (2.358)    | (4.707)    |
+| **Fluxo de Caixa Livre** | **(1.647)** | **(2.461)** | **(1.152)** | **69**     | **1.094**  |
 
 ### 5.3. Cálculo do Valor Terminal
 
@@ -200,15 +212,15 @@ Considerando o perfil de risco de uma startup de tecnologia no Brasil:
 
 ### 5.5. Valor Presente dos Fluxos de Caixa
 
-| Item | Valor (R$ mil) | Fator VP | Valor Presente (R$ mil) |
-|------|----------------|----------|-------------------------|
-| FC Ano 1 | (1.647) | 0,771 | (1.270) |
-| FC Ano 2 | (2.461) | 0,594 | (1.462) |
-| FC Ano 3 | (1.152) | 0,458 | (528) |
-| FC Ano 4 | 69 | 0,353 | 24 |
-| FC Ano 5 | 1.094 | 0,272 | 298 |
-| Valor Terminal | 106.800 | 0,272 | 29.050 |
-| **Valor Presente Líquido** | | | **26.112** |
+| Item                       | Valor (R$ mil) | Fator VP | Valor Presente (R$ mil) |
+| -------------------------- | -------------- | -------- | ----------------------- |
+| FC Ano 1                   | (1.647)        | 0,771    | (1.270)                 |
+| FC Ano 2                   | (2.461)        | 0,594    | (1.462)                 |
+| FC Ano 3                   | (1.152)        | 0,458    | (528)                   |
+| FC Ano 4                   | 69             | 0,353    | 24                      |
+| FC Ano 5                   | 1.094          | 0,272    | 298                     |
+| Valor Terminal             | 106.800        | 0,272    | 29.050                  |
+| **Valor Presente Líquido** |                |          | **26.112**              |
 
 Considerando o estágio atual (pré-comercialização), aplicamos um fator de desconto adicional de 80% para refletir o risco de execução:
 
@@ -218,14 +230,14 @@ Considerando o estágio atual (pré-comercialização), aplicamos um fator de de
 
 ### 6.1. Componentes de Propriedade Intelectual
 
-| Componente | Descrição | Método de Valoração |
-|------------|-----------|---------------------|
-| Patente Principal | Sistema de verificação externa com QR dinâmico | Relief from Royalty |
-| Patentes Secundárias | Componentes modulares e integração blockchain | Relief from Royalty |
-| Software Embarcado | Firmware e algoritmos de detecção | Custo de Desenvolvimento |
-| Arquitetura Blockchain | Sistema de certificação e tokenização | Custo de Desenvolvimento |
-| Know-how Técnico | Conhecimento não patenteável | Custo de Reposição |
-| Marca e Identidade | GuardDrive FleetShield | Custo de Desenvolvimento |
+| Componente             | Descrição                                      | Método de Valoração      |
+| ---------------------- | ---------------------------------------------- | ------------------------ |
+| Patente Principal      | Sistema de verificação externa com QR dinâmico | Relief from Royalty      |
+| Patentes Secundárias   | Componentes modulares e integração blockchain  | Relief from Royalty      |
+| Software Embarcado     | Firmware e algoritmos de detecção              | Custo de Desenvolvimento |
+| Arquitetura Blockchain | Sistema de certificação e tokenização          | Custo de Desenvolvimento |
+| Know-how Técnico       | Conhecimento não patenteável                   | Custo de Reposição       |
+| Marca e Identidade     | GuardDrive FleetShield                         | Custo de Desenvolvimento |
 
 ### 6.2. Método Relief from Royalty
 
@@ -263,24 +275,24 @@ Para software, arquitetura blockchain e marca:
 
 ### 7.1. Custos Diretos de Replicação
 
-| Componente | Custo Estimado (R$) | Justificativa |
-|------------|---------------------|---------------|
-| Pesquisa e Desenvolvimento | 1.800.000 | 9.000 horas × R$ 200/hora |
-| Prototipagem e Testes | 500.000 | Hardware, componentes e testes |
-| Registro de Propriedade Intelectual | 150.000 | Patentes, marcas e direitos autorais |
-| Desenvolvimento de Software | 600.000 | 3.000 horas × R$ 200/hora |
-| Infraestrutura Blockchain | 400.000 | Desenvolvimento e implementação |
-| **Total Custos Diretos** | **3.450.000** | |
+| Componente                          | Custo Estimado (R$) | Justificativa                        |
+| ----------------------------------- | ------------------- | ------------------------------------ |
+| Pesquisa e Desenvolvimento          | 1.800.000           | 9.000 horas × R$ 200/hora            |
+| Prototipagem e Testes               | 500.000             | Hardware, componentes e testes       |
+| Registro de Propriedade Intelectual | 150.000             | Patentes, marcas e direitos autorais |
+| Desenvolvimento de Software         | 600.000             | 3.000 horas × R$ 200/hora            |
+| Infraestrutura Blockchain           | 400.000             | Desenvolvimento e implementação      |
+| **Total Custos Diretos**            | **3.450.000**       |                                      |
 
 ### 7.2. Custos Indiretos e Intangíveis
 
-| Componente | Custo Estimado (R$) | Justificativa |
-|------------|---------------------|---------------|
-| Tempo dos Fundadores | 900.000 | 18 meses × 2 fundadores × R$ 25.000/mês |
-| Curva de Aprendizado | 500.000 | Valor do conhecimento adquirido |
-| Rede de Relacionamentos | 300.000 | Acesso a stakeholders-chave |
-| Posicionamento de Mercado | 200.000 | Vantagem de primeiro movimento |
-| **Total Custos Indiretos** | **1.900.000** | |
+| Componente                 | Custo Estimado (R$) | Justificativa                           |
+| -------------------------- | ------------------- | --------------------------------------- |
+| Tempo dos Fundadores       | 900.000             | 18 meses × 2 fundadores × R$ 25.000/mês |
+| Curva de Aprendizado       | 500.000             | Valor do conhecimento adquirido         |
+| Rede de Relacionamentos    | 300.000             | Acesso a stakeholders-chave             |
+| Posicionamento de Mercado  | 200.000             | Vantagem de primeiro movimento          |
+| **Total Custos Indiretos** | **1.900.000**       |                                         |
 
 ### 7.3. Valor Total de Replicação
 
@@ -292,13 +304,13 @@ Para software, arquitetura blockchain e marca:
 
 ### 8.1. Resumo das Valorações por Metodologia
 
-| Metodologia | Valor (R$) | Peso | Valor Ponderado (R$) |
-|-------------|------------|------|----------------------|
-| Múltiplos de Mercado | 11.700.000 | 25% | 2.925.000 |
-| Fluxo de Caixa Descontado | 5.222.000 | 30% | 1.566.600 |
-| Valoração de PI | 5.135.000 | 30% | 1.540.500 |
-| Custo de Replicação | 5.350.000 | 15% | 802.500 |
-| **Valor Eixo Ponderado** | | | **6.834.600** |
+| Metodologia               | Valor (R$) | Peso | Valor Ponderado (R$) |
+| ------------------------- | ---------- | ---- | -------------------- |
+| Múltiplos de Mercado      | 11.700.000 | 25%  | 2.925.000            |
+| Fluxo de Caixa Descontado | 5.222.000  | 30%  | 1.566.600            |
+| Valoração de PI           | 5.135.000  | 30%  | 1.540.500            |
+| Custo de Replicação       | 5.350.000  | 15%  | 802.500              |
+| **Valor Eixo Ponderado**  |            |      | **6.834.600**        |
 
 ### 8.2. Ajustes Finais
 
@@ -320,12 +332,12 @@ Para fins de negociação e clareza, arredondamos o valor para:
 
 ### 9.1. Estrutura Societária Atual e Proposta
 
-| Sócio | Participação Atual | Participação Proposta | Valor (R$) |
-|-------|-------------------|----------------------|------------|
-| João Manoel Oliveira Silva | 50% | 40% | 2.000.000 |
-| Adriano Paulo Carneiro Rosas Santos | 50% | 40% | 2.000.000 |
-| Reserva para Investidores | 0% | 20% | 1.000.000 |
-| **Total** | **100%** | **100%** | **5.000.000** |
+| Sócio                               | Participação Atual | Participação Proposta | Valor (R$)    |
+| ----------------------------------- | ------------------ | --------------------- | ------------- |
+| João Manoel Oliveira Silva          | 50%                | 40%                   | 2.000.000     |
+| Adriano Paulo Carneiro Rosas Santos | 50%                | 40%                   | 2.000.000     |
+| Reserva para Investidores           | 0%                 | 20%                   | 1.000.000     |
+| **Total**                           | **100%**           | **100%**              | **5.000.000** |
 
 ### 9.2. Justificativa para Diluição Igualitária
 
@@ -345,6 +357,7 @@ Para a reserva de 20% das cotas:
 - **Valor ideal**: R$ 1.500.000 (prêmio de 50%)
 
 Este prêmio se justifica pelo:
+
 1. Risco reduzido após desenvolvimento inicial
 2. Propriedade intelectual já desenvolvida e em processo de proteção
 3. Potencial de mercado validado
@@ -353,12 +366,12 @@ Este prêmio se justifica pelo:
 
 ### 10.1. Perfil de Investidores Ideais
 
-| Tipo de Investidor | Vantagens | Estratégia de Abordagem |
-|-------------------|-----------|-------------------------|
-| Investidores Anjo | Experiência no setor, rede de contatos | Pitch focado em inovação e propriedade intelectual |
-| Aceleradoras de Hardware/IoT | Suporte técnico, infraestrutura | Demonstração de protótipo e escalabilidade |
-| Corporate Venture Capital | Acesso a mercado, validação | Ênfase em sinergias e potencial de parceria |
-| Fundos de Impacto ESG | Alinhamento com tokenização ESG | Destaque para métricas de impacto e sustentabilidade |
+| Tipo de Investidor           | Vantagens                              | Estratégia de Abordagem                              |
+| ---------------------------- | -------------------------------------- | ---------------------------------------------------- |
+| Investidores Anjo            | Experiência no setor, rede de contatos | Pitch focado em inovação e propriedade intelectual   |
+| Aceleradoras de Hardware/IoT | Suporte técnico, infraestrutura        | Demonstração de protótipo e escalabilidade           |
+| Corporate Venture Capital    | Acesso a mercado, validação            | Ênfase em sinergias e potencial de parceria          |
+| Fundos de Impacto ESG        | Alinhamento com tokenização ESG        | Destaque para métricas de impacto e sustentabilidade |
 
 ### 10.2. Estruturação do Investimento
 
@@ -388,22 +401,22 @@ Para justificar o aumento de valuation entre as rodadas:
 
 ### 11.1. Fatores de Impacto no Valuation
 
-| Fator | Impacto Baixo | Impacto Base | Impacto Alto |
-|-------|--------------|--------------|--------------|
-| Taxa de Adoção | -30% | Base | +40% |
-| Preço Médio | -20% | Base | +15% |
-| Custo de Aquisição de Cliente | +25% | Base | -15% |
-| Tempo para Break-even | +12 meses | Base | -6 meses |
-| Ambiente Regulatório | Desfavorável | Neutro | Favorável |
+| Fator                         | Impacto Baixo | Impacto Base | Impacto Alto |
+| ----------------------------- | ------------- | ------------ | ------------ |
+| Taxa de Adoção                | -30%          | Base         | +40%         |
+| Preço Médio                   | -20%          | Base         | +15%         |
+| Custo de Aquisição de Cliente | +25%          | Base         | -15%         |
+| Tempo para Break-even         | +12 meses     | Base         | -6 meses     |
+| Ambiente Regulatório          | Desfavorável  | Neutro       | Favorável    |
 
 ### 11.2. Cenários de Valuation
 
-| Cenário | Descrição | Valor Eixo (R$) |
-|---------|-----------|----------------|
-| Pessimista | Adoção lenta, pressão de preços, regulação desfavorável | 2.500.000 |
-| Base | Conforme projeções apresentadas | 5.000.000 |
-| Otimista | Adoção acelerada, preços premium, regulação favorável | 8.500.000 |
-| Disruptivo | Adoção exponencial, expansão internacional rápida | 15.000.000 |
+| Cenário    | Descrição                                               | Valor Eixo (R$) |
+| ---------- | ------------------------------------------------------- | --------------- |
+| Pessimista | Adoção lenta, pressão de preços, regulação desfavorável | 2.500.000       |
+| Base       | Conforme projeções apresentadas                         | 5.000.000       |
+| Otimista   | Adoção acelerada, preços premium, regulação favorável   | 8.500.000       |
+| Disruptivo | Adoção exponencial, expansão internacional rápida       | 15.000.000      |
 
 ## 12. Considerações Estratégicas
 
@@ -467,6 +480,7 @@ A GuardDrive FleetShield apresenta um valor eixo de **R$ 5.000.000,00**, baseado
 ### 13.3. Considerações Finais
 
 O valor eixo estabelecido representa um equilíbrio entre:
+
 - O valor atual da propriedade intelectual e tecnologia desenvolvida
 - O potencial futuro de mercado e receitas
 - O risco inerente ao estágio atual de desenvolvimento
@@ -476,4 +490,4 @@ Este valor proporciona uma base sólida para negociações com investidores, man
 
 ---
 
-*Este documento é confidencial e destinado apenas aos sócios da GuardDrive FleetShield. Não compartilhe sem autorização prévia.*
+_Este documento é confidencial e destinado apenas aos sócios da GuardDrive FleetShield. Não compartilhe sem autorização prévia._

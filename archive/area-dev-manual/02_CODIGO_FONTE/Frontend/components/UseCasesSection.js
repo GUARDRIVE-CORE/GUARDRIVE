@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { 
-  FiTruck, 
-  FiShield, 
-  FiBuilding, 
+import React, { useState } from "react";
+import styled from "styled-components";
+import { motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  FiTruck,
+  FiShield,
+  FiBuilding,
   FiGlobe,
   FiUsers,
   FiTrendingUp,
   FiDollarSign,
   FiCheck,
   FiArrowRight,
-  FiBarChart3
-} from 'react-icons/fi';
-import { colors, breakpoints, Container, Section, Button } from '../styles/GlobalStyles';
+  FiBarChart3,
+} from "react-icons/fi";
+import {
+  colors,
+  breakpoints,
+  Container,
+  Section,
+  Button,
+} from "../styles/GlobalStyles";
 
 const UseCasesWrapper = styled(Section)`
   background: ${colors.gray50};
@@ -41,7 +47,7 @@ const TabsContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
     gap: 1rem;
@@ -50,21 +56,22 @@ const TabsContainer = styled.div`
 
 const Tab = styled(motion.button)`
   padding: 1rem 2rem;
-  background: ${props => props.active ? colors.primary : colors.white};
-  color: ${props => props.active ? colors.white : colors.gray700};
-  border: 2px solid ${props => props.active ? colors.primary : colors.gray200};
+  background: ${(props) => (props.active ? colors.primary : colors.white)};
+  color: ${(props) => (props.active ? colors.white : colors.gray700)};
+  border: 2px solid
+    ${(props) => (props.active ? colors.primary : colors.gray200)};
   border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 0.5rem;
-  
+
   &:hover {
     border-color: ${colors.primary};
-    color: ${props => props.active ? colors.white : colors.primary};
+    color: ${(props) => (props.active ? colors.white : colors.primary)};
   }
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     margin: 0;
   }
@@ -76,7 +83,7 @@ const UseCaseContent = styled(motion.div)`
   gap: 4rem;
   align-items: center;
   margin-bottom: 4rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -89,7 +96,7 @@ const UseCaseTitle = styled.h3`
   font-size: 2.5rem;
   color: ${colors.gray900};
   margin-bottom: 1.5rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 2rem;
   }
@@ -117,23 +124,23 @@ const BenefitItem = styled.div`
   background: ${colors.white};
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  
+
   svg {
     color: ${colors.secondary};
     font-size: 1.5rem;
     flex-shrink: 0;
   }
-  
+
   div {
     flex-grow: 1;
   }
-  
+
   h4 {
     font-size: 1.125rem;
     color: ${colors.gray900};
     margin-bottom: 0.25rem;
   }
-  
+
   p {
     font-size: 0.875rem;
     color: ${colors.gray600};
@@ -153,14 +160,14 @@ const StatCard = styled.div`
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  
+
   .number {
     font-size: 2.5rem;
     font-weight: 800;
     color: ${colors.primary};
     margin-bottom: 0.5rem;
   }
-  
+
   .label {
     font-size: 0.875rem;
     color: ${colors.gray600};
@@ -175,15 +182,15 @@ const VisualSection = styled.div`
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${props => props.gradient || colors.primaryGradient};
+    background: ${(props) => props.gradient || colors.primaryGradient};
     opacity: 0.05;
   }
 `;
@@ -205,12 +212,12 @@ const ShowcaseIcon = styled(motion.div)`
   background: ${colors.white};
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  
+
   svg {
     font-size: 3rem;
-    color: ${props => props.color || colors.primary};
+    color: ${(props) => props.color || colors.primary};
   }
-  
+
   span {
     font-weight: 600;
     color: ${colors.gray700};
@@ -224,13 +231,13 @@ const CTASection = styled.div`
   padding: 4rem;
   text-align: center;
   color: ${colors.white};
-  
+
   h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: ${colors.white};
   }
-  
+
   p {
     font-size: 1.125rem;
     margin-bottom: 2rem;
@@ -242,136 +249,144 @@ const UseCasesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const useCases = [
     {
-      id: 'frotas',
-      title: 'Frotas Corporativas',
-      description: 'Transforme sua frota em um ativo sustentável e verificável. Reduza custos operacionais, melhore a segurança e gere novos fluxos de receita através de créditos de carbono.',
+      id: "frotas",
+      title: "Frotas Corporativas",
+      description:
+        "Transforme sua frota em um ativo sustentável e verificável. Reduza custos operacionais, melhore a segurança e gere novos fluxos de receita através de créditos de carbono.",
       benefits: [
         {
           icon: FiShield,
-          title: 'Segurança Aprimorada',
-          description: 'Redução de 85% em acidentes através de monitoramento inteligente'
+          title: "Segurança Aprimorada",
+          description:
+            "Redução de 85% em acidentes através de monitoramento inteligente",
         },
         {
           icon: FiDollarSign,
-          title: 'Economia de Custos',
-          description: 'Até 40% de redução em custos de combustível e manutenção'
+          title: "Economia de Custos",
+          description:
+            "Até 40% de redução em custos de combustível e manutenção",
         },
         {
           icon: FiTrendingUp,
-          title: 'Créditos de Carbono',
-          description: 'Monetize práticas sustentáveis através de tokens verificáveis'
+          title: "Créditos de Carbono",
+          description:
+            "Monetize práticas sustentáveis através de tokens verificáveis",
         },
         {
           icon: FiBarChart3,
-          title: 'Relatórios ESG',
-          description: 'Conformidade automática com padrões internacionais'
-        }
+          title: "Relatórios ESG",
+          description: "Conformidade automática com padrões internacionais",
+        },
       ],
       stats: [
-        { number: '85%', label: 'Redução de Acidentes' },
-        { number: '40%', label: 'Economia Combustível' },
-        { number: '200%', label: 'ROI em 12 meses' },
-        { number: '95%', label: 'Conformidade ESG' }
+        { number: "85%", label: "Redução de Acidentes" },
+        { number: "40%", label: "Economia Combustível" },
+        { number: "200%", label: "ROI em 12 meses" },
+        { number: "95%", label: "Conformidade ESG" },
       ],
       icons: [
-        { icon: FiTruck, label: 'Monitoramento', color: colors.primary },
-        { icon: FiShield, label: 'Segurança', color: colors.secondary },
-        { icon: FiTrendingUp, label: 'Otimização', color: colors.accent },
-        { icon: FiDollarSign, label: 'Monetização', color: colors.success }
+        { icon: FiTruck, label: "Monitoramento", color: colors.primary },
+        { icon: FiShield, label: "Segurança", color: colors.secondary },
+        { icon: FiTrendingUp, label: "Otimização", color: colors.accent },
+        { icon: FiDollarSign, label: "Monetização", color: colors.success },
       ],
-      gradient: colors.primaryGradient
+      gradient: colors.primaryGradient,
     },
     {
-      id: 'seguradoras',
-      title: 'Seguradoras',
-      description: 'Revolucione a precificação de seguros com dados verificáveis em tempo real. Reduza sinistros, melhore a avaliação de riscos e ofereça produtos mais competitivos.',
+      id: "seguradoras",
+      title: "Seguradoras",
+      description:
+        "Revolucione a precificação de seguros com dados verificáveis em tempo real. Reduza sinistros, melhore a avaliação de riscos e ofereça produtos mais competitivos.",
       benefits: [
         {
           icon: FiBarChart3,
-          title: 'Dados Verificáveis',
-          description: 'Informações certificadas por blockchain para avaliação precisa'
+          title: "Dados Verificáveis",
+          description:
+            "Informações certificadas por blockchain para avaliação precisa",
         },
         {
           icon: FiShield,
-          title: 'Redução de Sinistros',
-          description: 'Prevenção proativa através de alertas em tempo real'
+          title: "Redução de Sinistros",
+          description: "Prevenção proativa através de alertas em tempo real",
         },
         {
           icon: FiDollarSign,
-          title: 'Precificação Dinâmica',
-          description: 'Ajuste de prêmios baseado em comportamento real'
+          title: "Precificação Dinâmica",
+          description: "Ajuste de prêmios baseado em comportamento real",
         },
         {
           icon: FiUsers,
-          title: 'Satisfação do Cliente',
-          description: 'Produtos personalizados e mais justos'
-        }
+          title: "Satisfação do Cliente",
+          description: "Produtos personalizados e mais justos",
+        },
       ],
       stats: [
-        { number: '60%', label: 'Redução Sinistros' },
-        { number: '30%', label: 'Melhoria Margem' },
-        { number: '90%', label: 'Precisão Dados' },
-        { number: '45%', label: 'Satisfação Cliente' }
+        { number: "60%", label: "Redução Sinistros" },
+        { number: "30%", label: "Melhoria Margem" },
+        { number: "90%", label: "Precisão Dados" },
+        { number: "45%", label: "Satisfação Cliente" },
       ],
       icons: [
-        { icon: FiBarChart3, label: 'Análise', color: colors.primary },
-        { icon: FiShield, label: 'Proteção', color: colors.secondary },
-        { icon: FiDollarSign, label: 'Precificação', color: colors.accent },
-        { icon: FiUsers, label: 'Clientes', color: colors.success }
+        { icon: FiBarChart3, label: "Análise", color: colors.primary },
+        { icon: FiShield, label: "Proteção", color: colors.secondary },
+        { icon: FiDollarSign, label: "Precificação", color: colors.accent },
+        { icon: FiUsers, label: "Clientes", color: colors.success },
       ],
-      gradient: colors.secondaryGradient
+      gradient: colors.secondaryGradient,
     },
     {
-      id: 'governos',
-      title: 'Governos e Reguladores',
-      description: 'Implemente políticas públicas baseadas em dados verificáveis. Monitore emissões, fiscalize conformidade e promova sustentabilidade urbana com transparência total.',
+      id: "governos",
+      title: "Governos e Reguladores",
+      description:
+        "Implemente políticas públicas baseadas em dados verificáveis. Monitore emissões, fiscalize conformidade e promova sustentabilidade urbana com transparência total.",
       benefits: [
         {
           icon: FiGlobe,
-          title: 'Monitoramento Urbano',
-          description: 'Visibilidade completa das emissões e tráfego urbano'
+          title: "Monitoramento Urbano",
+          description: "Visibilidade completa das emissões e tráfego urbano",
         },
         {
           icon: FiCheck,
-          title: 'Fiscalização Automática',
-          description: 'Conformidade verificável com regulamentações ambientais'
+          title: "Fiscalização Automática",
+          description:
+            "Conformidade verificável com regulamentações ambientais",
         },
         {
           icon: FiTrendingUp,
-          title: 'Políticas Baseadas em Dados',
-          description: 'Decisões informadas por métricas verificáveis'
+          title: "Políticas Baseadas em Dados",
+          description: "Decisões informadas por métricas verificáveis",
         },
         {
           icon: FiBuilding,
-          title: 'Smart Cities',
-          description: 'Integração com infraestrutura urbana inteligente'
-        }
+          title: "Smart Cities",
+          description: "Integração com infraestrutura urbana inteligente",
+        },
       ],
       stats: [
-        { number: '70%', label: 'Redução Emissões' },
-        { number: '100%', label: 'Transparência' },
-        { number: '50%', label: 'Eficiência Fiscal' },
-        { number: '80%', label: 'Conformidade' }
+        { number: "70%", label: "Redução Emissões" },
+        { number: "100%", label: "Transparência" },
+        { number: "50%", label: "Eficiência Fiscal" },
+        { number: "80%", label: "Conformidade" },
       ],
       icons: [
-        { icon: FiGlobe, label: 'Monitoramento', color: colors.primary },
-        { icon: FiCheck, label: 'Conformidade', color: colors.secondary },
-        { icon: FiBuilding, label: 'Infraestrutura', color: colors.accent },
-        { icon: FiTrendingUp, label: 'Políticas', color: colors.success }
+        { icon: FiGlobe, label: "Monitoramento", color: colors.primary },
+        { icon: FiCheck, label: "Conformidade", color: colors.secondary },
+        { icon: FiBuilding, label: "Infraestrutura", color: colors.accent },
+        { icon: FiTrendingUp, label: "Políticas", color: colors.success },
       ],
-      gradient: `linear-gradient(135deg, ${colors.accent} 0%, #FB923C 100%)`
-    }
+      gradient: `linear-gradient(135deg, ${colors.accent} 0%, #FB923C 100%)`,
+    },
   ];
 
   const tabs = [
-    { label: 'Frotas Corporativas', icon: FiTruck },
-    { label: 'Seguradoras', icon: FiShield },
-    { label: 'Governos', icon: FiBuilding }
+    { label: "Frotas Corporativas", icon: FiTruck },
+    { label: "Seguradoras", icon: FiShield },
+    { label: "Governos", icon: FiBuilding },
   ];
 
   const currentUseCase = useCases[activeTab];
@@ -392,7 +407,7 @@ const UseCasesSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Uma solução versátil que atende diferentes setores e necessidades, 
+            Uma solução versátil que atende diferentes setores e necessidades,
             sempre com foco em segurança, sustentabilidade e transparência.
           </SectionSubtitle>
         </SectionHeader>
@@ -411,7 +426,7 @@ const UseCasesSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <tab.icon style={{ marginRight: '0.5rem' }} />
+                <tab.icon style={{ marginRight: "0.5rem" }} />
                 {tab.label}
               </Tab>
             ))}
@@ -428,8 +443,10 @@ const UseCasesSection = () => {
           >
             <ContentSection>
               <UseCaseTitle>{currentUseCase.title}</UseCaseTitle>
-              <UseCaseDescription>{currentUseCase.description}</UseCaseDescription>
-              
+              <UseCaseDescription>
+                {currentUseCase.description}
+              </UseCaseDescription>
+
               <BenefitsList>
                 {currentUseCase.benefits.map((benefit, index) => (
                   <motion.div
@@ -494,16 +511,21 @@ const UseCasesSection = () => {
           <CTASection>
             <h3>Pronto para Transformar Sua Operação?</h3>
             <p>
-              Descubra como o GuardDrive FleetShield pode revolucionar sua frota, 
-              reduzir custos e gerar novos fluxos de receita sustentáveis.
+              Descubra como o GuardDrive FleetShield pode revolucionar sua
+              frota, reduzir custos e gerar novos fluxos de receita
+              sustentáveis.
             </p>
             <Button
               variant="success"
               size="large"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Agendar Demonstração Personalizada
-              <FiArrowRight style={{ marginLeft: '0.5rem' }} />
+              <FiArrowRight style={{ marginLeft: "0.5rem" }} />
             </Button>
           </CTASection>
         </motion.div>
@@ -513,4 +535,3 @@ const UseCasesSection = () => {
 };
 
 export default UseCasesSection;
-

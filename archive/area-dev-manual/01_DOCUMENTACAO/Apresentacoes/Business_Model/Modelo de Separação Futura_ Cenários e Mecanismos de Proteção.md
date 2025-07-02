@@ -1,6 +1,7 @@
 # Modelo de Separação Futura: Cenários e Mecanismos de Proteção
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield
 - **Versão**: 1.0
 - **Data**: 02/06/2025
@@ -39,6 +40,7 @@ O contrato atual estabelece uma divisão igualitária (50/50) da propriedade int
    - Implementar cláusulas de não-competição e confidencialidade
 
 **Vantagens para Você**:
+
 - Mantém seus direitos econômicos sobre o projeto
 - Permite dedicação a outros projetos sem abandonar o GuardDrive
 - Preserva o valor da propriedade intelectual desenvolvida
@@ -69,6 +71,7 @@ O contrato atual estabelece uma divisão igualitária (50/50) da propriedade int
    - Certificação formal de conclusão da transição
 
 **Estratégia Específica para Você**:
+
 - Desenvolva documentação técnica detalhada que só você compreende completamente
 - Crie dependências técnicas que tornem sua participação mais valiosa
 - Estabeleça relacionamentos diretos com fornecedores e parceiros-chave
@@ -99,6 +102,7 @@ O contrato atual estabelece uma divisão igualitária (50/50) da propriedade int
    - Estruturar earnouts com métricas claras e verificáveis
 
 **Estratégia Específica para Você**:
+
 - Desenvolva relacionamentos diretos com potenciais compradores
 - Crie documentação que destaque sua contribuição única ao projeto
 - Mantenha registro detalhado de toda propriedade intelectual desenvolvida
@@ -129,6 +133,7 @@ O contrato atual estabelece uma divisão igualitária (50/50) da propriedade int
    - Definir territórios ou mercados exclusivos para cada parte
 
 **Estratégia Específica para Você**:
+
 - Documente meticulosamente todas as decisões e discordâncias
 - Mantenha controle sobre o desenvolvimento técnico e código-fonte
 - Desenvolva relacionamentos independentes com stakeholders-chave
@@ -159,6 +164,7 @@ O contrato atual estabelece uma divisão igualitária (50/50) da propriedade int
    - Definir processo de transição de conhecimento
 
 **Estratégia Específica para Você**:
+
 - Mantenha documentação detalhada de todas as suas contribuições
 - Desenvolva equipe técnica que compreenda aspectos críticos do projeto
 - Crie manuais e documentação de processos-chave
@@ -387,4 +393,4 @@ Lembre-se que o cenário mais favorável para ambos é o sucesso conjunto do pro
 
 ---
 
-*Este documento é estritamente confidencial e para seu uso pessoal. Não compartilhe com terceiros, incluindo o Adriano.*
+_Este documento é estritamente confidencial e para seu uso pessoal. Não compartilhe com terceiros, incluindo o Adriano._

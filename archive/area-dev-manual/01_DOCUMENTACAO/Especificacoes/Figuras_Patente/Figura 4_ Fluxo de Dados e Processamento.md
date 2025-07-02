@@ -103,4 +103,4 @@ O fluxo de dados compreende as seguintes etapas principais:
 
 Este fluxo de dados é projetado para garantir integridade, confidencialidade e disponibilidade das informações em todas as etapas, desde a captura até a verificação final. A arquitetura distribuída e os múltiplos níveis de segurança tornam o sistema resistente a falhas e tentativas de adulteração, enquanto os mecanismos de verificação externa permitem auditoria transparente por entidades autorizadas.
 
-*Nota: Este diagrama representa o fluxo conceitual de dados no sistema. A implementação específica pode variar conforme requisitos de segurança, desempenho e integração com sistemas existentes.*
+_Nota: Este diagrama representa o fluxo conceitual de dados no sistema. A implementação específica pode variar conforme requisitos de segurança, desempenho e integração com sistemas existentes._

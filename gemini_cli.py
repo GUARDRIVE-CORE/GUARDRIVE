@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import argparse
 import os
 import sys
-import argparse
+
 import google.generativeai as genai
+
 
 def configure_api_key():
     """Configura a chave de API do Google Gemini."""

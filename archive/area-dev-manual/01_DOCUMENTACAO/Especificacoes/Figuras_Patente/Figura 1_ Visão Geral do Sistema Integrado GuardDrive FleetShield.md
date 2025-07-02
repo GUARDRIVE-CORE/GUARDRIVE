@@ -52,4 +52,4 @@ A Figura 1 ilustra a visão geral do Sistema Integrado GuardDrive FleetShield, m
 
 O fluxo de dados e operações ocorre conforme indicado pelas setas de conexão: os dados são capturados pelo Módulo Sensor (1), processados pelo Microcontrolador (2), exibidos no Dispositivo Visual (3) e registrados no Sistema Blockchain (4). As Interfaces de Comunicação (5) facilitam a transmissão de dados entre componentes e sistemas externos, enquanto o Sistema de Tokenização (6) gera valor a partir dos dados verificados.
 
-*Nota: Este diagrama representa a arquitetura conceitual do sistema. A implementação física pode variar conforme o cenário de aplicação (retrofit ou OEM) e o tipo de veículo.*
+_Nota: Este diagrama representa a arquitetura conceitual do sistema. A implementação física pode variar conforme o cenário de aplicação (retrofit ou OEM) e o tipo de veículo._

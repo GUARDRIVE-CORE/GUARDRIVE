@@ -39,12 +39,12 @@ Este documento detalha o processo de transição da marca SealSafe v3.7 para o n
 
 ### Cronograma de Implementação
 
-| Fase | Atividade | Prazo |
-|------|-----------|-------|
-| 1 | Atualização de documentação interna | Imediato |
-| 2 | Atualização de materiais visuais | 7 dias |
-| 3 | Atualização de código e SDKs | 14 dias |
-| 4 | Lançamento da comunicação externa | 21 dias |
+| Fase | Atividade                           | Prazo    |
+| ---- | ----------------------------------- | -------- |
+| 1    | Atualização de documentação interna | Imediato |
+| 2    | Atualização de materiais visuais    | 7 dias   |
+| 3    | Atualização de código e SDKs        | 14 dias  |
+| 4    | Lançamento da comunicação externa   | 21 dias  |
 
 ### Diretrizes de Comunicação
 
