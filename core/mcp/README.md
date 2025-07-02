@@ -4,22 +4,23 @@
 ![Platform](https://img.shields.io/badge/platform-universal-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-> **🚀 The Future of AI-IDE Integration**  
-> Universal MCP servers that work with any IDE, terminal, or AI agent supporting the Model Context Protocol.
+> **🛡️ GUARDRIVE Intelligent Development Ecosystem**  
+> Universal MCP servers specifically designed for GUARDRIVE platform development, compatible with any IDE or terminal supporting the Model Context Protocol.
 
 ## 🌟 What is GUARDRIVE MCP?
 
-GUARDRIVE MCP is a comprehensive ecosystem of **Model Context Protocol (MCP) servers** designed to bridge the gap between AI agents and development tools. Unlike traditional IDE-specific extensions, MCP servers work universally across any client that supports the protocol.
+GUARDRIVE MCP is a specialized ecosystem of **Model Context Protocol (MCP) servers** designed specifically for GUARDRIVE platform development. These servers provide intelligent automation for blockchain, ESG tokenization, and multi-language development workflows. Unlike traditional IDE-specific extensions, MCP servers work universally across any client that supports the protocol.
 
-### 🎯 **One Codebase, Every IDE**
-Write once, use everywhere - from Warp Terminal to VS Code, Cursor to Claude Desktop.
+### 🎯 **GUARDRIVE-First, Universal Compatibility**
+Optimized for GUARDRIVE development workflows, compatible everywhere - from Warp Terminal to VS Code, Cursor to Claude Desktop.
 
 ## 🚀 Quick Start
 
-### Install via npm (Recommended)
+### Install from GUARDRIVE Repository (Recommended)
 ```bash
-npm install -g @guardrive/mcp-servers
-guardrive-mcp setup
+git clone https://github.com/GUARDRIVE-CORE/GUARDRIVE.git
+cd GUARDRIVE
+npm run setup:mcp
 ```
 
 ### Install via PowerShell (Windows)
