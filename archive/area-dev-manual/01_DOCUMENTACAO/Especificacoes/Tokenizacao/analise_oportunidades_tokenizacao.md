@@ -8,33 +8,33 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 
 ### 1.1 Métricas Ambientais (E)
 
-| Métrica | Fonte de Dados | Relevância | Framework Aplicável |
-|---------|----------------|------------|---------------------|
-| Emissões de CO₂ evitadas | Telemetria veicular (OBD-II) | Alta | GHG Protocol, TCFD |
-| Eficiência de combustível | Sensores de consumo | Alta | SASB (Automotivo) |
-| Quilometragem em modo eficiente | GPS + acelerômetro | Média | GRI 305 |
-| Manutenção preventiva | Diagnóstico OBD-II | Média | SASB (Automotivo) |
-| Redução de congestionamentos | GPS + dados de rota | Média | GRI 305 |
+| Métrica                         | Fonte de Dados               | Relevância | Framework Aplicável |
+| ------------------------------- | ---------------------------- | ---------- | ------------------- |
+| Emissões de CO₂ evitadas        | Telemetria veicular (OBD-II) | Alta       | GHG Protocol, TCFD  |
+| Eficiência de combustível       | Sensores de consumo          | Alta       | SASB (Automotivo)   |
+| Quilometragem em modo eficiente | GPS + acelerômetro           | Média      | GRI 305             |
+| Manutenção preventiva           | Diagnóstico OBD-II           | Média      | SASB (Automotivo)   |
+| Redução de congestionamentos    | GPS + dados de rota          | Média      | GRI 305             |
 
 ### 1.2 Métricas Sociais (S)
 
-| Métrica | Fonte de Dados | Relevância | Framework Aplicável |
-|---------|----------------|------------|---------------------|
-| Uso correto do cinto de segurança | Sensor Hall (100ms) | Muito Alta | GRI 416, ISO 26262 |
-| Detecção de cadeirinhas infantis | Sensor piezoelétrico | Alta | GRI 416 |
-| Frenagens bruscas evitadas | Acelerômetro MEMS | Alta | SASB (Automotivo) |
-| Comportamento seguro em curvas | Giroscópio | Média | SASB (Automotivo) |
-| Respeito aos limites de velocidade | GPS + dados de via | Alta | GRI 416 |
+| Métrica                            | Fonte de Dados       | Relevância | Framework Aplicável |
+| ---------------------------------- | -------------------- | ---------- | ------------------- |
+| Uso correto do cinto de segurança  | Sensor Hall (100ms)  | Muito Alta | GRI 416, ISO 26262  |
+| Detecção de cadeirinhas infantis   | Sensor piezoelétrico | Alta       | GRI 416             |
+| Frenagens bruscas evitadas         | Acelerômetro MEMS    | Alta       | SASB (Automotivo)   |
+| Comportamento seguro em curvas     | Giroscópio           | Média      | SASB (Automotivo)   |
+| Respeito aos limites de velocidade | GPS + dados de via   | Alta       | GRI 416             |
 
 ### 1.3 Métricas de Governança (G)
 
-| Métrica | Fonte de Dados | Relevância | Framework Aplicável |
-|---------|----------------|------------|---------------------|
-| Registros imutáveis de eventos críticos | Blockchain | Alta | ESRS G1 |
-| Transparência de dados de segurança | API pública | Alta | ESRS G1 |
-| Auditabilidade de relatórios | Árvore Merkle | Alta | TCFD |
-| Conformidade regulatória | Logs de verificação | Alta | ESRS G1 |
-| Participação em programas de incentivo | Smart contracts | Média | GRI 102 |
+| Métrica                                 | Fonte de Dados      | Relevância | Framework Aplicável |
+| --------------------------------------- | ------------------- | ---------- | ------------------- |
+| Registros imutáveis de eventos críticos | Blockchain          | Alta       | ESRS G1             |
+| Transparência de dados de segurança     | API pública         | Alta       | ESRS G1             |
+| Auditabilidade de relatórios            | Árvore Merkle       | Alta       | TCFD                |
+| Conformidade regulatória                | Logs de verificação | Alta       | ESRS G1             |
+| Participação em programas de incentivo  | Smart contracts     | Média      | GRI 102             |
 
 ## 2. Oportunidades de Tokenização Identificadas
 
@@ -43,6 +43,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 **Descrição:** Tokenização de emissões de CO₂ evitadas através de condução eficiente, manutenção preventiva e otimização de rotas.
 
 **Modelo de Implementação:**
+
 - **Cálculo:** 1 token = 1 kg de CO₂ evitado (verificável via OBD-II)
 - **Emissão:** Automática via smart contract após validação de dados
 - **Verificação:** Comparação com linha de base (veículo similar sem sistema)
@@ -50,6 +51,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 - **Blockchain Recomendada:** Celo (carbon-negative) ou Polygon (painel GHG)
 
 **Alinhamento com Frameworks:**
+
 - GHG Protocol (Escopos 1 e 3)
 - TCFD (Métricas e Metas)
 - ISO 14064 (Quantificação de GEE)
@@ -59,6 +61,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 **Descrição:** Tokenização de comportamentos seguros verificáveis, como uso correto do cinto, respeito aos limites de velocidade e proteção de passageiros vulneráveis.
 
 **Modelo de Implementação:**
+
 - **Cálculo:** Score de segurança (0-100) baseado em múltiplas métricas
 - **Emissão:** NFTs de certificação de segurança por período (diário/semanal/mensal)
 - **Verificação:** Sensores de alta precisão (>99,9%) com registro blockchain
@@ -66,6 +69,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 - **Blockchain Recomendada:** Hyperledger Besu (privacidade) ou XRPL (eficiência)
 
 **Alinhamento com Frameworks:**
+
 - GRI 416 (Saúde e Segurança do Cliente)
 - SASB (Métricas de Segurança Automotiva)
 - ISO 26262 (Segurança Funcional Automotiva)
@@ -75,6 +79,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 **Descrição:** Tokenização de participação em programas de incentivo, conformidade regulatória e transparência de dados.
 
 **Modelo de Implementação:**
+
 - **Cálculo:** Pontos de governança baseados em conformidade e participação
 - **Emissão:** Tokens de governança para stakeholders (seguradoras, frotas, autoridades)
 - **Verificação:** Smart contracts de validação de compliance
@@ -82,6 +87,7 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 - **Blockchain Recomendada:** Hyperledger Besu (permissionada) para conformidade regulatória
 
 **Alinhamento com Frameworks:**
+
 - ESRS G1 (Governança, Risco e Compliance)
 - GRI 102 (Divulgações Gerais)
 - TCFD (Governança)
@@ -91,30 +97,30 @@ Este documento mapeia as oportunidades de tokenização ESG para o sistema Guard
 ### 3.1 Fluxo de Dados Ambientais
 
 ```
-Sensores Veiculares (OBD-II, GPS) → Microcontrolador ARM → 
-Processamento Edge (cálculo de emissões) → 
-Buffer Circular (72h) → Transmissão Segura (WebSocket) → 
-Validação (Oracle externo) → Smart Contract (emissão de tokens) → 
+Sensores Veiculares (OBD-II, GPS) → Microcontrolador ARM →
+Processamento Edge (cálculo de emissões) →
+Buffer Circular (72h) → Transmissão Segura (WebSocket) →
+Validação (Oracle externo) → Smart Contract (emissão de tokens) →
 Registro Blockchain → Dashboard ESG
 ```
 
 ### 3.2 Fluxo de Dados de Segurança
 
 ```
-Sensores de Segurança (Hall, Piezo, MEMS) → Microcontrolador ARM → 
-Análise de Comportamento (100ms) → Detecção de Eventos Críticos → 
-Registro Local (árvore Merkle) → Transmissão Segura (AES-256) → 
-Validação Multi-fonte → Smart Contract (NFT de segurança) → 
+Sensores de Segurança (Hall, Piezo, MEMS) → Microcontrolador ARM →
+Análise de Comportamento (100ms) → Detecção de Eventos Críticos →
+Registro Local (árvore Merkle) → Transmissão Segura (AES-256) →
+Validação Multi-fonte → Smart Contract (NFT de segurança) →
 Registro Blockchain → Interface Visual (QR + LED)
 ```
 
 ### 3.3 Fluxo de Dados de Governança
 
 ```
-Fontes Regulatórias → Requisitos de Compliance → 
-Verificação Automática → Logs de Auditoria → 
-Transmissão Segura (API OAuth 2.0) → 
-Smart Contract (validação de compliance) → 
+Fontes Regulatórias → Requisitos de Compliance →
+Verificação Automática → Logs de Auditoria →
+Transmissão Segura (API OAuth 2.0) →
+Smart Contract (validação de compliance) →
 Registro Blockchain → Relatórios Automatizados (ESRS/GRI)
 ```
 
@@ -122,14 +128,14 @@ Registro Blockchain → Relatórios Automatizados (ESRS/GRI)
 
 ### 4.1 Casos de Sucesso Analisados
 
-| Projeto | Modelo | Blockchain | Relevância para GuardDrive |
-|---------|--------|------------|----------------------------|
-| UCorp (UCO2) | Créditos de carbono por km elétrico | Não especificada | Alta (modelo similar para emissões) |
-| LoCar (CLCAR) | Token de participação para motoristas | Marketplace CoinLivre | Média (modelo de incentivo) |
-| Toucan Protocol | Tokenização de créditos de carbono | Polygon | Alta (padrão de mercado) |
-| KlimaDAO | Tokens lastreados em carbono | Polygon | Média (modelo de governança) |
-| Ripple/XRPL | NFTs de créditos de carbono | XRPL | Alta (eficiência energética) |
-| Northern Trust | Sistema permissionado para créditos | Hyperledger Besu | Alta (modelo corporativo) |
+| Projeto         | Modelo                                | Blockchain            | Relevância para GuardDrive          |
+| --------------- | ------------------------------------- | --------------------- | ----------------------------------- |
+| UCorp (UCO2)    | Créditos de carbono por km elétrico   | Não especificada      | Alta (modelo similar para emissões) |
+| LoCar (CLCAR)   | Token de participação para motoristas | Marketplace CoinLivre | Média (modelo de incentivo)         |
+| Toucan Protocol | Tokenização de créditos de carbono    | Polygon               | Alta (padrão de mercado)            |
+| KlimaDAO        | Tokens lastreados em carbono          | Polygon               | Média (modelo de governança)        |
+| Ripple/XRPL     | NFTs de créditos de carbono           | XRPL                  | Alta (eficiência energética)        |
+| Northern Trust  | Sistema permissionado para créditos   | Hyperledger Besu      | Alta (modelo corporativo)           |
 
 ### 4.2 Diferenciais Competitivos Identificados
 
@@ -161,11 +167,13 @@ Registro Blockchain → Relatórios Automatizados (ESRS/GRI)
 ### 5.2 Seleção de Blockchain
 
 **Recomendação Principal:** Implementação híbrida com:
+
 - **Hyperledger Besu** para dados sensíveis e conformidade regulatória
 - **Celo** para tokenização pública de créditos de carbono (carbon-negative)
 - **Bridge** entre as duas redes para interoperabilidade
 
 **Justificativa:**
+
 - Hyperledger Besu oferece privacidade e controle necessários para dados veiculares sensíveis
 - Celo proporciona credibilidade ambiental (carbon-negative) para tokens ESG
 - Modelo híbrido permite balancear requisitos de privacidade e transparência
@@ -173,12 +181,14 @@ Registro Blockchain → Relatórios Automatizados (ESRS/GRI)
 ### 5.3 Arquitetura de Smart Contracts
 
 **Recomendação:**
+
 - Contratos modulares seguindo padrão de proxy para atualizações
 - Implementação de oráculos para validação externa de dados
 - Utilização de padrões ERC-1155 para múltiplos tipos de tokens
 - Implementação de mecanismos de governança para atualizações
 
 **Justificativa:**
+
 - Modularidade permite evolução do sistema sem perda de histórico
 - Oráculos garantem confiabilidade dos dados externos
 - ERC-1155 suporta tanto tokens fungíveis (carbono) quanto não-fungíveis (certificados)
@@ -194,4 +204,4 @@ Registro Blockchain → Relatórios Automatizados (ESRS/GRI)
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-ESG-TOKEN-ANALYSIS-2025-001*
+_Metadata de Rastreabilidade Simbólica: GD-ESG-TOKEN-ANALYSIS-2025-001_

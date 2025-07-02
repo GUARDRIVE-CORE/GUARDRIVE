@@ -358,11 +358,12 @@ GuardDrive Mobile
 ### 1. Onboarding - Novo Usuário
 
 ```
-Início → Bem-vindo → Benefícios → Cadastro → Verificação → 
+Início → Bem-vindo → Benefícios → Cadastro → Verificação →
 Configuração Inicial → Primeiro Veículo → Tutorial → Dashboard
 ```
 
 **Detalhamento:**
+
 1. **Tela de Boas-vindas**: Apresentação do GuardDrive
 2. **Benefícios**: Explicação dos valores ESG e tokenização
 3. **Cadastro**: Dados pessoais e da empresa
@@ -375,12 +376,13 @@ Configuração Inicial → Primeiro Veículo → Tutorial → Dashboard
 ### 2. Instalação de Dispositivo
 
 ```
-Dashboard → Adicionar Veículo → Dados do Veículo → 
-Solicitar Instalação → Agendamento → Confirmação → 
+Dashboard → Adicionar Veículo → Dados do Veículo →
+Solicitar Instalação → Agendamento → Confirmação →
 Ativação → Teste → Conclusão
 ```
 
 **Detalhamento:**
+
 1. **Adicionar Veículo**: Formulário com dados do veículo
 2. **Solicitar Instalação**: Escolha de local e data
 3. **Agendamento**: Confirmação com técnico
@@ -391,12 +393,13 @@ Ativação → Teste → Conclusão
 ### 3. Geração de Tokens ESG
 
 ```
-Condução → Coleta de Dados → Análise IA → Cálculo de Score → 
-Validação Blockchain → Geração de Tokens → Notificação → 
+Condução → Coleta de Dados → Análise IA → Cálculo de Score →
+Validação Blockchain → Geração de Tokens → Notificação →
 Atualização Wallet
 ```
 
 **Detalhamento:**
+
 1. **Condução**: Uso normal do veículo
 2. **Coleta**: Sensores capturam dados em tempo real
 3. **Análise**: IA processa métricas de sustentabilidade
@@ -409,12 +412,13 @@ Atualização Wallet
 ### 4. Troca de Tokens por Benefícios
 
 ```
-Wallet → Marketplace → Escolha de Benefício → 
-Verificação de Saldo → Confirmação → Transação Blockchain → 
+Wallet → Marketplace → Escolha de Benefício →
+Verificação de Saldo → Confirmação → Transação Blockchain →
 Geração de Voucher → Notificação
 ```
 
 **Detalhamento:**
+
 1. **Marketplace**: Catálogo de benefícios disponíveis
 2. **Escolha**: Seleção do benefício desejado
 3. **Verificação**: Confirmação de saldo suficiente
@@ -431,22 +435,23 @@ Geração de Voucher → Notificação
 .container {
   /* Mobile: 320px - 768px */
   padding: 1rem;
-  
+
   /* Tablet: 768px - 1024px */
   @media (min-width: 768px) {
     padding: 2rem;
     display: grid;
     grid-template-columns: 250px 1fr;
   }
-  
+
   /* Desktop: 1024px+ */
   @media (min-width: 1024px) {
     padding: 3rem;
     grid-template-columns: 300px 1fr;
   }
-  
+
   /* Large Desktop: 1440px+ */
   @media (min-width: 1440px) {
     max-width: 1400px;
-   
+
 (Content truncated due to size limit. Use line ranges to read in chunks)
+```

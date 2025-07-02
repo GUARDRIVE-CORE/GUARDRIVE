@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { 
-  FiMail, 
-  FiPhone, 
-  FiMapPin, 
+import React, { useState } from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
   FiSend,
   FiUser,
   FiBuilding,
   FiMessageSquare,
   FiCheck,
   FiClock,
-  FiShield
-} from 'react-icons/fi';
-import { colors, breakpoints, Container, Section, Button, Card } from '../styles/GlobalStyles';
+  FiShield,
+} from "react-icons/fi";
+import {
+  colors,
+  breakpoints,
+  Container,
+  Section,
+  Button,
+  Card,
+} from "../styles/GlobalStyles";
 
 const ContactWrapper = styled(Section)`
   background: ${colors.white};
@@ -41,7 +48,7 @@ const ContactGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -78,33 +85,33 @@ const ContactMethod = styled(motion.div)`
   background: ${colors.gray50};
   border-radius: 12px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     background: ${colors.primary};
     color: ${colors.white};
     transform: translateY(-2px);
-    
+
     svg {
       color: ${colors.white};
     }
   }
-  
+
   svg {
     font-size: 1.5rem;
     color: ${colors.primary};
     transition: color 0.3s ease;
   }
-  
+
   div {
     flex-grow: 1;
   }
-  
+
   h4 {
     font-size: 1.125rem;
     margin-bottom: 0.25rem;
     color: inherit;
   }
-  
+
   p {
     font-size: 0.875rem;
     opacity: 0.8;
@@ -116,28 +123,28 @@ const ContactMethod = styled(motion.div)`
 const BusinessHours = styled(Card)`
   background: ${colors.gray900};
   color: ${colors.white};
-  
+
   h4 {
     color: ${colors.white};
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    
+
     svg {
       color: ${colors.secondary};
     }
   }
-  
+
   ul {
     list-style: none;
-    
+
     li {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.5rem;
       font-size: 0.875rem;
-      
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -184,12 +191,12 @@ const Input = styled.input`
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
-  
+
   &:focus {
     outline: none;
     border-color: ${colors.primary};
   }
-  
+
   &::placeholder {
     color: ${colors.gray400};
   }
@@ -202,7 +209,7 @@ const Select = styled.select`
   font-size: 1rem;
   background: ${colors.white};
   transition: border-color 0.3s ease;
-  
+
   &:focus {
     outline: none;
     border-color: ${colors.primary};
@@ -218,12 +225,12 @@ const TextArea = styled.textarea`
   resize: vertical;
   font-family: inherit;
   transition: border-color 0.3s ease;
-  
+
   &:focus {
     outline: none;
     border-color: ${colors.primary};
   }
-  
+
   &::placeholder {
     color: ${colors.gray400};
   }
@@ -231,7 +238,7 @@ const TextArea = styled.textarea`
 
 const SubmitButton = styled(Button)`
   align-self: flex-start;
-  
+
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
@@ -247,7 +254,7 @@ const SuccessMessage = styled(motion.div)`
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  
+
   svg {
     font-size: 1.25rem;
   }
@@ -262,18 +269,18 @@ const TrustIndicators = styled.div`
 
 const TrustCard = styled(motion(Card))`
   text-align: center;
-  
+
   svg {
     font-size: 2.5rem;
     color: ${colors.primary};
     margin-bottom: 1rem;
   }
-  
+
   h4 {
     color: ${colors.gray900};
     margin-bottom: 0.5rem;
   }
-  
+
   p {
     font-size: 0.875rem;
     color: ${colors.gray600};
@@ -283,49 +290,49 @@ const TrustCard = styled(motion(Card))`
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    interest: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    interest: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simular envio do formulário
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     setIsSubmitting(false);
     setIsSubmitted(true);
-    
+
     // Reset form after 5 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        interest: '',
-        message: ''
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        interest: "",
+        message: "",
       });
     }, 5000);
   };
@@ -333,40 +340,40 @@ const ContactSection = () => {
   const contactMethods = [
     {
       icon: FiMail,
-      title: 'Email',
-      description: 'contato@guarddrive.com',
-      action: 'mailto:contato@guarddrive.com'
+      title: "Email",
+      description: "contato@guarddrive.com",
+      action: "mailto:contato@guarddrive.com",
     },
     {
       icon: FiPhone,
-      title: 'Telefone',
-      description: '+55 (11) 9999-9999',
-      action: 'tel:+5511999999999'
+      title: "Telefone",
+      description: "+55 (11) 9999-9999",
+      action: "tel:+5511999999999",
     },
     {
       icon: FiMapPin,
-      title: 'Endereço',
-      description: 'São Paulo, SP - Brasil',
-      action: null
-    }
+      title: "Endereço",
+      description: "São Paulo, SP - Brasil",
+      action: null,
+    },
   ];
 
   const trustIndicators = [
     {
       icon: FiShield,
-      title: 'Segurança Garantida',
-      description: 'Dados protegidos por criptografia de ponta'
+      title: "Segurança Garantida",
+      description: "Dados protegidos por criptografia de ponta",
     },
     {
       icon: FiClock,
-      title: 'Resposta Rápida',
-      description: 'Retornamos em até 24 horas'
+      title: "Resposta Rápida",
+      description: "Retornamos em até 24 horas",
     },
     {
       icon: FiCheck,
-      title: 'Sem Compromisso',
-      description: 'Demonstração gratuita e sem obrigações'
-    }
+      title: "Sem Compromisso",
+      description: "Demonstração gratuita e sem obrigações",
+    },
   ];
 
   return (
@@ -385,7 +392,7 @@ const ContactSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Pronto para revolucionar sua frota? Agende uma demonstração gratuita 
+            Pronto para revolucionar sua frota? Agende uma demonstração gratuita
             e descubra como o GuardDrive pode transformar sua operação.
           </SectionSubtitle>
         </SectionHeader>
@@ -399,9 +406,9 @@ const ContactSection = () => {
             <ContactInfo>
               <InfoTitle>Vamos Conversar</InfoTitle>
               <InfoDescription>
-                Nossa equipe de especialistas está pronta para apresentar como o 
-                GuardDrive FleetShield pode revolucionar sua frota, reduzir custos 
-                e gerar novos fluxos de receita sustentáveis.
+                Nossa equipe de especialistas está pronta para apresentar como o
+                GuardDrive FleetShield pode revolucionar sua frota, reduzir
+                custos e gerar novos fluxos de receita sustentáveis.
               </InfoDescription>
 
               <ContactMethods>
@@ -413,7 +420,7 @@ const ContactSection = () => {
                     transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
                     whileHover={{ scale: 1.02 }}
                     onClick={() => method.action && window.open(method.action)}
-                    style={{ cursor: method.action ? 'pointer' : 'default' }}
+                    style={{ cursor: method.action ? "pointer" : "default" }}
                   >
                     <method.icon />
                     <div>
@@ -455,7 +462,7 @@ const ContactSection = () => {
             <ContactForm>
               <FormTitle>Solicitar Demonstração</FormTitle>
               <FormDescription>
-                Preencha o formulário abaixo e nossa equipe entrará em contato 
+                Preencha o formulário abaixo e nossa equipe entrará em contato
                 para agendar uma demonstração personalizada.
               </FormDescription>
 
@@ -466,7 +473,10 @@ const ContactSection = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <FiCheck />
-                  <span>Mensagem enviada com sucesso! Entraremos em contato em breve.</span>
+                  <span>
+                    Mensagem enviada com sucesso! Entraremos em contato em
+                    breve.
+                  </span>
                 </SuccessMessage>
               )}
 
@@ -557,15 +567,15 @@ const ContactSection = () => {
                   disabled={isSubmitting || isSubmitted}
                 >
                   {isSubmitting ? (
-                    'Enviando...'
+                    "Enviando..."
                   ) : isSubmitted ? (
                     <>
-                      <FiCheck style={{ marginRight: '0.5rem' }} />
+                      <FiCheck style={{ marginRight: "0.5rem" }} />
                       Enviado!
                     </>
                   ) : (
                     <>
-                      <FiSend style={{ marginRight: '0.5rem' }} />
+                      <FiSend style={{ marginRight: "0.5rem" }} />
                       Solicitar Demonstração
                     </>
                   )}
@@ -602,4 +612,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -10,31 +10,37 @@ import {
   ScrollView,
   Alert,
   TouchableOpacity,
-} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import Icon from 'react-native-vector-icons/Feather';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import { colors, typography, spacing, borderRadius, layout } from '../styles/theme';
+} from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+import Icon from "react-native-vector-icons/Feather";
+import Button from "../components/Button";
+import Card from "../components/Card";
+import {
+  colors,
+  typography,
+  spacing,
+  borderRadius,
+  layout,
+} from "../styles/theme";
 
 const LoginScreen = ({ navigation }) => {
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleInputChange = (field, value) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [field]: value,
     }));
-    
+
     // Limpar erro do campo quando usuário começar a digitar
     if (errors[field]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
         [field]: null,
       }));
@@ -45,15 +51,15 @@ const LoginScreen = ({ navigation }) => {
     const newErrors = {};
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email é obrigatório';
+      newErrors.email = "Email é obrigatório";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email inválido';
+      newErrors.email = "Email inválido";
     }
 
     if (!formData.password.trim()) {
-      newErrors.password = 'Senha é obrigatória';
+      newErrors.password = "Senha é obrigatória";
     } else if (formData.password.length < 6) {
-      newErrors.password = 'Senha deve ter pelo menos 6 caracteres';
+      newErrors.password = "Senha deve ter pelo menos 6 caracteres";
     }
 
     setErrors(newErrors);
@@ -69,16 +75,19 @@ const LoginScreen = ({ navigation }) => {
 
     try {
       // Simular chamada de API
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
       // Simular login bem-sucedido
-      if (formData.email === 'demo@guarddrive.com' && formData.password === 'demo123') {
-        navigation.replace('Main');
+      if (
+        formData.email === "demo@guarddrive.com" &&
+        formData.password === "demo123"
+      ) {
+        navigation.replace("Main");
       } else {
-        Alert.alert('Erro', 'Email ou senha incorretos');
+        Alert.alert("Erro", "Email ou senha incorretos");
       }
     } catch (error) {
-      Alert.alert('Erro', 'Falha ao fazer login. Tente novamente.');
+      Alert.alert("Erro", "Falha ao fazer login. Tente novamente.");
     } finally {
       setLoading(false);
     }
@@ -86,17 +95,20 @@ const LoginScreen = ({ navigation }) => {
 
   const handleForgotPassword = () => {
     Alert.alert(
-      'Recuperar Senha',
-      'Um link de recuperação será enviado para seu email.',
+      "Recuperar Senha",
+      "Um link de recuperação será enviado para seu email.",
       [
-        { text: 'Cancelar', style: 'cancel' },
-        { text: 'Enviar', onPress: () => console.log('Enviar email de recuperação') },
-      ]
+        { text: "Cancelar", style: "cancel" },
+        {
+          text: "Enviar",
+          onPress: () => console.log("Enviar email de recuperação"),
+        },
+      ],
     );
   };
 
   const handleCreateAccount = () => {
-    navigation.navigate('Register');
+    navigation.navigate("Register");
   };
 
   return (
@@ -109,7 +121,7 @@ const LoginScreen = ({ navigation }) => {
       >
         <KeyboardAvoidingView
           style={styles.keyboardView}
-          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
           <ScrollView
             contentContainerStyle={styles.scrollContent}
@@ -145,14 +157,13 @@ const LoginScreen = ({ navigation }) => {
                       style={styles.inputIcon}
                     />
                     <TextInput
-                      style={[
-                        styles.input,
-                        errors.email && styles.inputError,
-                      ]}
+                      style={[styles.input, errors.email && styles.inputError]}
                       placeholder="seu@email.com"
                       placeholderTextColor={colors.gray400}
                       value={formData.email}
-                      onChangeText={(value) => handleInputChange('email', value)}
+                      onChangeText={(value) =>
+                        handleInputChange("email", value)
+                      }
                       keyboardType="email-address"
                       autoCapitalize="none"
                       autoCorrect={false}
@@ -182,7 +193,9 @@ const LoginScreen = ({ navigation }) => {
                       placeholder="Sua senha"
                       placeholderTextColor={colors.gray400}
                       value={formData.password}
-                      onChangeText={(value) => handleInputChange('password', value)}
+                      onChangeText={(value) =>
+                        handleInputChange("password", value)
+                      }
                       secureTextEntry={!showPassword}
                       autoCapitalize="none"
                       autoCorrect={false}
@@ -192,7 +205,7 @@ const LoginScreen = ({ navigation }) => {
                       onPress={() => setShowPassword(!showPassword)}
                     >
                       <Icon
-                        name={showPassword ? 'eye-off' : 'eye'}
+                        name={showPassword ? "eye-off" : "eye"}
                         size={20}
                         color={colors.gray400}
                       />
@@ -224,7 +237,9 @@ const LoginScreen = ({ navigation }) => {
                 {/* Demo Credentials */}
                 <View style={styles.demoCredentials}>
                   <Text style={styles.demoTitle}>Credenciais de Demo:</Text>
-                  <Text style={styles.demoText}>Email: demo@guarddrive.com</Text>
+                  <Text style={styles.demoText}>
+                    Email: demo@guarddrive.com
+                  </Text>
                   <Text style={styles.demoText}>Senha: demo123</Text>
                 </View>
               </View>
@@ -233,7 +248,7 @@ const LoginScreen = ({ navigation }) => {
             {/* Create Account */}
             <View style={styles.createAccount}>
               <Text style={styles.createAccountText}>
-                Não tem uma conta?{' '}
+                Não tem uma conta?{" "}
                 <Text
                   style={styles.createAccountLink}
                   onPress={handleCreateAccount}
@@ -280,16 +295,16 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
   },
   header: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: spacing.xl,
     marginBottom: spacing.xl,
   },
   logoContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: spacing.md,
   },
   logoText: {
-    fontSize: typography.fontSize['3xl'],
+    fontSize: typography.fontSize["3xl"],
     fontFamily: typography.fontFamily.bold,
     color: colors.white,
     marginTop: spacing.sm,
@@ -299,23 +314,23 @@ const styles = StyleSheet.create({
     fontFamily: typography.fontFamily.medium,
     color: colors.white,
     opacity: 0.9,
-    textAlign: 'center',
+    textAlign: "center",
   },
   formCard: {
     marginBottom: spacing.lg,
   },
   formTitle: {
-    fontSize: typography.fontSize['2xl'],
+    fontSize: typography.fontSize["2xl"],
     fontFamily: typography.fontFamily.bold,
     color: colors.gray900,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: spacing.sm,
   },
   formSubtitle: {
     fontSize: typography.fontSize.base,
     fontFamily: typography.fontFamily.regular,
     color: colors.gray600,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: spacing.xl,
   },
   form: {
@@ -330,9 +345,9 @@ const styles = StyleSheet.create({
     color: colors.gray700,
   },
   inputContainer: {
-    position: 'relative',
-    flexDirection: 'row',
-    alignItems: 'center',
+    position: "relative",
+    flexDirection: "row",
+    alignItems: "center",
   },
   input: {
     flex: 1,
@@ -351,7 +366,7 @@ const styles = StyleSheet.create({
     borderColor: colors.error,
   },
   inputIcon: {
-    position: 'absolute',
+    position: "absolute",
     left: spacing.md,
     zIndex: 1,
   },
@@ -359,7 +374,7 @@ const styles = StyleSheet.create({
     paddingRight: 48,
   },
   passwordToggle: {
-    position: 'absolute',
+    position: "absolute",
     right: spacing.md,
     padding: spacing.sm,
   },
@@ -369,7 +384,7 @@ const styles = StyleSheet.create({
     color: colors.error,
   },
   forgotPassword: {
-    alignSelf: 'flex-end',
+    alignSelf: "flex-end",
   },
   forgotPasswordText: {
     fontSize: typography.fontSize.sm,
@@ -397,7 +412,7 @@ const styles = StyleSheet.create({
     color: colors.gray600,
   },
   createAccount: {
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: spacing.xl,
   },
   createAccountText: {
@@ -407,24 +422,23 @@ const styles = StyleSheet.create({
   },
   createAccountLink: {
     fontFamily: typography.fontFamily.semiBold,
-    textDecorationLine: 'underline',
+    textDecorationLine: "underline",
   },
   features: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    justifyContent: "space-around",
     marginTop: spacing.lg,
   },
   feature: {
-    alignItems: 'center',
+    alignItems: "center",
     gap: spacing.sm,
   },
   featureText: {
     fontSize: typography.fontSize.sm,
     fontFamily: typography.fontFamily.medium,
     color: colors.white,
-    textAlign: 'center',
+    textAlign: "center",
   },
 });
 
 export default LoginScreen;
-

@@ -7,7 +7,7 @@ __version__ = "1.0.0"
 __author__ = "GUARDRIVE-CORE"
 __description__ = "Sistema veicular inteligente com blockchain, tokenização ESG e ecosystem MCP universal"
 
-from .config import settings, get_config_by_env
+from .config import get_config_by_env, settings
 
 __all__ = [
     "__version__",

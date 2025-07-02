@@ -51,6 +51,7 @@
 A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield além do contexto veicular tradicional, demonstrando a versatilidade e adaptabilidade da tecnologia para diversos setores e casos de uso.
 
 ### 10.1. Aplicação em Aviação
+
 - **Implementação**: Adaptação do sistema para monitoramento e verificação de dispositivos de segurança em aeronaves
 - **Casos de uso**:
   - **Cintos de segurança em cabines**: Monitoramento do uso correto de cintos por passageiros, com verificação para tripulação
@@ -62,6 +63,7 @@ A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield
   - Incentivos para comportamento seguro em voos
 
 ### 10.2. Aplicação Marítima
+
 - **Implementação**: Adaptação para embarcações e instalações marítimas
 - **Casos de uso**:
   - **Coletes salva-vidas**: Monitoramento de disponibilidade, condição e uso de coletes
@@ -74,6 +76,7 @@ A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield
   - Redução de prêmios de seguro marítimo
 
 ### 10.3. Aplicação Industrial
+
 - **Implementação**: Adaptação para ambientes industriais e manufatura
 - **Casos de uso**:
   - **Equipamentos de proteção individual**: Monitoramento de uso correto de EPIs
@@ -86,6 +89,7 @@ A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield
   - Incentivos para cultura de segurança no ambiente industrial
 
 ### 10.4. Aplicação em Entretenimento
+
 - **Implementação**: Adaptação para ambientes de lazer e entretenimento
 - **Casos de uso**:
   - **Parques de diversões**: Verificação de dispositivos de segurança em atrações
@@ -99,6 +103,7 @@ A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield
   - Diferenciação competitiva baseada em segurança verificável
 
 ### 10.5. Integração com Sistemas de Saúde
+
 - **Implementação**: Expansão do sistema para monitoramento de saúde e resposta a emergências
 - **Casos de uso**:
   - **Monitoramento de sinais vitais**: Integração com sensores biométricos para detecção de condições médicas
@@ -111,6 +116,7 @@ A Figura 10 ilustra as aplicações expandidas do sistema GuardDrive FleetShield
   - Dados valiosos para pesquisa e melhoria de segurança
 
 ### 10.6. Aplicações em ESG (Environmental, Social, Governance)
+
 - **Implementação**: Expansão do sistema para certificação e tokenização de métricas ESG
 - **Casos de uso**:
   - **Certificação de impacto ambiental**: Registro verificável de redução de emissões e práticas sustentáveis
@@ -127,4 +133,4 @@ Estas aplicações expandidas demonstram a versatilidade e adaptabilidade do sis
 
 A arquitetura modular do sistema permite adaptações específicas para cada contexto, mantendo a integridade do conceito central e maximizando o retorno sobre o investimento em pesquisa e desenvolvimento.
 
-*Nota: Este diagrama representa aplicações conceituais expandidas do sistema. A implementação específica pode variar conforme requisitos regulatórios, técnicos e de mercado de cada setor.*
+_Nota: Este diagrama representa aplicações conceituais expandidas do sistema. A implementação específica pode variar conforme requisitos regulatórios, técnicos e de mercado de cada setor._

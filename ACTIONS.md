@@ -3,6 +3,7 @@
 ## 1. Resolver problemas do Git
 
 ### Submodule GUARDRIVE_V1
+
 O diretório GUARDRIVE_V1 está sendo tratado como submodule, mas não está configurado corretamente:
 
 ```powershell
@@ -18,6 +19,7 @@ git submodule update
 ```
 
 ### Resolver problemas de final de linha
+
 Correção para o arquivo system-monitor/index.js:
 
 ```powershell
@@ -70,4 +72,3 @@ git push origin main
 ```
 
 Estas ações garantirão que o projeto esteja 100% atualizado, com todos os arquivos necessários sob controle de versão e configurados corretamente.
-

@@ -30,24 +30,28 @@ A presente invenção se aplica ao campo de sistemas embarcados veiculares para 
 Os sistemas atuais de monitoramento de cintos de segurança apresentam limitações significativas:
 
 3.1. **Sistemas Convencionais de Alerta**
+
 - Limitados a alertas sonoros e visuais internos ao veículo
 - Não oferecem verificação externa ou auditável
 - Facilmente burlados com adaptadores ou extensores
 - Não registram histórico de uso para análise posterior
 
-3.2. **Sistemas de Câmeras de Fiscalização**
+  3.2. **Sistemas de Câmeras de Fiscalização**
+
 - Dependem de visibilidade externa e condições de iluminação
 - Não detectam uso incorreto (posicionamento inadequado)
 - Não fornecem registro contínuo ou verificável
 - Exigem infraestrutura externa complexa e custosa
 
-3.3. **Sistemas de Telemetria Veicular**
+  3.3. **Sistemas de Telemetria Veicular**
+
 - Focados principalmente em localização e comportamento de direção
 - Não verificam especificamente o uso correto de cintos
 - Dados não são verificáveis externamente em tempo real
 - Falta de registro imutável para auditoria
 
-3.4. **Patentes e Publicações Relevantes**
+  3.4. **Patentes e Publicações Relevantes**
+
 - US10XXXXXX - "Vehicle Safety Belt Monitoring System" (2018)
   - Limitado a monitoramento interno sem verificação externa
 - EP30XXXXXX - "Smart Seatbelt System with Sensors" (2019)
@@ -291,27 +295,35 @@ O Selfbelt é um dispositivo adaptativo que se acopla ao sistema de cintos de se
 ## 8. Desenhos e Diagramas
 
 ### 8.1. Figura 1: Visão Geral do Sistema Selfbelt
+
 [Diagrama mostrando todos os componentes principais do sistema e suas interações]
 
 ### 8.2. Figura 2: Componentes do Hardware
+
 [Diagrama explodido mostrando todos os componentes físicos do dispositivo]
 
 ### 8.3. Figura 3: Arquitetura de Software
+
 [Diagrama de camadas mostrando a estrutura do software embarcado]
 
 ### 8.4. Figura 4: Fluxo de Dados e Verificação
+
 [Fluxograma detalhando o processo de coleta, processamento e verificação de dados]
 
 ### 8.5. Figura 5: Implementação Blockchain
+
 [Diagrama da arquitetura blockchain e processo de registro de dados]
 
 ### 8.6. Figura 6: Modos de Implementação
+
 [Ilustrações dos diferentes modos de implementação: retrofit e OEM]
 
 ### 8.7. Figura 7: Interface de Verificação
+
 [Mockup da interface de verificação para autoridades e gestores]
 
 ### 8.8. Figura 8: Mapa de Sensores
+
 [Diagrama detalhado da disposição e funcionamento dos sensores]
 
 ---
@@ -368,4 +380,4 @@ Os resultados após 12 meses incluíram aumento de 35% na eficiência da fiscali
 - Redução de riscos e custos de seguro
 - Incentivo a comportamentos seguros
 - Dados para treinamento e melh
-(Content truncated due to size limit. Use line ranges to read in chunks)
+  (Content truncated due to size limit. Use line ranges to read in chunks)

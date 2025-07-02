@@ -49,6 +49,7 @@
 A Figura 6 apresenta a interface de verificação para autoridades, gestores de frota e outros agentes autorizados, ilustrando o processo de verificação externa do status do dispositivo de segurança veicular.
 
 ### 6.1. Dispositivo de Verificação
+
 - **Hardware**: Smartphone, tablet ou dispositivo dedicado com câmera e capacidade de processamento
 - **Requisitos**:
   - Câmera com resolução mínima de 5MP para leitura confiável do código QR
@@ -62,6 +63,7 @@ A Figura 6 apresenta a interface de verificação para autoridades, gestores de 
   - Compatibilidade com múltiplas plataformas (iOS, Android, Windows)
 
 ### 6.2. Tela de Verificação
+
 - **Elementos da Interface**:
   - Status de verificação: indicação clara e visível (Verificado, Inválido, Expirado)
   - Identificação do veículo: placa ou outro identificador único
@@ -75,6 +77,7 @@ A Figura 6 apresenta a interface de verificação para autoridades, gestores de 
   - Opções para visualização detalhada ou resumida
 
 ### 6.3. Processo de Verificação
+
 - **Etapas**:
   1. **Escanear código QR**: Captura do código QR dinâmico exibido no dispositivo visual externo
   2. **Verificar assinatura digital**: Validação criptográfica da autenticidade dos dados
@@ -87,6 +90,7 @@ A Figura 6 apresenta a interface de verificação para autoridades, gestores de 
   - Registro de verificação (opcional, conforme configuração)
 
 ### 6.4. Níveis de Autorização
+
 - **Autoridade (Agentes de fiscalização, órgãos reguladores)**:
   - Acesso a dados completos do dispositivo e veículo
   - Visualização de histórico de conformidade
@@ -105,4 +109,4 @@ A Figura 6 apresenta a interface de verificação para autoridades, gestores de 
 
 A interface de verificação é projetada para ser intuitiva e eficiente, permitindo verificação rápida em campo ou remotamente. O sistema de autorização em camadas garante que apenas informações apropriadas sejam disponibilizadas para cada tipo de usuário, protegendo dados sensíveis enquanto permite verificação transparente do status de conformidade.
 
-*Nota: Este diagrama representa a interface conceitual de verificação. A implementação específica pode variar conforme requisitos regulatórios, plataforma de dispositivo e preferências do usuário.*
+_Nota: Este diagrama representa a interface conceitual de verificação. A implementação específica pode variar conforme requisitos regulatórios, plataforma de dispositivo e preferências do usuário._

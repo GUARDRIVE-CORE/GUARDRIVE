@@ -1,7 +1,9 @@
 # Wireframes e Protótipos - GuardDrive FleetShield
+
 ## Landing Page e Aplicativo Mobile
 
 ### Análise das Referências (Sem Parar)
+
 Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 
 1. **Interface Limpa e Moderna**
@@ -25,6 +27,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ## Wireframes da Landing Page GuardDrive FleetShield
 
 ### 1. Header/Hero Section
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [LOGO GuardDrive]                    [Login] [Demonstração] │
@@ -43,6 +46,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 2. Seção de Benefícios
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    POR QUE GUARDDRIVE?                      │
@@ -62,6 +66,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 3. Demonstração do Produto
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                  VEJA O SISTEMA EM AÇÃO                     │
@@ -82,6 +87,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 4. Casos de Uso
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    CASOS DE USO                             │
@@ -99,6 +105,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 5. Prova Social e Credibilidade
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                  TECNOLOGIA PATENTEADA                      │
@@ -115,6 +122,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 6. CTA Final
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │              PRONTO PARA REVOLUCIONAR SUA FROTA?           │
@@ -134,6 +142,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ## Wireframes do Aplicativo Mobile
 
 ### 1. Tela de Login/Onboarding
+
 ```
 ┌─────────────────┐
 │ [Logo GuardDrive]│
@@ -156,6 +165,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 2. Dashboard Principal
+
 ```
 ┌─────────────────┐
 │ Olá, João! 👋   │
@@ -181,6 +191,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 3. Monitoramento em Tempo Real
+
 ```
 ┌─────────────────┐
 │ ← VEÍCULO ABC123│
@@ -208,6 +219,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 4. Wallet ESG/Tokens
+
 ```
 ┌─────────────────┐
 │ ← CARTEIRA ESG  │
@@ -233,6 +245,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ```
 
 ### 5. Configurações e Perfil
+
 ```
 ┌─────────────────┐
 │ ← CONFIGURAÇÕES │
@@ -263,6 +276,7 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ## Especificações Técnicas de Design
 
 ### Paleta de Cores
+
 - **Primária**: #1E3A8A (Azul Profundo)
 - **Secundária**: #10B981 (Verde ESG)
 - **Accent**: #F59E0B (Âmbar/Alerta)
@@ -270,23 +284,27 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 - **Status**: #EF4444 (Erro), #22C55E (Sucesso)
 
 ### Tipografia
+
 - **Títulos**: Inter Bold, 24-32px
 - **Subtítulos**: Inter SemiBold, 18-20px
 - **Corpo**: Inter Regular, 14-16px
 - **Captions**: Inter Medium, 12px
 
 ### Componentes UI
+
 - **Botões**: Altura 48px, border-radius 8px
 - **Cards**: border-radius 12px, shadow-sm
 - **Inputs**: Altura 44px, border-radius 6px
 - **Ícones**: 24px padrão, 32px para destaque
 
 ### Responsividade
+
 - **Mobile**: 320px - 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: 1024px+
 
 ### Animações
+
 - **Transições**: 200ms ease-in-out
 - **Hover**: scale(1.02) + shadow
 - **Loading**: Skeleton screens
@@ -297,11 +315,13 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ## Fluxos de Usuário
 
 ### Landing Page
+
 1. **Visitante** → Hero Section → Benefícios → Demo → CTA
 2. **Interessado** → Formulário → Agendamento → Follow-up
 3. **Cliente** → Login → Dashboard
 
 ### Aplicativo
+
 1. **Onboarding** → Login → Tutorial → Dashboard
 2. **Monitoramento** → Lista Veículos → Detalhes → Ações
 3. **ESG** → Wallet → Histórico → Marketplace
@@ -310,9 +330,9 @@ Baseado nas imagens fornecidas, identifiquei os seguintes padrões de design:
 ---
 
 ## Próximos Passos
+
 1. Implementação do código React para landing page
 2. Desenvolvimento do aplicativo React Native
 3. Integração com APIs do sistema GuardDrive
 4. Testes de usabilidade e otimização
 5. Deploy e monitoramento de performance
-

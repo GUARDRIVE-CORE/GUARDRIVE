@@ -1,6 +1,7 @@
 # DOCUMENTO DE PATENTE - INPI BRASIL
 
 ## TÍTULO DA INVENÇÃO
+
 "SISTEMA INTEGRADO DE MONITORAMENTO E VERIFICAÇÃO EXTERNA DO USO DE CINTO DE SEGURANÇA COM CERTIFICAÇÃO BLOCKCHAIN"
 
 ## CAMPO DA INVENÇÃO
@@ -120,9 +121,10 @@
 [0049] a) Display QR dinâmico: exibe um código QR que é atualizado a cada 30 segundos, contendo informações criptografadas sobre o status atual do cinto (correto, incorreto, não utilizado), timestamp, identificador único do dispositivo e assinatura digital para verificação de autenticidade.
 
 [0050] b) Indicadores LED RGB: mostram o status visualmente através de cores:
-   - Verde: uso correto do cinto
-   - Amarelo: uso detectado mas potencialmente incorreto
-   - Vermelho: não uso ou uso incorreto do cinto
+
+- Verde: uso correto do cinto
+- Amarelo: uso detectado mas potencialmente incorreto
+- Vermelho: não uso ou uso incorreto do cinto
 
 [0051] c) Invólucro resistente: protege os componentes contra condições climáticas adversas e tentativas de adulteração, com classificação IP67.
 
@@ -137,11 +139,12 @@
 [0055] a) Os dados de uso são assinados digitalmente pelo microcontrolador seguro, garantindo sua autenticidade e integridade.
 
 [0056] b) As informações são registradas em uma blockchain privada (Hyperledger Besu) com:
-   - Timestamp preciso
-   - Geolocalização (quando disponível)
-   - Status do cinto
-   - Identificadores do veículo e dispositivo
-   - Assinatura digital
+
+- Timestamp preciso
+- Geolocalização (quando disponível)
+- Status do cinto
+- Identificadores do veículo e dispositivo
+- Assinatura digital
 
 [0057] c) Smart contracts automatizam a verificação de conformidade, gerando alertas e relatórios quando necessário.
 
@@ -178,10 +181,11 @@
 [0071] b) OEM: integração direta na fabricação do veículo, com componentes embutidos no sistema de cintos original, comunicação direta com sistemas do veículo, e design otimizado e personalizado para cada modelo.
 
 [0072] c) Versões do Produto:
-   - Standard: funcionalidades básicas para uso individual
-   - Pro: recursos avançados para frotas comerciais
-   - Enterprise: solução completa para grandes frotas
-   - Gov: versão especializada para órgãos públicos e fiscalização
+
+- Standard: funcionalidades básicas para uso individual
+- Pro: recursos avançados para frotas comerciais
+- Enterprise: solução completa para grandes frotas
+- Gov: versão especializada para órgãos públicos e fiscalização
 
 ### Aplicações e Benefícios
 

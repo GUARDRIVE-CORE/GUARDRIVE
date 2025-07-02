@@ -1,14 +1,14 @@
-import React from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
-import { colors, borderRadius, shadows, spacing } from '../styles/theme';
+import React from "react";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { colors, borderRadius, shadows, spacing } from "../styles/theme";
 
 const Card = ({
   children,
   style,
   onPress,
-  variant = 'default',
-  padding = 'default',
-  shadow = 'md',
+  variant = "default",
+  padding = "default",
+  shadow = "md",
   ...props
 }) => {
   const getCardStyle = () => {
@@ -24,13 +24,13 @@ const Card = ({
 
     // Aplicar padding
     switch (padding) {
-      case 'none':
+      case "none":
         baseStyle.padding = 0;
         break;
-      case 'small':
+      case "small":
         baseStyle.padding = spacing.sm;
         break;
-      case 'large':
+      case "large":
         baseStyle.padding = spacing.xl;
         break;
       default:
@@ -39,30 +39,30 @@ const Card = ({
 
     // Variantes de estilo
     switch (variant) {
-      case 'outlined':
+      case "outlined":
         baseStyle.borderWidth = 1;
         baseStyle.borderColor = colors.gray200;
         break;
-      case 'elevated':
+      case "elevated":
         Object.assign(baseStyle, shadows.lg);
         break;
-      case 'primary':
+      case "primary":
         baseStyle.backgroundColor = colors.primary;
         break;
-      case 'secondary':
+      case "secondary":
         baseStyle.backgroundColor = colors.secondary;
         break;
-      case 'success':
+      case "success":
         baseStyle.backgroundColor = colors.success;
         break;
-      case 'warning':
+      case "warning":
         baseStyle.backgroundColor = colors.warning;
         break;
-      case 'error':
+      case "error":
         baseStyle.backgroundColor = colors.error;
         break;
-      case 'transparent':
-        baseStyle.backgroundColor = 'transparent';
+      case "transparent":
+        baseStyle.backgroundColor = "transparent";
         baseStyle.shadowOpacity = 0;
         baseStyle.elevation = 0;
         break;
@@ -98,23 +98,17 @@ const Card = ({
 
 // Componente CardHeader para cabeçalhos de cards
 export const CardHeader = ({ children, style }) => (
-  <View style={[styles.header, style]}>
-    {children}
-  </View>
+  <View style={[styles.header, style]}>{children}</View>
 );
 
 // Componente CardBody para conteúdo principal
 export const CardBody = ({ children, style }) => (
-  <View style={[styles.body, style]}>
-    {children}
-  </View>
+  <View style={[styles.body, style]}>{children}</View>
 );
 
 // Componente CardFooter para rodapés de cards
 export const CardFooter = ({ children, style }) => (
-  <View style={[styles.footer, style]}>
-    {children}
-  </View>
+  <View style={[styles.footer, style]}>{children}</View>
 );
 
 const styles = StyleSheet.create({
@@ -130,4 +124,3 @@ const styles = StyleSheet.create({
 });
 
 export default Card;
-

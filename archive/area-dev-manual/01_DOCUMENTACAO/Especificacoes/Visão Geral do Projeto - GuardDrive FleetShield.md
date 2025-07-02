@@ -1,6 +1,7 @@
 # Visão Geral do Projeto - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield - Sistema Digital Completo
 - **Versão**: 1.0
 - **Data**: 02/06/2025
@@ -9,16 +10,19 @@
 ## 1. Opções de Nome
 
 ### 1.1. GuardDrive FleetShield
+
 **Significado**: Mantém o nome atual, que combina "Guard" (proteção) com "Drive" (condução), enfatizando a proteção durante a condução veicular. "FleetShield" adiciona a dimensão de proteção para frotas, criando um escudo de segurança digital e físico.
 
 **Justificativa**: Mantém a continuidade da marca já estabelecida, facilitando a transição para o sistema digital completo. O nome já carrega reconhecimento no mercado e alinha-se perfeitamente com a proposta de valor.
 
 ### 1.2. VeritasFleet
+
 **Significado**: Combina "Veritas" (verdade em latim) com "Fleet" (frota), simbolizando a verificação confiável e auditável da segurança em frotas veiculares.
 
 **Justificativa**: Enfatiza o aspecto de verificação externa confiável e dados imutáveis, destacando a transparência e confiabilidade como diferenciais. O termo "Veritas" traz uma conotação de autoridade e credibilidade.
 
 ### 1.3. SafeChainMobility
+
 **Significado**: Une "Safe" (seguro), "Chain" (corrente/blockchain) e "Mobility" (mobilidade), representando a intersecção entre segurança veicular, tecnologia blockchain e mobilidade inteligente.
 
 **Justificativa**: Destaca explicitamente a tecnologia blockchain como diferencial, posicionando o produto na interseção de três tendências importantes: segurança, blockchain e mobilidade conectada.

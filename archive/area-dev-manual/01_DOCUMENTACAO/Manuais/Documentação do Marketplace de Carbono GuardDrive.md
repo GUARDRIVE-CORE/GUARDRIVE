@@ -33,6 +33,7 @@ O Marketplace de Carbono GuardDrive é estruturado em quatro camadas principais:
 ### 1. Geração de Dados
 
 Os dispositivos Selfbelt coletam dados de telemetria veicular, incluindo:
+
 - Uso correto de cintos de segurança
 - Padrões de condução (velocidade, aceleração, frenagem)
 - Eficiência de combustível
@@ -41,6 +42,7 @@ Os dispositivos Selfbelt coletam dados de telemetria veicular, incluindo:
 ### 2. Verificação e Processamento
 
 Os dados são processados localmente e verificados através de:
+
 - Algoritmos de IA embarcada para detecção de padrões
 - Fusão de dados de múltiplos sensores
 - Comparação com linhas de base estabelecidas
@@ -51,16 +53,19 @@ Os dados são processados localmente e verificados através de:
 O sistema calcula o impacto ESG com base em:
 
 **Impacto Ambiental (E)**
+
 - Redução de emissões de CO₂: 32% em média
 - Economia de combustível: 28% em média
 - Redução de desgaste de componentes: 25% em média
 
 **Impacto Social (S)**
+
 - Redução de fatalidades: potencial de 45% em acidentes
 - Diminuição de lesões: 23% em média
 - Aumento de conscientização: 78% em uso correto de cintos
 
 **Impacto de Governança (G)**
+
 - Conformidade regulatória: 95% de redução em multas
 - Transparência: 100% de rastreabilidade de dados
 - Gestão de risco: 85% de melhoria em identificação de riscos
@@ -68,6 +73,7 @@ O sistema calcula o impacto ESG com base em:
 ### 4. Emissão de Tokens
 
 O smart contract CarbonMint.sol emite tokens ESG com as seguintes características:
+
 - Padrão ERC-1155 para múltiplos tipos de tokens
 - Metadados completos incluindo origem, impacto e verificação
 - Assinatura criptográfica vinculando dados originais ao token
@@ -76,6 +82,7 @@ O smart contract CarbonMint.sol emite tokens ESG com as seguintes característic
 ### 5. Listagem no Marketplace
 
 Os tokens são listados no Marketplace GuardDrive com:
+
 - Informações detalhadas sobre origem e impacto
 - Certificações e verificações aplicáveis
 - Preço sugerido baseado em qualidade e demanda
@@ -84,6 +91,7 @@ Os tokens são listados no Marketplace GuardDrive com:
 ### 6. Comercialização
 
 Os tokens podem ser comercializados através de:
+
 - Venda direta entre partes
 - Leilões programados
 - Contratos de compra futura
@@ -92,6 +100,7 @@ Os tokens podem ser comercializados através de:
 ### 7. Aposentadoria (Retirement)
 
 Os tokens podem ser aposentados (queimados) para:
+
 - Compensação de emissões corporativas
 - Cumprimento de metas ESG
 - Relatórios de sustentabilidade
@@ -102,16 +111,19 @@ Os tokens podem ser aposentados (queimados) para:
 O Marketplace GuardDrive integra-se com os principais padrões e registros de carbono:
 
 ### Verra (VCS)
+
 - Mapeamento de metodologias compatíveis
 - Processo de conversão de tokens para créditos VCU
 - Rastreabilidade bidirecional entre sistemas
 
 ### Gold Standard
+
 - Alinhamento com requisitos de adicionalidade
 - Processo de certificação e verificação
 - Conversão para créditos Gold Standard
 
 ### Registros Nacionais
+
 - Integração com sistemas de registro nacionais
 - Conformidade com regulamentações locais
 - Conversão para créditos regulados quando aplicável
@@ -234,31 +246,37 @@ O sistema garante proteção de dados em conformidade com regulamentações glob
 ## Benefícios para Stakeholders
 
 ### Para Usuários de Veículos
+
 - Recompensas por comportamentos seguros
 - Redução de prêmios de seguro
 - Contribuição verificável para sustentabilidade
 
 ### Para Gestores de Frotas
+
 - Redução de custos operacionais
 - Melhoria de segurança e conformidade
 - Geração de receita adicional via tokens ESG
 
 ### Para Fabricantes de Veículos
+
 - Diferenciação de produto
 - Cumprimento de requisitos regulatórios
 - Dados valiosos para P&D
 
 ### Para Seguradoras
+
 - Modelos de risco mais precisos
 - Redução de sinistros
 - Novos produtos baseados em uso real
 
 ### Para Governos e Cidades
+
 - Melhoria de segurança viária
 - Dados para planejamento urbano
 - Redução de custos sociais de acidentes
 
 ### Para Compradores de Créditos
+
 - Créditos de carbono de alta qualidade e verificáveis
 - Rastreabilidade completa e transparência
 - Impacto social positivo além da redução de carbono
@@ -266,21 +284,25 @@ O sistema garante proteção de dados em conformidade com regulamentações glob
 ## Roadmap de Desenvolvimento
 
 ### Fase 1: Lançamento Inicial (Concluída)
+
 - Implementação dos smart contracts core
 - Desenvolvimento da infraestrutura de verificação
 - Testes piloto com frotas selecionadas
 
 ### Fase 2: Expansão de Mercado (Atual)
+
 - Integração com mercados externos (Verra, Gold Standard)
 - Ampliação de parcerias institucionais
 - Desenvolvimento de ferramentas avançadas de análise
 
 ### Fase 3: Escala Global (Próxima)
+
 - Expansão para múltiplas regiões e regulamentações
 - Desenvolvimento de novos tipos de tokens e impactos
 - Integração com sistemas de cidades inteligentes
 
 ### Fase 4: Ecossistema Completo (Futura)
+
 - Expansão para outros dispositivos de segurança
 - Marketplace totalmente descentralizado
 - Integração com sistemas financeiros tradicionais
@@ -293,4 +315,4 @@ A combinação de hardware avançado (Selfbelt), software inteligente (IA embarc
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-MKT-CARBON-2025-001*
+_Metadata de Rastreabilidade Simbólica: GD-MKT-CARBON-2025-001_

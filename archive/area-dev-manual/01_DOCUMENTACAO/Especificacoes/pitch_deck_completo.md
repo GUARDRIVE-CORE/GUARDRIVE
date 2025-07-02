@@ -3,12 +3,14 @@
 ## Estrutura do Pitch Deck para Investidores
 
 ### Slide 1: Capa
+
 - **Título:** GuardDrive | SealSafe Selfbelt
 - **Subtítulo:** A Nova Infraestrutura Cognitiva para Segurança Veicular e Governança de Dados
 - **Visual:** Logo GuardDrive e imagem do SealSafe Selfbelt instalado em veículo
 - **Rodapé:** Confidencial - 2025
 
 ### Slide 2: O Problema
+
 - **Título:** O Desafio da Segurança Veicular
 - **Pontos-chave:**
   - 1.3 milhão de mortes anuais em acidentes de trânsito (OMS)
@@ -19,6 +21,7 @@
 - **Visual:** Gráfico de fatalidades e estatísticas de uso incorreto de cintos
 
 ### Slide 3: A Solução
+
 - **Título:** SealSafe Selfbelt: Segurança Verificável
 - **Pontos-chave:**
   - Sistema adaptativo para monitoramento, verificação e registro do uso de cintos
@@ -29,6 +32,7 @@
 - **Visual:** Diagrama simplificado do sistema SealSafe Selfbelt
 
 ### Slide 4: O Produto
+
 - **Título:** Linha de Produtos SealSafe
 - **Pontos-chave:**
   - **Selfbelt Standard:** Uso individual
@@ -38,6 +42,7 @@
 - **Visual:** Imagens dos produtos com principais características
 
 ### Slide 5: Tecnologia
+
 - **Título:** Tecnologia Inovadora
 - **Pontos-chave:**
   - Hardware avançado com múltiplos sensores
@@ -48,6 +53,7 @@
 - **Visual:** Diagrama técnico simplificado com componentes principais
 
 ### Slide 6: Validação
+
 - **Título:** Resultados Comprovados
 - **Pontos-chave:**
   - Implementação em frota de 200 táxis:
@@ -59,6 +65,7 @@
 - **Visual:** Gráficos de resultados e logos de parceiros de validação
 
 ### Slide 7: Impacto ESG
+
 - **Título:** Impacto ESG Mensurável
 - **Pontos-chave:**
   - **Ambiental:** Redução de 32% em emissões de CO₂
@@ -69,6 +76,7 @@
 - **Visual:** Métricas ESG e ícones dos ODS da ONU
 
 ### Slide 8: Mercado
+
 - **Título:** Mercado Global
 - **Pontos-chave:**
   - Mercado global de segurança veicular: $XX bilhões (2025)
@@ -81,6 +89,7 @@
 - **Visual:** Gráfico de tamanho de mercado e crescimento
 
 ### Slide 9: Modelo de Negócios
+
 - **Título:** Modelo de Negócios
 - **Pontos-chave:**
   - **Hardware:** Venda direta e licenciamento para OEMs
@@ -91,6 +100,7 @@
 - **Visual:** Diagrama de fluxo de receita e projeções financeiras
 
 ### Slide 10: Vantagens Competitivas
+
 - **Título:** Por que GuardDrive?
 - **Pontos-chave:**
   - Única solução com verificação externa em tempo real
@@ -101,6 +111,7 @@
 - **Visual:** Matriz comparativa com concorrentes
 
 ### Slide 11: Equipe
+
 - **Título:** Nossa Equipe
 - **Pontos-chave:**
   - Fundadores com experiência em segurança veicular, blockchain e IA
@@ -109,6 +120,7 @@
 - **Visual:** Fotos e mini-bios dos principais membros da equipe
 
 ### Slide 12: Roadmap
+
 - **Título:** Visão de Futuro
 - **Pontos-chave:**
   - **2025:** Lançamento comercial do SealSafe Selfbelt
@@ -119,6 +131,7 @@
 - **Visual:** Timeline visual com marcos principais
 
 ### Slide 13: Oportunidade de Investimento
+
 - **Título:** Oportunidade de Investimento
 - **Pontos-chave:**
   - Captação: R$ XX milhões
@@ -132,6 +145,7 @@
 - **Visual:** Gráfico de uso dos recursos e projeções financeiras
 
 ### Slide 14: Call to Action
+
 - **Título:** Transformando a Segurança Veicular
 - **Pontos-chave:**
   - Resumo do valor e impacto
@@ -140,6 +154,7 @@
 - **Visual:** Imagem impactante de segurança veicular com logo GuardDrive
 
 ### Slide 15: Apêndice
+
 - Slides adicionais com informações detalhadas sobre:
   - Tecnologia
   - Patentes
@@ -170,4 +185,4 @@
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-PITCH-2025-001*
+_Metadata de Rastreabilidade Simbólica: GD-PITCH-2025-001_

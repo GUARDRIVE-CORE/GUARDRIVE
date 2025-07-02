@@ -1,63 +1,69 @@
-import React from 'react';
+import React from "react";
 import {
   TouchableOpacity,
   Text,
   ActivityIndicator,
   StyleSheet,
   View,
-} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import { colors, typography, spacing, borderRadius, shadows } from '../styles/theme';
+} from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+import {
+  colors,
+  typography,
+  spacing,
+  borderRadius,
+  shadows,
+} from "../styles/theme";
 
 const Button = ({
   title,
   onPress,
-  variant = 'primary',
-  size = 'medium',
+  variant = "primary",
+  size = "medium",
   disabled = false,
   loading = false,
   icon,
-  iconPosition = 'left',
+  iconPosition = "left",
   style,
   textStyle,
   ...props
 }) => {
   const getButtonStyle = () => {
     const baseStyle = {
-      height: size === 'small' ? 40 : size === 'large' ? 56 : 48,
+      height: size === "small" ? 40 : size === "large" ? 56 : 48,
       borderRadius: borderRadius.md,
       paddingHorizontal: spacing.lg,
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'row',
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "row",
     };
 
     switch (variant) {
-      case 'primary':
+      case "primary":
         return {
           ...baseStyle,
           backgroundColor: colors.primary,
           ...shadows.md,
         };
-      case 'secondary':
+      case "secondary":
         return {
           ...baseStyle,
           backgroundColor: colors.secondary,
           ...shadows.md,
         };
-      case 'outline':
+      case "outline":
         return {
           ...baseStyle,
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
           borderWidth: 2,
           borderColor: colors.primary,
         };
-      case 'ghost':
+      case "ghost":
         return {
           ...baseStyle,
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
         };
-      case 'danger':
+      case "danger":
         return {
           ...baseStyle,
           backgroundColor: colors.error,
@@ -70,22 +76,26 @@ const Button = ({
 
   const getTextStyle = () => {
     const baseTextStyle = {
-      fontSize: size === 'small' ? typography.fontSize.sm : 
-                size === 'large' ? typography.fontSize.lg : typography.fontSize.base,
+      fontSize:
+        size === "small"
+          ? typography.fontSize.sm
+          : size === "large"
+            ? typography.fontSize.lg
+            : typography.fontSize.base,
       fontFamily: typography.fontFamily.semiBold,
-      textAlign: 'center',
+      textAlign: "center",
     };
 
     switch (variant) {
-      case 'primary':
-      case 'secondary':
-      case 'danger':
+      case "primary":
+      case "secondary":
+      case "danger":
         return {
           ...baseTextStyle,
           color: colors.white,
         };
-      case 'outline':
-      case 'ghost':
+      case "outline":
+      case "ghost":
         return {
           ...baseTextStyle,
           color: colors.primary,
@@ -100,35 +110,31 @@ const Button = ({
       return (
         <ActivityIndicator
           size="small"
-          color={variant === 'outline' || variant === 'ghost' ? colors.primary : colors.white}
+          color={
+            variant === "outline" || variant === "ghost"
+              ? colors.primary
+              : colors.white
+          }
         />
       );
     }
 
     return (
       <View style={styles.content}>
-        {icon && iconPosition === 'left' && (
-          <View style={[styles.icon, { marginRight: spacing.sm }]}>
-            {icon}
-          </View>
+        {icon && iconPosition === "left" && (
+          <View style={[styles.icon, { marginRight: spacing.sm }]}>{icon}</View>
         )}
         <Text style={[getTextStyle(), textStyle]}>{title}</Text>
-        {icon && iconPosition === 'right' && (
-          <View style={[styles.icon, { marginLeft: spacing.sm }]}>
-            {icon}
-          </View>
+        {icon && iconPosition === "right" && (
+          <View style={[styles.icon, { marginLeft: spacing.sm }]}>{icon}</View>
         )}
       </View>
     );
   };
 
-  const buttonStyle = [
-    getButtonStyle(),
-    disabled && styles.disabled,
-    style,
-  ];
+  const buttonStyle = [getButtonStyle(), disabled && styles.disabled, style];
 
-  if (variant === 'primary' && !disabled) {
+  if (variant === "primary" && !disabled) {
     return (
       <TouchableOpacity
         onPress={onPress}
@@ -148,7 +154,7 @@ const Button = ({
     );
   }
 
-  if (variant === 'secondary' && !disabled) {
+  if (variant === "secondary" && !disabled) {
     return (
       <TouchableOpacity
         onPress={onPress}
@@ -183,13 +189,13 @@ const Button = ({
 
 const styles = StyleSheet.create({
   content: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
   },
   icon: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   disabled: {
     opacity: 0.6,
@@ -197,4 +203,3 @@ const styles = StyleSheet.create({
 });
 
 export default Button;
-

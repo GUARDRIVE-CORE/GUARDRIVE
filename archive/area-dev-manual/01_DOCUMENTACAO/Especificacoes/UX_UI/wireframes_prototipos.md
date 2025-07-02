@@ -1,6 +1,7 @@
 # Wireframes e Protótipos - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield - Web e Mobile
 - **Versão**: 1.0
 - **Data**: 08/06/2025
@@ -272,5 +273,6 @@
 │  │                         │  │  Esqueceu sua senha?        │  │
 │  │                         │  │                             │  │
 │  └─────────────────────────┘  └─────────────────────────────┘  │
-│                                                
+│
 (Content truncated due to size limit. Use line ranges to read in chunks)
+```

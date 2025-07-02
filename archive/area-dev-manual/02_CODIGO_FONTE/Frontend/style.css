@@ -1,13 +1,13 @@
 /* GuardDrive Website Styles */
 
 :root {
-  --primary-blue: #0055A4;
-  --secondary-blue: #00A0E3;
-  --primary-green: #00A878;
-  --alert-orange: #FF5E1F;
+  --primary-blue: #0055a4;
+  --secondary-blue: #00a0e3;
+  --primary-green: #00a878;
+  --alert-orange: #ff5e1f;
   --dark-gray: #333333;
-  --light-gray: #F5F5F5;
-  --white: #FFFFFF;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
   --black: #000000;
   --transition-speed: 0.3s;
 }
@@ -19,13 +19,18 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--dark-gray);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--primary-blue);
@@ -471,7 +476,7 @@ header {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-textarea {
@@ -636,7 +641,12 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 1;
 }
 
@@ -645,18 +655,18 @@ footer {
   .hero-content {
     width: 60%;
   }
-  
+
   .hero-image {
     width: 40%;
   }
-  
+
   .product-grid,
   .esg-cards,
   .partners-grid,
   .media-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footer-col {
     width: 45%;
     margin-bottom: 30px;
@@ -667,7 +677,7 @@ footer {
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .nav-menu {
     position: fixed;
     top: 80px;
@@ -680,25 +690,25 @@ footer {
     padding-top: 50px;
     transition: left var(--transition-speed);
   }
-  
+
   .nav-menu.active {
     left: 0;
   }
-  
+
   .nav-item {
     margin: 0 0 30px 0;
   }
-  
+
   .hero {
     height: auto;
     padding: 150px 0 100px;
   }
-  
+
   .hero-content {
     width: 100%;
     text-align: center;
   }
-  
+
   .hero-image {
     position: relative;
     width: 100%;
@@ -706,14 +716,14 @@ footer {
     transform: none;
     top: auto;
   }
-  
+
   .about-content,
   .tech-content,
   .patent-content,
   .contact-content {
     flex-direction: column;
   }
-  
+
   .about-text,
   .tech-text,
   .patent-text,
@@ -723,7 +733,7 @@ footer {
     padding: 0;
     margin-bottom: 30px;
   }
-  
+
   .about-image,
   .tech-image,
   .patent-image {
@@ -738,23 +748,23 @@ footer {
   .media-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-col {
     width: 100%;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .banner {
     height: 300px;
   }
-  
+
   .banner-title {
     font-size: 2rem;
   }

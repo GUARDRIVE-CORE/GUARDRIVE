@@ -18,6 +18,7 @@ O aplicativo móvel GuardDrive oferece uma interface intuitiva e poderosa para g
 ## 🛠️ Tecnologias Utilizadas
 
 ### Framework e Bibliotecas
+
 - **React Native 0.72**: Framework principal
 - **React Navigation 6**: Navegação entre telas
 - **React Query**: Gerenciamento de estado e cache
@@ -26,6 +27,7 @@ O aplicativo móvel GuardDrive oferece uma interface intuitiva e poderosa para g
 - **Yup**: Validação de esquemas
 
 ### UI/UX
+
 - **React Native Vector Icons**: Ícones consistentes
 - **React Native Linear Gradient**: Gradientes suaves
 - **React Native Chart Kit**: Gráficos e visualizações
@@ -33,6 +35,7 @@ O aplicativo móvel GuardDrive oferece uma interface intuitiva e poderosa para g
 - **React Native Shimmer**: Loading states elegantes
 
 ### Funcionalidades Nativas
+
 - **React Native Maps**: Mapas e geolocalização
 - **React Native Camera**: Scanner QR e captura
 - **React Native Biometrics**: Autenticação biométrica
@@ -40,6 +43,7 @@ O aplicativo móvel GuardDrive oferece uma interface intuitiva e poderosa para g
 - **React Native Bluetooth**: Conectividade IoT
 
 ### Desenvolvimento
+
 - **TypeScript**: Tipagem estática (configuração futura)
 - **ESLint**: Linting de código
 - **Prettier**: Formatação automática
@@ -75,6 +79,7 @@ mobile-app/
 ## 🎨 Design System
 
 ### Paleta de Cores
+
 - **Primária**: #1E3A8A (Azul Profundo)
 - **Secundária**: #10B981 (Verde ESG)
 - **Accent**: #F59E0B (Âmbar/Alerta)
@@ -83,11 +88,13 @@ mobile-app/
 - **Neutros**: Escala de cinzas
 
 ### Tipografia
+
 - **Fonte**: Inter (sistema)
 - **Pesos**: Regular, Medium, SemiBold, Bold, ExtraBold
 - **Tamanhos**: 12px a 48px (escala responsiva)
 
 ### Componentes
+
 - **Botões**: 3 tamanhos, 5 variantes
 - **Cards**: Múltiplas variações com sombras
 - **Inputs**: Estados focado, erro, desabilitado
@@ -96,6 +103,7 @@ mobile-app/
 ## 🚀 Instalação e Execução
 
 ### Pré-requisitos
+
 - Node.js 16+
 - React Native CLI
 - Android Studio (para Android)
@@ -105,6 +113,7 @@ mobile-app/
 ### Configuração do Ambiente
 
 #### Android
+
 ```bash
 # Instalar Android Studio
 # Configurar ANDROID_HOME
@@ -116,6 +125,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
 #### iOS (macOS apenas)
+
 ```bash
 # Instalar Xcode via App Store
 # Instalar CocoaPods
@@ -123,6 +133,7 @@ sudo gem install cocoapods
 ```
 
 ### Instalação
+
 ```bash
 # Clone o repositório
 git clone https://github.com/guarddrive/mobile-app.git
@@ -140,6 +151,7 @@ cd ios && pod install && cd ..
 ### Execução
 
 #### Android
+
 ```bash
 # Inicie o Metro bundler
 npm start
@@ -152,6 +164,7 @@ npx react-native run-android
 ```
 
 #### iOS
+
 ```bash
 # Inicie o Metro bundler
 npm start
@@ -166,6 +179,7 @@ npx react-native run-ios
 ### Build para Produção
 
 #### Android
+
 ```bash
 # Gerar APK de release
 npm run build:android
@@ -174,6 +188,7 @@ npm run build:android
 ```
 
 #### iOS
+
 ```bash
 # Gerar arquivo para App Store
 npm run build:ios
@@ -184,36 +199,42 @@ npm run build:ios
 ## 📱 Funcionalidades Principais
 
 ### 1. Autenticação
+
 - Login com email/senha
 - Autenticação biométrica (Touch ID/Face ID)
 - Recuperação de senha
 - Logout seguro
 
 ### 2. Dashboard
+
 - Visão geral da frota
 - Métricas ESG em tempo real
 - Gráficos de performance
 - Ações rápidas
 
 ### 3. Monitoramento de Frota
+
 - Lista de veículos
 - Status em tempo real
 - Localização no mapa
 - Histórico de viagens
 
 ### 4. Gestão ESG
+
 - Métricas de sustentabilidade
 - Cálculo de CO₂ evitado
 - Score ESG
 - Relatórios de conformidade
 
 ### 5. Carteira de Tokens
+
 - Saldo de tokens ESG
 - Histórico de transações
 - Marketplace de créditos
 - Conversão de valores
 
 ### 6. Alertas e Notificações
+
 - Alertas de segurança
 - Notificações de manutenção
 - Updates de conformidade
@@ -222,6 +243,7 @@ npm run build:ios
 ## 🔧 Configuração
 
 ### Variáveis de Ambiente
+
 Crie um arquivo `.env` na raiz:
 
 ```env
@@ -232,6 +254,7 @@ SENTRY_DSN=your_sentry_dsn
 ```
 
 ### Configuração de Push Notifications
+
 ```javascript
 // android/app/src/main/res/values/strings.xml
 <string name="app_name">GuardDrive</string>
@@ -247,6 +270,7 @@ SENTRY_DSN=your_sentry_dsn
 ### Permissões
 
 #### Android (android/app/src/main/AndroidManifest.xml)
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -257,6 +281,7 @@ SENTRY_DSN=your_sentry_dsn
 ```
 
 #### iOS (ios/GuardDrive/Info.plist)
+
 ```xml
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>Este app precisa de acesso à localização para monitorar a frota</string>
@@ -269,12 +294,14 @@ SENTRY_DSN=your_sentry_dsn
 ## 📊 Performance e Otimização
 
 ### Métricas de Performance
+
 - **Tempo de inicialização**: < 3s
 - **Navegação entre telas**: < 500ms
 - **Carregamento de dados**: < 2s
 - **Uso de memória**: < 150MB
 
 ### Otimizações Implementadas
+
 - **Lazy Loading**: Componentes carregados sob demanda
 - **Image Caching**: Cache inteligente de imagens
 - **Data Caching**: React Query para cache de dados
@@ -283,6 +310,7 @@ SENTRY_DSN=your_sentry_dsn
 ## 🔒 Segurança
 
 ### Medidas de Segurança
+
 - **Criptografia**: Dados sensíveis criptografados
 - **Keychain/Keystore**: Armazenamento seguro de tokens
 - **Certificate Pinning**: Validação de certificados SSL
@@ -290,6 +318,7 @@ SENTRY_DSN=your_sentry_dsn
 - **Session Management**: Gerenciamento seguro de sessões
 
 ### Compliance
+
 - **LGPD**: Conformidade com lei de proteção de dados
 - **GDPR**: Compliance europeu
 - **SOC 2**: Padrões de segurança empresarial
@@ -297,6 +326,7 @@ SENTRY_DSN=your_sentry_dsn
 ## 🧪 Testes
 
 ### Tipos de Teste
+
 ```bash
 # Testes unitários
 npm test
@@ -312,6 +342,7 @@ npm run test:coverage
 ```
 
 ### Ferramentas de Teste
+
 - **Jest**: Framework de testes
 - **React Native Testing Library**: Testes de componentes
 - **Detox**: Testes end-to-end
@@ -320,12 +351,14 @@ npm run test:coverage
 ## 📈 Analytics e Monitoramento
 
 ### Ferramentas Integradas
+
 - **Firebase Analytics**: Métricas de uso
 - **Crashlytics**: Relatórios de crash
 - **Sentry**: Monitoramento de erros
 - **Performance Monitoring**: Métricas de performance
 
 ### Métricas Coletadas
+
 - Tempo de uso por tela
 - Jornadas de usuário
 - Crashes e erros
@@ -334,6 +367,7 @@ npm run test:coverage
 ## 🚀 Deploy e Distribuição
 
 ### App Store (iOS)
+
 ```bash
 # Build para App Store
 xcodebuild -workspace ios/GuardDrive.xcworkspace \
@@ -345,6 +379,7 @@ xcodebuild -workspace ios/GuardDrive.xcworkspace \
 ```
 
 ### Google Play Store (Android)
+
 ```bash
 # Gerar AAB para Play Store
 cd android
@@ -352,6 +387,7 @@ cd android
 ```
 
 ### Distribuição Beta
+
 - **TestFlight** (iOS): Distribuição beta para iOS
 - **Firebase App Distribution**: Distribuição multiplataforma
 - **Internal Testing**: Testes internos da equipe
@@ -359,12 +395,14 @@ cd android
 ## 🤝 Contribuição
 
 ### Padrões de Código
+
 - Use ESLint e Prettier
 - Siga convenções de nomenclatura React Native
 - Documente componentes complexos
 - Escreva testes para novas funcionalidades
 
 ### Fluxo de Desenvolvimento
+
 1. Fork o repositório
 2. Crie uma branch para sua feature
 3. Desenvolva e teste localmente
@@ -373,6 +411,7 @@ cd android
 6. Abra um Pull Request
 
 ### Code Review
+
 - Todas as mudanças passam por code review
 - Testes automatizados devem passar
 - Performance deve ser mantida
@@ -381,12 +420,14 @@ cd android
 ## 📞 Suporte
 
 ### Canais de Suporte
+
 - **Email**: mobile@guarddrive.com
 - **Documentação**: [docs.guarddrive.com/mobile](https://docs.guarddrive.com/mobile)
 - **Issues**: [GitHub Issues](https://github.com/guarddrive/mobile-app/issues)
 - **Discord**: [Comunidade GuardDrive](https://discord.gg/guarddrive)
 
 ### FAQ
+
 **P: O app funciona offline?**
 R: Sim, funcionalidades básicas funcionam offline com sincronização automática.
 
@@ -403,18 +444,21 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 ## 🗺️ Roadmap
 
 ### Versão 1.1 (Q2 2024)
+
 - [ ] Modo offline completo
 - [ ] Widget para tela inicial
 - [ ] Integração com Apple CarPlay/Android Auto
 - [ ] Relatórios personalizáveis
 
 ### Versão 1.2 (Q3 2024)
+
 - [ ] Realidade aumentada para manutenção
 - [ ] IA preditiva para manutenção
 - [ ] Integração com assistentes de voz
 - [ ] Marketplace de peças
 
 ### Versão 2.0 (Q4 2024)
+
 - [ ] Plataforma multi-tenant
 - [ ] API pública para integrações
 - [ ] Dashboard web sincronizado
@@ -423,4 +467,3 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 ---
 
 **GuardDrive Mobile Team** - Revolucionando a gestão de frotas na palma da sua mão.
-

@@ -69,6 +69,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0018] O dispositivo Selfbelt utiliza um microcontrolador ESP32-S3 como unidade central de processamento, escolhido por sua capacidade de processamento, baixo consumo energético e recursos de segurança integrados, conforme ilustrado na Figura 2.
 
 [0019] O sistema inclui os seguintes sensores primários:
+
 - Sensor de Pressão (resistivo): localizado na fivela do cinto, com precisão de 99.9% e monitoramento contínuo
 - Sensor de Tensão (piezoelétrico): localizado na correia do cinto, com precisão de 98% e frequência de 1 Hz
 - Sensor de Posicionamento (infravermelho): localizado na correia do cinto, com precisão de 95% e frequência de 1 Hz
@@ -77,6 +78,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 - Sensores ambientais (temperatura, umidade, luz): localizados no módulo principal, com precisão entre 95% e 97% e frequência de 0.1 Hz
 
 [0020] O sistema inclui os seguintes módulos de comunicação:
+
 - Bluetooth (BLE 5.2): para comunicação local com smartphones e dispositivos próximos
 - NFC (ISO 14443): para autenticação e configuração rápida
 - LoRaWAN (opcional, Classe A): para comunicação de longa distância em áreas sem cobertura celular
@@ -84,11 +86,13 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 - GPS (opcional, GNSS): para geolocalização precisa
 
 [0021] O sistema inclui os seguintes elementos de visualização e verificação externa:
+
 - Display e-ink: para informações estáticas e configuração
 - LED RGB: para indicação visual de status (verde: correto, amarelo: atenção, vermelho: incorreto)
 - QR dinâmico: gerado em tempo real para verificação externa do status do cinto
 
 [0022] O sistema inclui os seguintes elementos de diagnóstico e monitoramento:
+
 - Sensor de Voltagem: para monitoramento de bateria
 - Sensor de Corrente: para diagnóstico de consumo
 - Watchdog: para monitoramento contínuo do sistema
@@ -99,6 +103,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0023] O firmware do Selfbelt é desenvolvido em Rust com Zephyr RTOS, escolhidos por sua segurança, eficiência e capacidade de operação em tempo real. A arquitetura do firmware é modular, permitindo atualizações parciais e adaptação a diferentes cenários de uso.
 
 [0024] O sistema utiliza algoritmos de IA embarcada para processamento local de dados, incluindo:
+
 - Detecção de presença de ocupante: baseada em sensor de pressão com limiar adaptativo
 - Detecção de conexão do cinto: baseada em sensores de pressão e tensão com limiar adaptativo
 - Medição de tensão do cinto: baseada em sensor piezoelétrico com calibração dinâmica
@@ -107,6 +112,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 - Medição de velocidade, aceleração, frenagem e curvas: baseada em fusão de sensores com filtro Kalman
 
 [0025] O sistema calcula as seguintes variáveis derivadas:
+
 - Uso correto do cinto: baseado em presença de ocupante, conexão, tensão e posicionamento do cinto
 - Comportamento de risco: baseado em velocidade, aceleração, frenagem e curvas
 - Conformidade regulatória: baseada em uso correto do cinto, movimento e velocidade do veículo
@@ -116,6 +122,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 - Saúde do sistema: baseada em diagnósticos integrados
 
 [0026] O sistema utiliza criptografia de ponta a ponta para proteção de dados, incluindo:
+
 - Criptografia simétrica: AES-256 para dados em repouso
 - Criptografia assimétrica: ECDSA (curva P-384) para assinatura digital
 - Criptografia pós-quântica: Kyber para troca de chaves e Dilithium para assinatura digital
@@ -127,20 +134,24 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0027] O sistema Selfbelt utiliza múltiplos protocolos de comunicação para integração com diferentes sistemas e infraestruturas:
 
 [0028] Para comunicação local:
+
 - Bluetooth Low Energy (BLE 5.2) para comunicação com smartphones e dispositivos próximos
 - Near Field Communication (NFC) para autenticação e configuração rápida
 - OBD-II/CAN para integração com sistemas veiculares existentes
 
 [0029] Para comunicação remota:
+
 - LoRaWAN (opcional) para comunicação de longa distância em áreas sem cobertura celular
 - Integração com redes celulares via smartphone ou gateway veicular
 
 [0030] Para integração com backend e blockchain:
+
 - MQTT para comunicação assíncrona e eficiente
 - REST API para integração com sistemas externos
 - GraphQL para consultas complexas e eficientes
 
 [0031] Para verificação externa:
+
 - QR dinâmico atualizado a cada 30 segundos
 - LED RGB para indicação visual de status
 - API pública para verificação de autenticidade de registros
@@ -150,16 +161,19 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0032] O sistema Selfbelt utiliza uma blockchain permissionada Hyperledger Besu com consenso IBFT 2.0 (Istanbul Byzantine Fault Tolerance), escolhida por sua escalabilidade, eficiência energética e capacidade de privacidade.
 
 [0033] A infraestrutura blockchain inclui os seguintes componentes:
+
 - Nós validadores: operados por entidades autorizadas (fabricantes, reguladores, seguradoras)
 - Nós de armazenamento: para registro completo de eventos
 - Oráculos: para integração com dados externos (clima, tráfego, limites de velocidade)
 - Pontes: para interoperabilidade com outras blockchains
 
 [0034] O sistema implementa os seguintes smart contracts:
+
 - CarbonMint.sol: para emissão e gestão de tokens de carbono baseados em dados verificáveis
 - StakingInstitutional.sol: para staking institucional e governança do ecossistema
 
 [0035] O contrato CarbonMint.sol implementa as seguintes funcionalidades:
+
 - Verificação criptográfica de dados de telemetria
 - Cálculo de redução de emissões baseado em padrões de condução
 - Emissão de tokens representando créditos de carbono
@@ -167,6 +181,7 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 - Aposentadoria (queima) de créditos utilizados
 
 [0036] O contrato StakingInstitutional.sol implementa as seguintes funcionalidades:
+
 - Registro e gestão de instituições participantes
 - Staking de tokens como garantia de participação
 - Sistema de votação ponderada para decisões do ecossistema
@@ -177,21 +192,25 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0037] O sistema Selfbelt converte dados verificáveis de uso correto de cintos de segurança e comportamento de condução em tokens ESG, representando impacto ambiental, social e de governança.
 
 [0038] A dimensão ambiental (E) é calculada com base em:
+
 - Redução de emissões de CO₂: 32% em média, baseado em melhoria de comportamento de condução
 - Economia de combustível: 28% em média, através de padrões de condução mais eficientes
 - Redução de desgaste: 25% em componentes veiculares, prolongando vida útil
 
 [0039] A dimensão social (S) é calculada com base em:
+
 - Redução de fatalidades: potencial de 45% em acidentes com uso incorreto de cintos
 - Diminuição de lesões: 23% em média, baseado em estudos de caso
 - Conscientização: aumento de 78% no uso correto de cintos
 
 [0040] A dimensão de governança (G) é calculada com base em:
+
 - Conformidade regulatória: 95% de redução em multas relacionadas
 - Transparência: 100% de rastreabilidade e verificabilidade de dados
 - Gestão de risco: 85% de melhoria em identificação precoce de riscos
 
 [0041] Os tokens ESG podem ser utilizados para:
+
 - Relatórios corporativos de sustentabilidade
 - Programas de incentivo para motoristas e frotas
 - Redução de prêmios de seguro
@@ -202,22 +221,26 @@ A presente invenção refere-se a um sistema modular adaptativo para monitoramen
 [0042] O sistema Selfbelt inclui as seguintes interfaces para diferentes stakeholders:
 
 [0043] Para usuários individuais:
+
 - Aplicativo móvel com informações de uso, histórico e recompensas
 - Notificações em tempo real sobre uso incorreto
 - Visualização de impacto ESG pessoal
 
 [0044] Para gestores de frotas:
+
 - Dashboard web com visão geral da frota
 - Relatórios de conformidade e segurança
 - Alertas de comportamentos de risco
 - Integração com sistemas de gestão existentes
 
 [0045] Para órgãos reguladores:
+
 - Interface de verificação externa via QR dinâmico
 - Relatórios agregados de conformidade
 - Integração com sistemas de fiscalização
 
 [0046] Para seguradoras:
+
 - API para integração com sistemas de precificação
 - Dados verificáveis para modelos de risco
 - Relatórios de comportamento de condução
@@ -367,4 +390,4 @@ Sistema modular adaptativo para monitoramento, verificação e registro de uso d
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-PAT-INPI-PCT-2025-001*
+_Metadata de Rastreabilidade Simbólica: GD-PAT-INPI-PCT-2025-001_

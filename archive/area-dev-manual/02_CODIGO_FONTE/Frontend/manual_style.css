@@ -1,20 +1,20 @@
 /* GuardDrive Manual Interativo - Estilos */
 
 :root {
-  --primary-color: #0055A4;
-  --secondary-color: #00A878;
+  --primary-color: #0055a4;
+  --secondary-color: #00a878;
   --dark-color: #333333;
-  --light-color: #F5F5F5;
-  --accent-color: #FF5722;
+  --light-color: #f5f5f5;
+  --accent-color: #ff5722;
   --text-color: #212121;
-  --background-color: #FFFFFF;
+  --background-color: #ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
 }
 
 body {
@@ -107,7 +107,7 @@ section {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0077CC 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0077cc 100%);
   color: white;
   border-radius: 10px;
   margin-top: 2rem;
@@ -176,7 +176,7 @@ pre {
 }
 
 code {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
 }
 
@@ -215,7 +215,7 @@ footer p {
   body {
     overflow-x: hidden;
   }
-  
+
   .nav-links {
     position: absolute;
     right: 0px;
@@ -230,40 +230,40 @@ footer p {
     transition: transform 0.5s ease-in;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   }
-  
+
   .nav-links li {
     opacity: 0;
     margin: 1.5rem 0;
   }
-  
+
   .burger {
     display: block;
   }
-  
+
   .nav-active {
     transform: translateX(0%);
   }
-  
+
   section {
     padding: 0 1rem;
   }
-  
+
   .hero {
     padding: 3rem 1rem;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero h2 {
     font-size: 1.5rem;
   }
-  
+
   h2 {
     font-size: 1.8rem;
   }
-  
+
   h3 {
     font-size: 1.3rem;
   }
@@ -316,10 +316,10 @@ footer p {
 
 /* Tema Escuro (para futura implementação) */
 .dark-theme {
-  --primary-color: #2196F3;
-  --secondary-color: #4CAF50;
+  --primary-color: #2196f3;
+  --secondary-color: #4caf50;
   --dark-color: #121212;
-  --light-color: #F5F5F5;
-  --text-color: #E0E0E0;
-  --background-color: #1E1E1E;
+  --light-color: #f5f5f5;
+  --text-color: #e0e0e0;
+  --background-color: #1e1e1e;
 }

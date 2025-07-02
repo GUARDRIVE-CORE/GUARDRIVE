@@ -4,7 +4,7 @@
 
 **Versão:** 3.7  
 **Data:** 24 de maio de 2025  
-**Classificação:** Confidencial  
+**Classificação:** Confidencial
 
 ## Sumário Executivo
 
@@ -315,10 +315,10 @@ import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
  */
 contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
     using ECDSA for bytes32;
-    
+
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant VERIFIER_ROLE = keccak256("VERIFIER_ROLE");
-    
+
     // Estrutura para armazenar metadados do token
     struct TokenMetadata {
         string vehicleId;
@@ -328,26 +328,26 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
         uint256 carbonAmount;
         bool retired;
     }
-    
+
     // Mapeamento de tokenId para metadados
     mapping(uint256 => TokenMetadata) public tokenMetadata;
-    
+
     // Contador de tokens
     uint256 private _tokenIdCounter;
-    
+
     // Mapeamento de verificadores para suas chaves públicas
     mapping(address => bytes) public verifierPublicKeys;
-    
+
     // Eventos
     event CarbonMinted(string indexed vehicleId, uint256 indexed tokenId, uint256 amount, uint256 timestamp);
     event CarbonRetired(uint256 indexed tokenId, uint256 amount, address indexed retiredBy);
     event VerifierAdded(address indexed verifier, bytes publicKey);
-    
+
     constructor(string memory uri) ERC1155(uri) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MINTER_ROLE, msg.sender);
     }
-    
+
     /**
      * @dev Adiciona um verificador com sua chave pública
      */
@@ -356,7 +356,7 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
         _setupRole(VERIFIER_ROLE, verifier);
         emit VerifierAdded(verifier, publicKey);
     }
-    
+
     /**
      * @dev Emite tokens de carbono com base em dados verificados
      */
@@ -368,10 +368,10 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
     ) external onlyRole(MINTER_ROLE) nonReentrant returns (uint256) {
         // Verifica assinatura
         require(_verifySignature(dataHash, signature), "Invalid signature");
-        
+
         // Incrementa contador e cria novo token
         uint256 tokenId = _tokenIdCounter++;
-        
+
         // Armazena metadados
         tokenMetadata[tokenId] = TokenMetadata({
             vehicleId: vehicleId,
@@ -381,31 +381,31 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
             carbonAmount: amount,
             retired: false
         });
-        
+
         // Emite token
         _mint(msg.sender, tokenId, amount, "");
-        
+
         emit CarbonMinted(vehicleId, tokenId, amount, block.timestamp);
-        
+
         return tokenId;
     }
-    
+
     /**
      * @dev Aposenta (queima) tokens de carbono
      */
     function retireCarbon(uint256 tokenId, uint256 amount) external nonReentrant {
         require(balanceOf(msg.sender, tokenId) >= amount, "Insufficient balance");
         require(!tokenMetadata[tokenId].retired, "Token already retired");
-        
+
         // Queima tokens
         _burn(msg.sender, tokenId, amount);
-        
+
         // Marca como aposentado
         tokenMetadata[tokenId].retired = true;
-        
+
         emit CarbonRetired(tokenId, amount, msg.sender);
     }
-    
+
     /**
      * @dev Verifica assinatura criptográfica dos dados
      */
@@ -413,14 +413,14 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
         address signer = dataHash.toEthSignedMessageHash().recover(signature);
         return hasRole(VERIFIER_ROLE, signer);
     }
-    
+
     /**
      * @dev Retorna URI para um token específico
      */
     function uri(uint256 tokenId) public view override returns (string memory) {
         return string(abi.encodePacked(super.uri(tokenId), "/", _toString(tokenId)));
     }
-    
+
     /**
      * @dev Converte uint256 para string
      */
@@ -428,26 +428,26 @@ contract CarbonMint is ERC1155, AccessControl, ReentrancyGuard {
         if (value == 0) {
             return "0";
         }
-        
+
         uint256 temp = value;
         uint256 digits;
-        
+
         while (temp != 0) {
             digits++;
             temp /= 10;
         }
-        
+
         bytes memory buffer = new bytes(digits);
-        
+
         while (value != 0) {
             digits -= 1;
             buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
             value /= 10;
         }
-        
+
         return string(buffer);
     }
-    
+
     // Função de suporte para verificação de interface
     function supportsInterface(bytes4 interfaceId) public view override(ERC1155, AccessControl) returns (bool) {
         return super.supportsInterface(interfaceId);
@@ -473,17 +473,17 @@ import "@openzeppelin/contracts/utils/Counters.sol";
  */
 contract StakingInstitutional is ERC1155Holder, AccessControl, ReentrancyGuard {
     using Counters for Counters.Counter;
-    
+
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     bytes32 public constant INSTITUTION_ROLE = keccak256("INSTITUTION_ROLE");
-    
+
     // Referência ao contrato de tokens
     IERC1155 public carbonToken;
-    
+
     // Contador para IDs de stake e propostas
     Counters.Counter private _stakeIdCounter;
     Counters.Counter private _proposalIdCounter;
-    
+
     // Estrutura para armazenar informações de stake
     struct Stake {
         address institution;
@@ -493,7 +493,7 @@ contract StakingInstitutional is ERC1155Holder, AccessControl, ReentrancyGuard {
         uint256 endTime;
         bool active;
     }
-    
+
     // Estrutura para armazenar propostas de governança
     struct Proposal {
         string description;
@@ -505,32 +505,32 @@ contract StakingInstitutional is ERC1155Holder, AccessControl, ReentrancyGuard {
         bool executed;
         mapping(address => bool) hasVoted;
     }
-    
+
     // Mapeamentos
     mapping(uint256 => Stake) public stakes;
     mapping(uint256 => Proposal) public proposals;
     mapping(address => uint256) public institutionTotalStake;
-    
+
     // Eventos
     event StakeCreated(uint256 indexed stakeId, address indexed institution, uint256 totalAmount);
     event StakeWithdrawn(uint256 indexed stakeId, address indexed institution);
     event ProposalCreated(uint256 indexed proposalId, address indexed proposer, string description);
     event Voted(uint256 indexed proposalId, address indexed voter, bool support, uint256 weight);
     event ProposalExecuted(uint256 indexed proposalId);
-    
+
     constructor(address carbonTokenAddress) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(ADMIN_ROLE, msg.sender);
         carbonToken = IERC1155(carbonTokenAddress);
     }
-    
+
     /**
      * @dev Registra uma instituição
      */
     function registerInstitution(address institution) external onlyRole(ADMIN_ROLE) {
         grantRole(INSTITUTION_ROLE, institution);
     }
-    
+
     /**
      * @dev Cria um novo stake
      */
@@ -541,24 +541,24 @@ contract StakingInstitutional is ERC1155Holder, AccessControl, ReentrancyGuard {
     ) external onlyRole(INSTITUTION_ROLE) nonReentrant returns (uint256) {
         require(tokenIds.length == amounts.length, "Arrays length mismatch");
         require(duration >= 30 days, "Minimum stake duration is 30 days");
-        
+
         uint256 stakeId = _stakeIdCounter.current();
         _stakeIdCounter.increment();
-        
+
         // Transfere tokens para o contrato
         for (uint256 i = 0; i < tokenIds.length; i++) {
             carbonToken.safeTransferFrom(msg.sender, address(this), tokenIds[i], amounts[i], "");
         }
-        
+
         // Calcula stake total
         uint256 totalAmount = 0;
         for (uint256 i = 0; i < amounts.length; i++) {
             totalAmount += amounts[i];
         }
-        
+
         // Atualiza stake total da instituição
         institutionTotalStake[msg.sender] += totalAmount;
-        
+
         // Armazena informações do stake
         stakes[stakeId] = Stake({
             institution: msg.sender,
@@ -568,113 +568,113 @@ contract StakingInstitutional is ERC1155Holder, AccessControl, ReentrancyGuard {
             endTime: block.timestamp + duration,
             active: true
         });
-        
+
         emit StakeCreated(stakeId, msg.sender, totalAmount);
-        
+
         return stakeId;
     }
-    
+
     /**
      * @dev Retira um stake após o término do período
      */
     function withdrawStake(uint256 stakeId) external nonReentrant {
         Stake storage stake = stakes[stakeId];
-        
+
         require(stake.institution == msg.sender, "Not stake owner");
         require(stake.active, "Stake not active");
         require(block.timestamp >= stake.endTime, "Stake period not ended");
-        
+
         // Marca stake como inativo
         stake.active = false;
-        
+
         // Calcula stake total
         uint256 totalAmount = 0;
         for (uint256 i = 0; i < stake.amounts.length; i++) {
             totalAmount += stake.amounts[i];
         }
-        
+
         // Atualiza stake total da instituição
         institutionTotalStake[msg.sender] -= totalAmount;
-        
+
         // Transfere tokens de volta para a instituição
         for (uint256 i = 0; i < stake.tokenIds.length; i++) {
             carbonToken.safeTransferFrom(address(this), msg.sender, stake.tokenIds[i], stake.amounts[i], "");
         }
-        
+
         emit StakeWithdrawn(stakeId, msg.sender);
     }
-    
+
     /**
      * @dev Cria uma nova proposta de governança
      */
     function createProposal(string calldata description, uint256 votingPeriod) external onlyRole(INSTITUTION_ROLE) returns (uint256) {
         require(institutionTotalStake[msg.sender] > 0, "Must have active stake to propose");
         require(votingPeriod >= 3 days && votingPeriod <= 14 days, "Invalid voting period");
-        
+
         uint256 proposalId = _proposalIdCounter.current();
         _proposalIdCounter.increment();
-        
+
         Proposal storage proposal = proposals[proposalId];
         proposal.description = description;
         proposal.proposer = msg.sender;
         proposal.startTime = block.timestamp;
         proposal.endTime = block.timestamp + votingPeriod;
-        
+
         emit ProposalCreated(proposalId, msg.sender, description);
-        
+
         return proposalId;
     }
-    
+
     /**
      * @dev Vota em uma proposta
      */
     function vote(uint256 proposalId, bool support) external onlyRole(INSTITUTION_ROLE) {
         Proposal storage proposal = proposals[proposalId];
-        
+
         require(block.timestamp >= proposal.startTime, "Voting not started");
         require(block.timestamp < proposal.endTime, "Voting ended");
         require(!proposal.hasVoted[msg.sender], "Already voted");
         require(institutionTotalStake[msg.sender] > 0, "Must have active stake to vote");
-        
+
         // Registra voto
         proposal.hasVoted[msg.sender] = true;
-        
+
         // Adiciona peso do voto baseado no stake total
         uint256 voteWeight = institutionTotalStake[msg.sender];
-        
+
         if (support) {
             proposal.forVotes += voteWeight;
         } else {
             proposal.againstVotes += voteWeight;
         }
-        
+
         emit Voted(proposalId, msg.sender, support, voteWeight);
     }
-    
+
     /**
      * @dev Executa uma proposta aprovada
      */
     function executeProposal(uint256 proposalId) external onlyRole(ADMIN_ROLE) {
         Proposal storage proposal = proposals[proposalId];
-        
+
         require(block.timestamp >= proposal.endTime, "Voting not ended");
         require(!proposal.executed, "Already executed");
         require(proposal.forVotes > proposal.againstVotes, "Proposal not approved");
-        
+
         proposal.executed = true;
-        
+
         emit ProposalExecuted(proposalId);
-        
+
         // Implementação da execução específica seria adicionada aqui
     }
-    
+
     /**
      * @dev Retorna o peso de voto de uma instituição
      */
     function getVotingPower(address institution) external view returns (uint256) {
         return institutionTotalStake[institution];
     }
-    
+
     // Função de suporte para verificação de interface
     function supportsInterface(bytes4 interfaceId) public view override(ERC1155Holder, AccessControl) returns (bool) {
         return super.supportsInterface(interfaceId);
@@ -775,12 +775,12 @@ O SealSafe v3.7 foi submetido a um rigoroso processo de testes:
 
 Os testes de latência foram realizados em diferentes cenários:
 
-| Componente | Cenário Normal | Cenário de Pico | Limite Aceitável |
-|------------|----------------|-----------------|------------------|
-| Sensor para Dispositivo | 12.3 ms | 24.7 ms | 50 ms |
-| Dispositivo para Backend | 187.5 ms | 412.8 ms | 1000 ms |
-| Backend para Blockchain | 3.2 s | 8.7 s | 15 s |
-| End-to-End | 3.4 s | 9.1 s | 20 s |
+| Componente               | Cenário Normal | Cenário de Pico | Limite Aceitável |
+| ------------------------ | -------------- | --------------- | ---------------- |
+| Sensor para Dispositivo  | 12.3 ms        | 24.7 ms         | 50 ms            |
+| Dispositivo para Backend | 187.5 ms       | 412.8 ms        | 1000 ms          |
+| Backend para Blockchain  | 3.2 s          | 8.7 s           | 15 s             |
+| End-to-End               | 3.4 s          | 9.1 s           | 20 s             |
 
 ### 6.3 Resultados de Testes de Confiabilidade
 
@@ -915,6 +915,7 @@ Esta documentação técnica fornece as informações necessárias para submiss�
 ---
 
 **Anexos:**
+
 1. Diagramas de Arquitetura
 2. Esquemáticos de Hardware
 3. Resultados Detalhados de Testes
