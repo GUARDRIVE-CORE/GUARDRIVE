@@ -1,24 +1,26 @@
 # Changelog
 
-Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
+All notable changes to this project will be documented in this file.
 
-O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+📚 **[Changelog em Português](docs/CHANGELOG-PT.md) | [Portuguese Changelog](docs/CHANGELOG-PT.md)**
 
 ## [Unreleased]
 
 ### Added
-- 🚀 **MCP Próprio Independente** - Implementação do MODEL CONTEXT PROTOCOL próprio
-  - CLI independente de plataforma (`guardrive-mcp`)
-  - Bridge para compatibilidade com Warp Terminal
-  - Sistema de plugins extensível
-  - Suporte cross-platform (Windows, Linux, macOS)
+- 🚀 **Independent MCP Implementation** - Custom MODEL CONTEXT PROTOCOL implementation
+  - Platform-independent CLI (`guardrive-mcp`)
+  - Bridge for Warp Terminal compatibility
+  - Extensible plugin system
+  - Cross-platform support (Windows, Linux, macOS)
 
 ### Changed
-- 🔄 **Arquitetura MCP** - Refatoração para permitir uso com ou sem Warp Terminal
-- 📦 **Scripts de configuração** - Setup unificado para ambos os modos de uso
+- 🔄 **MCP Architecture** - Refactoring to allow usage with or without Warp Terminal
+- 📦 **Configuration Scripts** - Unified setup for both usage modes
 
-### Planejado
+### Planned
 - Backup Orchestrator MCP Server
 - Security Auditor MCP Server
 - Performance Optimizer MCP Server

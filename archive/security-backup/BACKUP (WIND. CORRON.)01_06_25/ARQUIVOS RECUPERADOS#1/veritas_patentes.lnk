@@ -1,0 +1,4 @@
+his.properties.length;t++)n(this.properties[t])},t.prototype.computeParentMediaRule=function(n){var r=null,t,i;return n&&(t=n.parentRule,t&&t.media?r="@media "+t.media.mediaText:n.parentStyleSheet&&(i=n.parentStyleSheet.owningElement,i.tagName==="LINK"&&i.media&&(r="media "+i.media))),r},t}();n.AppliedStyleRule=t})(t=n.RemoteDom||(n.RemoteDom={}))})(F12||(F12={}));
+//! Copyright (C) Microsoft. All rights reserved.
+(function(n){"use strict";var t;(function(n){var t=function(){function n(n,t){var r,i;this.uid=n;this.description=t.tagName.toLowerCase();r=t.getAttribute("id");r?this.description+="#"+r:(i=t.className,i&&typeof i=="string"&&i.trim().length>0&&(this.description+="."+i.trim().split(" ")[0]))}return n}();n.AppliedStyleTarget=t})(t=n.RemoteDom||(n.RemoteDom={}))})(F12||(F12={}));
+//! Copy
