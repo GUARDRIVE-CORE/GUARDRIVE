@@ -1,58 +1,60 @@
-# 🤝 Contribuindo para SYMBEON MCP Servers
+# 🤝 Contributing to GUARDRIVE Platform
 
-Obrigado por seu interesse em contribuir! Este documento contém diretrizes para contribuir com o projeto.
+Thank you for your interest in contributing! This document contains guidelines for contributing to the project.
 
-## 🎀 Quick Start para Contribuidores
+📚 **[Contribuindo em Português](docs/CONTRIBUTING-PT.md) | [Portuguese Contributing Guide](docs/CONTRIBUTING-PT.md)**
 
-### 1. **Setup do Ambiente**
+## 🎀 Quick Start for Contributors
+
+### 1. **Environment Setup**
 ```bash
-# Fork e clone o repositório
-git clone https://github.com/seu-usuario/mcp-servers.git
-cd mcp-servers
+# Fork and clone the repository
+git clone https://github.com/your-username/GUARDRIVE.git
+cd GUARDRIVE
 
-# Instalar dependências
+# Install dependencies
 npm run setup
 
-# Verificar se tudo está funcionando
+# Verify everything is working
 npm run test:all
 ```
 
-### 2. **Criar Branch para Contribuição**
+### 2. **Create Contribution Branch**
 ```bash
-# Seguindo nossas Branching Rules
-git checkout -b feature/sua-nova-funcionalidade
-# ou
-git checkout -b fix/correcao-importante
+# Following our Branching Rules
+git checkout -b feature/your-new-feature
+# or
+git checkout -b fix/important-fix
 ```
 
-## 📝 **Padrões de Código**
+## 📝 **Code Standards**
 
 ### **Conventional Commits**
-Usamos [Conventional Commits](https://conventionalcommits.org/) para mensagens de commit:
+We use [Conventional Commits](https://conventionalcommits.org/) for commit messages:
 
 ```bash
-# Exemplos corretos
-git commit -m "feat(devops): adicionar ferramenta de backup"
-git commit -m "fix(monitor): corrigir coleta de métricas de CPU"
-git commit -m "docs: atualizar README com novos exemplos"
-git commit -m "test(orchestrator): adicionar testes unitários"
+# Correct examples
+git commit -m "feat(devops): add backup tool"
+git commit -m "fix(monitor): fix CPU metrics collection"
+git commit -m "docs: update README with new examples"
+git commit -m "test(orchestrator): add unit tests"
 ```
 
-#### **Tipos de Commit**
-- `feat`: Nova funcionalidade
-- `fix`: Correção de bug
-- `docs`: Atualizações de documentação
-- `style`: Formatação (prettier, eslint)
-- `refactor`: Refatoração de código
-- `test`: Adição ou correção de testes
-- `chore`: Manutenção (deps, config)
+#### **Commit Types**
+- `feat`: New functionality
+- `fix`: Bug fix
+- `docs`: Documentation updates
+- `style`: Formatting (prettier, eslint)
+- `refactor`: Code refactoring
+- `test`: Adding or fixing tests
+- `chore`: Maintenance (deps, config)
 
-#### **Escopos Disponíveis**
+#### **Available Scopes**
 - `devops`: DevOps Orchestrator
 - `monitor`: System Monitor
-- `core`: Funcionalidades base
-- `docs`: Documentação
-- `ci`: CI/CD e automação
+- `core`: Core functionality
+- `docs`: Documentation
+- `ci`: CI/CD and automation
 
 ### **Code Style**
 Seguimos as **Code Style Rules** da SYMBEON:
