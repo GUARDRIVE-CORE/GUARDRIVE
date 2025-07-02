@@ -1,8 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { FiShield, FiTrendingUp, FiZap, FiCheck, FiPlay } from 'react-icons/fi';
-import { colors, breakpoints, Button, Container, Flex } from '../styles/GlobalStyles';
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { FiShield, FiTrendingUp, FiZap, FiCheck, FiPlay } from "react-icons/fi";
+import {
+  colors,
+  breakpoints,
+  Button,
+  Container,
+  Flex,
+} from "../styles/GlobalStyles";
 
 const HeroWrapper = styled.section`
   min-height: 100vh;
@@ -12,9 +18,9 @@ const HeroWrapper = styled.section`
   position: relative;
   overflow: hidden;
   padding-top: 5rem;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -39,11 +45,11 @@ const HeroTitle = styled(motion.h1)`
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 2.5rem;
   }
-  
+
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 2rem;
   }
@@ -54,7 +60,7 @@ const HeroSubtitle = styled(motion.p)`
   margin-bottom: 2rem;
   opacity: 0.9;
   line-height: 1.6;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 1.125rem;
   }
@@ -66,7 +72,7 @@ const FeatureList = styled(motion.div)`
   gap: 2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     gap: 1rem;
   }
@@ -78,7 +84,7 @@ const FeatureItem = styled.div`
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  
+
   svg {
     color: ${colors.secondary};
     font-size: 1.25rem;
@@ -90,7 +96,7 @@ const CTAButtons = styled(motion.div)`
   gap: 1rem;
   justify-content: center;
   margin-bottom: 4rem;
-  
+
   @media (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
     align-items: center;
@@ -102,7 +108,7 @@ const VideoButton = styled(Button)`
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: ${colors.white};
   backdrop-filter: blur(10px);
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.5);
@@ -114,7 +120,7 @@ const StatsSection = styled(motion.div)`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 4rem;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -161,23 +167,23 @@ const FloatingIcon = styled(motion.div)`
 
 const HeroSection = () => {
   const features = [
-    { icon: FiShield, text: 'Monitoramento em Tempo Real' },
-    { icon: FiTrendingUp, text: 'Certificação ESG' },
-    { icon: FiZap, text: 'Tokenização Blockchain' }
+    { icon: FiShield, text: "Monitoramento em Tempo Real" },
+    { icon: FiTrendingUp, text: "Certificação ESG" },
+    { icon: FiZap, text: "Tokenização Blockchain" },
   ];
 
   const stats = [
-    { number: '99.9%', label: 'Precisão dos Dados' },
-    { number: '24/7', label: 'Monitoramento' },
-    { number: '50+', label: 'Métricas ESG' },
-    { number: '100%', label: 'Rastreabilidade' }
+    { number: "99.9%", label: "Precisão dos Dados" },
+    { number: "24/7", label: "Monitoramento" },
+    { number: "50+", label: "Métricas ESG" },
+    { number: "100%", label: "Rastreabilidade" },
   ];
 
   const floatingIcons = [
-    { icon: FiShield, top: '20%', left: '10%', delay: 0 },
-    { icon: FiTrendingUp, top: '60%', right: '15%', delay: 1 },
-    { icon: FiZap, top: '30%', right: '25%', delay: 2 },
-    { icon: FiCheck, bottom: '30%', left: '20%', delay: 3 }
+    { icon: FiShield, top: "20%", left: "10%", delay: 0 },
+    { icon: FiTrendingUp, top: "60%", right: "15%", delay: 1 },
+    { icon: FiZap, top: "30%", right: "25%", delay: 2 },
+    { icon: FiCheck, bottom: "30%", left: "20%", delay: 3 },
   ];
 
   return (
@@ -190,16 +196,16 @@ const HeroSection = () => {
               top: item.top,
               bottom: item.bottom,
               left: item.left,
-              right: item.right
+              right: item.right,
             }}
             animate={{
               y: [0, -20, 0],
-              rotate: [0, 5, -5, 0]
+              rotate: [0, 5, -5, 0],
             }}
             transition={{
               duration: 6,
               repeat: Infinity,
-              delay: item.delay
+              delay: item.delay,
             }}
           >
             <item.icon />
@@ -226,8 +232,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Monitoramento em tempo real, certificação ESG e tokenização de créditos de carbono.
-            Transforme sua frota em um ativo sustentável e verificável.
+            Monitoramento em tempo real, certificação ESG e tokenização de
+            créditos de carbono. Transforme sua frota em um ativo sustentável e
+            verificável.
           </HeroSubtitle>
 
           <FeatureList
@@ -251,7 +258,11 @@ const HeroSection = () => {
             <Button
               variant="success"
               size="large"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Solicitar Demonstração Gratuita
             </Button>
@@ -260,10 +271,10 @@ const HeroSection = () => {
               size="large"
               onClick={() => {
                 // Abrir modal de vídeo ou redirecionar para demo
-                console.log('Abrir vídeo demo');
+                console.log("Abrir vídeo demo");
               }}
             >
-              <FiPlay style={{ marginRight: '0.5rem' }} />
+              <FiPlay style={{ marginRight: "0.5rem" }} />
               Ver Demo
             </VideoButton>
           </CTAButtons>
@@ -287,4 +298,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

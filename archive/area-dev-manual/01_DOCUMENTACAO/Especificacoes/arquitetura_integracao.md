@@ -1,6 +1,7 @@
 # Arquitetura de Integração Frontend-Backend - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield - Web e Mobile
 - **Versão**: 1.0
 - **Data**: 08/06/2025
@@ -61,6 +62,7 @@ O sistema GuardDrive FleetShield adotará uma **arquitetura de microsserviços o
 ### 2.1. Tecnologias e Frameworks
 
 #### Landing Page
+
 - **Framework**: Next.js (React)
 - **Estilização**: Tailwind CSS + CSS Modules
 - **Animações**: Framer Motion
@@ -68,6 +70,7 @@ O sistema GuardDrive FleetShield adotará uma **arquitetura de microsserviços o
 - **Analytics**: Google Analytics 4 + Tag Manager
 
 #### Aplicação Web (Dashboard)
+
 - **Framework**: React 18+ com TypeScript
 - **Gerenciamento de Estado**: Redux Toolkit + RTK Query
 - **Estilização**: Styled Components + Design System proprietário
@@ -76,6 +79,7 @@ O sistema GuardDrive FleetShield adotará uma **arquitetura de microsserviços o
 - **Autenticação**: JWT + OAuth 2.0
 
 #### Aplicativo Mobile
+
 - **Framework**: React Native
 - **Navegação**: React Navigation
 - **Gerenciamento de Estado**: Redux Toolkit + RTK Query
@@ -93,6 +97,7 @@ Para garantir consistência visual e comportamental entre todas as plataformas, 
 - **Documentação**: Storybook com exemplos interativos
 
 O Design System será publicado como pacote npm privado, permitindo:
+
 - Versionamento semântico
 - Atualizações independentes
 - Documentação centralizada
@@ -136,30 +141,35 @@ src/
 ### 3.2. Serviços Principais
 
 #### Auth Service
+
 - **Responsabilidades**: Autenticação, autorização, gestão de usuários
 - **Tecnologias**: Node.js/Express ou Rust
 - **Armazenamento**: PostgreSQL + Redis (sessões)
 - **Segurança**: OAuth 2.0, JWT, RBAC, 2FA
 
 #### Fleet Service
+
 - **Responsabilidades**: Gestão de frotas, veículos, telemetria
 - **Tecnologias**: Node.js/Express ou Rust
 - **Armazenamento**: PostgreSQL (metadados) + TimescaleDB (telemetria)
 - **Integrações**: APIs de fabricantes, GPS, OBD-II
 
 #### Safety Service
+
 - **Responsabilidades**: Monitoramento de segurança, alertas, verificação
 - **Tecnologias**: Node.js/Express ou Rust
 - **Armazenamento**: PostgreSQL + TimescaleDB
 - **Integrações**: Hardware IoT, sistemas de alerta
 
 #### ESG Service
+
 - **Responsabilidades**: Métricas ambientais, sociais e de governança
 - **Tecnologias**: Node.js/Express ou Rust
 - **Armazenamento**: PostgreSQL + TimescaleDB
 - **Integrações**: APIs de reguladores, frameworks ESG
 
 #### Tokenization Service
+
 - **Responsabilidades**: Emissão, gestão e transação de tokens
 - **Tecnologias**: Node.js/Express ou Rust
 - **Armazenamento**: PostgreSQL + Blockchain
@@ -276,24 +286,28 @@ Pipeline de CI/CD para cada componente:
 ### 6.2. Roadmap Técnico
 
 #### Fase 1: Fundação (Semanas 1-2)
+
 - Setup de repositórios e infraestrutura
 - Implementação do Design System base
 - Desenvolvimento da Landing Page
 - Configuração de CI/CD
 
 #### Fase 2: Core (Semanas 3-4)
+
 - Implementação de autenticação
 - Desenvolvimento do Dashboard Web básico
 - Criação de APIs essenciais
 - Prototipação do aplicativo mobile
 
 #### Fase 3: Expansão (Semanas 5-6)
+
 - Funcionalidades avançadas do Dashboard
 - Desenvolvimento completo do aplicativo mobile
 - Integrações com sistemas externos
 - Implementação de visualizações de dados
 
 #### Fase 4: Refinamento (Semanas 7-8)
+
 - Otimização de desempenho
 - Testes de usabilidade e ajustes
 - Documentação completa
@@ -371,4 +385,4 @@ Esta arquitetura fornece um blueprint abrangente para a implementação do siste
 
 ---
 
-*Este documento de arquitetura serve como guia para o desenvolvimento e deve ser revisado e atualizado conforme o projeto evolui.*
+_Este documento de arquitetura serve como guia para o desenvolvimento e deve ser revisado e atualizado conforme o projeto evolui._

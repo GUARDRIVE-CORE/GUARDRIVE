@@ -1,6 +1,7 @@
 # Brainstorming de Produtos Alternativos ao Selfbelt
 
 ## Metadados
+
 - **Projeto**: GuardDrive - Alternativas Estratégicas
 - **Versão**: 1.0
 - **Data**: 26/05/2025
@@ -27,6 +28,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Em vez de focar apenas no cinto, expande para uma solução completa de monitoramento de segurança veicular, aumentando significativamente o valor agregado e o mercado potencial.
 
 **Aplicações**:
+
 - Frotas comerciais buscando certificação de segurança
 - Seguradoras oferecendo descontos baseados em dados reais
 - Empresas de logística com necessidade de auditoria de segurança
@@ -39,6 +41,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Transforma veículos em sensores móveis para cidades inteligentes, criando uma rede distribuída de coleta de dados com verificação blockchain.
 
 **Aplicações**:
+
 - Prefeituras e órgãos de trânsito
 - Empresas de planejamento urbano
 - Agências ambientais
@@ -51,6 +54,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Foco no mercado B2B2C, oferecendo certificação de segurança para plataformas como Uber, 99, empresas de aluguel de veículos e serviços de compartilhamento.
 
 **Aplicações**:
+
 - Plataformas de transporte por aplicativo
 - Serviços de compartilhamento de veículos
 - Empresas de aluguel de veículos
@@ -63,6 +67,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Solução end-to-end para gestão de frotas com foco em segurança, compliance e ESG, incluindo hardware, software e serviços.
 
 **Aplicações**:
+
 - Empresas de logística e transporte
 - Frotas corporativas
 - Transporte público
@@ -75,6 +80,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Posicionamento no mercado emergente de veículos autônomos, oferecendo a camada de confiança e auditabilidade necessária para adoção em larga escala.
 
 **Aplicações**:
+
 - Fabricantes de veículos autônomos
 - Agências reguladoras
 - Seguradoras especializadas
@@ -87,6 +93,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Foco no mercado de logística e transporte de cargas, integrando segurança veicular com segurança da carga e conformidade regulatória.
 
 **Aplicações**:
+
 - Transportadoras
 - Operadores logísticos
 - Empresas de e-commerce
@@ -99,6 +106,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 **Diferencial**: Modelo de negócio inovador baseado em economia de tokens, onde participantes são recompensados por contribuir com dados de segurança verificados.
 
 **Aplicações**:
+
 - Motoristas individuais
 - Comunidades de compartilhamento de veículos
 - Empresas buscando engajamento em segurança
@@ -106,24 +114,26 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 
 ## 4. Análise Comparativa Preliminar
 
-| Alternativa | Tamanho de Mercado | Barreiras de Entrada | Alinhamento ESG | Potencial de Receita | Complexidade Técnica |
-|-------------|--------------------|-----------------------|-----------------|----------------------|----------------------|
-| SafetyHub | Alto | Média | Alto | Alto | Média |
-| UrbanPulse | Muito Alto | Alta | Muito Alto | Médio-Alto | Alta |
-| RideGuardian | Médio-Alto | Baixa | Alto | Médio | Baixa-Média |
-| FleetShield | Alto | Média | Alto | Alto | Média |
-| TrustSeal | Médio (crescente) | Alta | Médio-Alto | Muito Alto | Muito Alta |
-| CargoTrust | Alto | Média | Médio-Alto | Alto | Média |
-| SafetyNet | Muito Alto | Média-Alta | Alto | Médio-Alto | Alta |
+| Alternativa  | Tamanho de Mercado | Barreiras de Entrada | Alinhamento ESG | Potencial de Receita | Complexidade Técnica |
+| ------------ | ------------------ | -------------------- | --------------- | -------------------- | -------------------- |
+| SafetyHub    | Alto               | Média                | Alto            | Alto                 | Média                |
+| UrbanPulse   | Muito Alto         | Alta                 | Muito Alto      | Médio-Alto           | Alta                 |
+| RideGuardian | Médio-Alto         | Baixa                | Alto            | Médio                | Baixa-Média          |
+| FleetShield  | Alto               | Média                | Alto            | Alto                 | Média                |
+| TrustSeal    | Médio (crescente)  | Alta                 | Médio-Alto      | Muito Alto           | Muito Alta           |
+| CargoTrust   | Alto               | Média                | Médio-Alto      | Alto                 | Média                |
+| SafetyNet    | Muito Alto         | Média-Alta           | Alto            | Médio-Alto           | Alta                 |
 
 ## 5. Considerações Estratégicas
 
 ### 5.1. Mercados-Alvo Prioritários
+
 - B2B: Frotas comerciais, seguradoras, operadores logísticos
 - B2G: Prefeituras, órgãos de trânsito, agências reguladoras
 - B2B2C: Plataformas de transporte, serviços de compartilhamento
 
 ### 5.2. Tendências Relevantes
+
 - Aumento da regulamentação de segurança veicular
 - Crescimento da mobilidade compartilhada
 - Avanço dos veículos autônomos e conectados
@@ -131,6 +141,7 @@ Este documento apresenta um brainstorming de produtos alternativos ao Selfbelt q
 - Adoção de blockchain para rastreabilidade e auditoria
 
 ### 5.3. Fatores Críticos de Sucesso
+
 - Precisão e confiabilidade dos dados
 - Facilidade de integração com sistemas existentes
 - Escalabilidade da solução

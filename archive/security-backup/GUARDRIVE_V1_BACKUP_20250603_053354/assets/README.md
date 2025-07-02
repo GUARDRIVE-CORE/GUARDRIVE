@@ -9,4 +9,3 @@
 ## Uso
 
 As imagens neste diretório devem ser usadas conforme as diretrizes definidas no [Guia de Identidade Visual](../docs/development/brand_guidelines.md).
-

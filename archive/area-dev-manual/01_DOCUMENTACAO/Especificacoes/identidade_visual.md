@@ -74,6 +74,7 @@ guardrive-cintoveritas-api
 ### Transição de Marca
 
 Para materiais existentes do SealSafe v3.7 e outros produtos:
+
 1. Adicionar o selo "Validado por GuarDrive" em todos os documentos
 2. Atualizar cabeçalhos para incluir "GuarDrive | Uma Iniciativa Symbeon"
 3. Manter a identidade original do produto, adicionando a camada GuarDrive como validador

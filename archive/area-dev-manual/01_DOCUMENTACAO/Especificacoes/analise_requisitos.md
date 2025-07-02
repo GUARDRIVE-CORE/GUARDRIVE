@@ -22,23 +22,25 @@ Este documento consolida a análise dos requisitos e contexto para o desenvolvim
 ### Requisitos de Identidade Visual
 
 #### GuardDrive (Corporativa)
+
 - Logotipo com variações (clara/escura)
 - Paleta de cores institucionais que transmitam:
-  * Segurança
-  * Tecnologia
-  * Mobilidade
+  - Segurança
+  - Tecnologia
+  - Mobilidade
 - Tipografia institucional
 - Slogan em 3 versões:
-  * Técnica
-  * Emocional
-  * Institucional
+  - Técnica
+  - Emocional
+  - Institucional
 - Ícones técnicos vetoriais relacionados a:
-  * Mobilidade
-  * Segurança
-  * Sensores
-  * IoT veicular
+  - Mobilidade
+  - Segurança
+  - Sensores
+  - IoT veicular
 
 #### Selfbelt (Produto)
+
 - Marca visual própria
 - Selo dinâmico (QR + LED visual)
 - Design de chip modular
@@ -47,18 +49,20 @@ Este documento consolida a análise dos requisitos e contexto para o desenvolvim
 ### Requisitos de Comunicação
 
 #### Pitch Deck Institucional
+
 - Narrativa para montadoras, investidores e setor público
 - Estrutura:
-  * Problema
-  * Solução
-  * Tecnologia
-  * Diferencial
-  * Modelo de negócios
-  * Projeções
-  * Time
+  - Problema
+  - Solução
+  - Tecnologia
+  - Diferencial
+  - Modelo de negócios
+  - Projeções
+  - Time
 - Título do produto: "Selfbelt - Dispositivo Adaptativo de Segurança Veicular"
 
 #### Site Institucional (Wireframe + Copywriting)
+
 - Página inicial com visão estratégica da empresa
 - Página "Produto" com foco no Selfbelt
 - Página "Tecnologia" com explicação sobre sensores, blockchain e IA embarcada
@@ -68,34 +72,39 @@ Este documento consolida a análise dos requisitos e contexto para o desenvolvim
 ### Requisitos Técnicos e Jurídicos
 
 #### Documentação para Submissão
+
 - Dossiê Técnico em PDF
 - Estrutura padrão para INPI (BR) e PCT internacional
 - Conteúdo:
-  * Esquemas técnicos
-  * Fluxogramas
-  * Arquitetura do SDK
-  * Inovação industrial
-  * Mapa de sensores
-  * Desenho técnico da peça e suas redundâncias
+  - Esquemas técnicos
+  - Fluxogramas
+  - Arquitetura do SDK
+  - Inovação industrial
+  - Mapa de sensores
+  - Desenho técnico da peça e suas redundâncias
 
 ### Diretrizes de Design
 
 #### Estética
+
 - Minimalismo tecnológico
 - Interface simbólica de segurança
 - Linhas contínuas
 
 #### Inspirações
+
 - Tesla Design Language
 - AWS Brand Structure
 - Urban Mobility Visual Codes
 
 #### Linguagem Visual
+
 - Tecnológica
 - Segura
 - Transparente
 
 #### Palavras-chave Visuais
+
 - Segurança inteligente
 - Mobilidade adaptativa
 - Controle e confiança

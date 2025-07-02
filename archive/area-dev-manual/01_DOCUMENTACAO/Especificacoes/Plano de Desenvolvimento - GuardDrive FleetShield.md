@@ -1,6 +1,7 @@
 # Plano de Desenvolvimento - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield - Sistema Digital Completo
 - **Versão**: 1.0
 - **Data**: 02/06/2025
@@ -13,6 +14,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
 ## 2. Etapas de Desenvolvimento
 
 ### Fase 1: Fundação e Visão (Prioridade Alta)
+
 1. **Visão Geral do Projeto**
    - Definir 3 opções de nome simbólico
    - Estabelecer propósito claro (dor resolvida e para quem)
@@ -32,6 +34,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
    - **Entrega**: Documento de arquitetura em Markdown + diagramas ASCII
 
 ### Fase 2: Desenvolvimento Técnico (Prioridade Alta)
+
 4. **Frontend**
    - Definir tecnologias e frameworks
    - Criar wireframes textuais para principais telas
@@ -59,6 +62,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
    - **Entrega**: Smart contracts e documentação de integração
 
 ### Fase 3: Infraestrutura e DevOps (Prioridade Média)
+
 8. **Containerização**
    - Criar Dockerfile para cada componente
    - Desenvolver docker-compose.yml para ambiente local
@@ -78,6 +82,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
     - **Entrega**: Configurações de observabilidade e documentação
 
 ### Fase 4: Estratégia e Negócios (Prioridade Média)
+
 11. **Plano Estratégico de 5 Anos**
     - Definir metas-chave por ano
     - Estabelecer marcos de produto
@@ -93,6 +98,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
     - **Entrega**: Plano financeiro em Markdown com tabelas/gráficos
 
 ### Fase 5: Operação e Compliance (Prioridade Média)
+
 13. **Plano de Continuidade de Negócios (PCN)**
     - Identificar riscos críticos
     - Definir RPO/RTO para serviços
@@ -107,6 +113,7 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
     - **Entrega**: Documentos de governança em Markdown
 
 ### Fase 6: Finalização e Entrega (Prioridade Alta)
+
 15. **Revisão e Integração**
     - Verificar consistência entre componentes
     - Validar alinhamento com requisitos
@@ -122,12 +129,14 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
 ## 3. Priorização e Dependências
 
 ### Dependências Críticas
+
 - A estrutura do repositório deve ser definida antes do desenvolvimento de código
 - A arquitetura técnica deve preceder o desenvolvimento de componentes específicos
 - O esquema de banco de dados deve ser definido antes da implementação da API
 - O plano estratégico deve informar as projeções financeiras
 
 ### Ordem de Execução Recomendada
+
 1. Visão Geral do Projeto
 2. Estrutura do Repositório
 3. Arquitetura Técnica
@@ -147,15 +156,15 @@ Este documento detalha o plano de desenvolvimento para o sistema digital complet
 
 ## 4. Cronograma Estimado
 
-| Fase | Etapas | Tempo Estimado |
-|------|--------|----------------|
-| Fase 1: Fundação e Visão | 1-3 | 1-2 dias |
-| Fase 2: Desenvolvimento Técnico | 4-7 | 3-5 dias |
-| Fase 3: Infraestrutura e DevOps | 8-10 | 2-3 dias |
-| Fase 4: Estratégia e Negócios | 11-12 | 1-2 dias |
-| Fase 5: Operação e Compliance | 13-14 | 1-2 dias |
-| Fase 6: Finalização e Entrega | 15-16 | 1 dia |
-| **Total** | | **9-15 dias** |
+| Fase                            | Etapas | Tempo Estimado |
+| ------------------------------- | ------ | -------------- |
+| Fase 1: Fundação e Visão        | 1-3    | 1-2 dias       |
+| Fase 2: Desenvolvimento Técnico | 4-7    | 3-5 dias       |
+| Fase 3: Infraestrutura e DevOps | 8-10   | 2-3 dias       |
+| Fase 4: Estratégia e Negócios   | 11-12  | 1-2 dias       |
+| Fase 5: Operação e Compliance   | 13-14  | 1-2 dias       |
+| Fase 6: Finalização e Entrega   | 15-16  | 1 dia          |
+| **Total**                       |        | **9-15 dias**  |
 
 ## 5. Metodologia de Trabalho
 
@@ -170,18 +179,21 @@ Após cada seção, registraremos um **mini-log** com premissas-chave e decisõe
 ## 6. Padrões de Entrega
 
 ### Código
-- Blocos de código em formato ```code``` prontos para copiar
+
+- Blocos de código em formato `code` prontos para copiar
 - Comentários explicativos
 - Estrutura modular e reutilizável
 - Seguindo boas práticas da linguagem escolhida
 
 ### Documentação
+
 - Formato Markdown estruturado
 - Seções claras com títulos H2/H3
 - Diagramas ASCII quando útil
 - Explicação de raciocínio e premissas
 
 ### Artefatos Auxiliares
+
 - JSON, YAML, Dockerfile formatados corretamente
 - Pseudocódigo claro e explicativo
 - Configurações com comentários

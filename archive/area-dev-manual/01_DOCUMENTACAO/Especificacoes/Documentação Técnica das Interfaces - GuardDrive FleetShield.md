@@ -1,6 +1,7 @@
 # Documentação Técnica das Interfaces - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield
 - **Componente**: Interfaces de Usuário (Frontend)
 - **Versão**: 1.0
@@ -146,12 +147,14 @@ apps/interface-tecnica/
 ### 4.1. Interface ESG + Tokenização
 
 #### 4.1.1. Fluxo de Onboarding
+
 1. Registro/Login via OAuth (Google, Apple) ou email/senha.
 2. Conexão da conta com veículo(s) associado(s) (via ID do dispositivo ou integração com frota).
 3. Tutorial interativo sobre funcionalidades (dashboard, desafios, tokens).
 4. Configuração inicial de perfil e preferências de notificação.
 
 #### 4.1.2. Fluxo do Dashboard Principal
+
 1. Visualização do score de segurança e impacto ambiental (CO2 evitado).
 2. Acompanhamento de progresso em desafios de condução segura/sustentável.
 3. Resumo do saldo de tokens ESG e valor estimado.
@@ -159,12 +162,14 @@ apps/interface-tecnica/
 5. Acesso rápido a funcionalidades (carteira, desafios, perfil).
 
 #### 4.1.3. Fluxo de Desafios e Gamificação
+
 1. Visualização de desafios ativos (ex: "Dirigir 100km sem freadas bruscas").
 2. Acompanhamento de progresso em tempo real.
 3. Recebimento de notificações e recompensas (tokens, badges) ao completar desafios.
 4. Ranking de usuários (opcional, com privacidade configurável).
 
 #### 4.1.4. Fluxo da Carteira de Tokens
+
 1. Visualização do saldo total e histórico de transações (ganhos, gastos, transferências).
 2. Opções para resgatar tokens (descontos em parceiros, doações para ONGs).
 3. Transferência de tokens para outros usuários (opcional).
@@ -173,11 +178,13 @@ apps/interface-tecnica/
 ### 4.2. Interface de Controle Técnico e Operacional
 
 #### 4.2.1. Fluxo de Login e Autenticação
+
 1. Login com email/senha corporativo.
 2. Autenticação de Dois Fatores (2FA) obrigatória.
 3. Redirecionamento baseado no perfil do usuário (Admin, Gestor, Técnico).
 
 #### 4.2.2. Fluxo de Gestão de Dispositivos
+
 1. Visualização da lista de dispositivos (status, veículo associado, versão firmware).
 2. Filtro e busca por ID, status, modelo, etc.
 3. Registro de novos dispositivos.
@@ -187,6 +194,7 @@ apps/interface-tecnica/
 7. Comandos remotos (reiniciar, diagnosticar).
 
 #### 4.2.3. Fluxo de Visualização de Frota
+
 1. Mapa interativo com localização em tempo real dos veículos.
 2. Visualização de status de segurança (uso do cinto, alertas) no mapa.
 3. Filtro por grupo, status, tipo de veículo.
@@ -194,6 +202,7 @@ apps/interface-tecnica/
 5. Criação de geofences e alertas associados.
 
 #### 4.2.4. Fluxo de Análise de Dados
+
 1. Dashboard com KPIs de segurança da frota (score médio, nº de violações, km seguros).
 2. Relatórios customizáveis (por período, grupo, tipo de evento).
 3. Gráficos de tendência e comparação.
@@ -201,18 +210,21 @@ apps/interface-tecnica/
 5. Análise de causa raiz para eventos de segurança críticos.
 
 #### 4.2.5. Fluxo de Configuração e Atualizações
+
 1. Configuração de parâmetros do sistema (limites de velocidade, sensibilidade de sensores).
 2. Gerenciamento de regras de alerta e notificações.
 3. Configuração de integrações com sistemas externos (APIs, Webhooks).
 4. Agendamento de atualizações de software da plataforma.
 
 #### 4.2.6. Fluxo de Auditoria e Blockchain
+
 1. Visualização de logs de eventos registrados na blockchain.
 2. Verificação de certificados de segurança.
 3. Consulta de histórico de transações de tokens (nível organizacional).
 4. Geração de relatórios de auditoria para conformidade.
 
 #### 4.2.7. Fluxo de Gestão de Usuários e Permissões
+
 1. Criação, edição e exclusão de usuários (Admin).
 2. Atribuição de perfis (Admin, Gestor, Técnico, Auditor).
 3. Configuração de permissões granulares por módulo/funcionalidade (Admin).
@@ -352,4 +364,4 @@ apps/interface-tecnica/
 
 ---
 
-*Este documento é parte da documentação técnica oficial do GuardDrive FleetShield.*
+_Este documento é parte da documentação técnica oficial do GuardDrive FleetShield._

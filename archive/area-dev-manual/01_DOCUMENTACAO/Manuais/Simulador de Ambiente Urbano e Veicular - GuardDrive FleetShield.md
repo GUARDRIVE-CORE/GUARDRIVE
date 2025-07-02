@@ -1,6 +1,7 @@
 # Simulador de Ambiente Urbano e Veicular - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield
 - **Componente**: Simulador de Ambiente Urbano e Veicular
 - **Versão**: 1.0
@@ -14,6 +15,7 @@ O Simulador de Ambiente Urbano e Veicular do GuardDrive FleetShield é uma ferra
 ### 1.1. Propósito
 
 O simulador foi desenvolvido para:
+
 - Testar o sistema GuardDrive FleetShield em diversos cenários sem necessidade de implementação física
 - Validar algoritmos de detecção de eventos de segurança em condições controladas
 - Demonstrar o funcionamento do sistema para potenciais clientes e parceiros
@@ -62,21 +64,27 @@ O simulador é composto por quatro módulos principais que trabalham em conjunto
 ### 2.2. Componentes Principais
 
 #### 2.2.1. Módulo de Ambiente Urbano
+
 Responsável por gerar e gerenciar o ambiente urbano virtual, incluindo:
+
 - Malha viária (ruas, avenidas, rodovias)
 - Elementos urbanos (semáforos, faixas de pedestres, cruzamentos)
 - Condições ambientais (clima, iluminação, tráfego)
 - Física do ambiente (atrito, gravidade, colisões)
 
 #### 2.2.2. Módulo de Veículos
+
 Gerencia a frota virtual e o comportamento dos veículos:
+
 - Modelos de veículos com características físicas realistas
 - Comportamentos de condução configuráveis (agressivo, defensivo, normal)
 - Geração de eventos de segurança (não uso de cinto, freadas bruscas)
 - Movimentação autônoma ou controlada pelo usuário
 
 #### 2.2.3. Módulo de Sensores
+
 Simula os sensores do sistema GuardDrive FleetShield:
+
 - Sensores de cinto de segurança
 - Acelerômetros e giroscópios
 - GPS e localização
@@ -84,7 +92,9 @@ Simula os sensores do sistema GuardDrive FleetShield:
 - Comunicação com barramento CAN/OBD-II
 
 #### 2.2.4. Módulo de Integração
+
 Conecta o simulador ao ecossistema GuardDrive FleetShield:
+
 - Integração com SDK GuardDrive
 - Comunicação com backend e blockchain
 - Geração de certificados e tokens virtuais
@@ -113,6 +123,7 @@ Conecta o simulador ao ecossistema GuardDrive FleetShield:
 ### 3.1. Requisitos de Sistema
 
 #### 3.1.1. Hardware Recomendado
+
 - Processador: Intel Core i7 ou AMD Ryzen 7 (ou superior)
 - Memória RAM: 16GB (mínimo), 32GB (recomendado)
 - Placa de Vídeo: NVIDIA GTX 1660 ou AMD Radeon RX 5600 (ou superior) com 6GB VRAM
@@ -120,6 +131,7 @@ Conecta o simulador ao ecossistema GuardDrive FleetShield:
 - Conexão de Internet: 10 Mbps (mínimo)
 
 #### 3.1.2. Software Necessário
+
 - Sistema Operacional: Windows 10/11, macOS 12+, Ubuntu 20.04+ ou Debian 11+
 - Dependências: Python 3.9+, Node.js 16+, Docker 20+
 - Bibliotecas: OpenGL 4.5+, CUDA 11+ (opcional, para aceleração GPU)
@@ -171,17 +183,17 @@ general:
 # Configurações de renderização
 rendering:
   resolution: 1920x1080
-  quality: high  # low, medium, high, ultra
+  quality: high # low, medium, high, ultra
   fps_limit: 60
   use_gpu: true
 
 # Configurações de simulação
 simulation:
-  physics_update_rate: 60  # Hz
+  physics_update_rate: 60 # Hz
   default_environment: urban_center
   vehicle_count: 50
-  traffic_density: medium  # low, medium, high
-  time_scale: 1.0  # 1.0 = tempo real, 2.0 = 2x mais rápido
+  traffic_density: medium # low, medium, high
+  time_scale: 1.0 # 1.0 = tempo real, 2.0 = 2x mais rápido
 
 # Integração com GuardDrive
 guarddrive:
@@ -232,23 +244,23 @@ A interface do simulador é dividida em quatro áreas principais:
 
 #### 4.2.1. Controle de Simulação
 
-| Comando | Descrição |
-|---------|-----------|
-| `Ctrl+P` ou botão Play | Iniciar/pausar simulação |
-| `Ctrl+R` ou botão Reset | Reiniciar simulação |
-| `+` / `-` | Aumentar/diminuir velocidade da simulação |
-| `Esc` | Abrir menu principal |
-| `F1` | Mostrar ajuda |
+| Comando                 | Descrição                                 |
+| ----------------------- | ----------------------------------------- |
+| `Ctrl+P` ou botão Play  | Iniciar/pausar simulação                  |
+| `Ctrl+R` ou botão Reset | Reiniciar simulação                       |
+| `+` / `-`               | Aumentar/diminuir velocidade da simulação |
+| `Esc`                   | Abrir menu principal                      |
+| `F1`                    | Mostrar ajuda                             |
 
 #### 4.2.2. Navegação na Visualização 3D
 
-| Comando | Descrição |
-|---------|-----------|
-| Mouse + botão direito | Rotacionar câmera |
-| WASD | Mover câmera |
-| Scroll do mouse | Zoom in/out |
-| F | Focar no veículo selecionado |
-| C | Alternar entre modos de câmera (livre, seguir veículo, topo) |
+| Comando               | Descrição                                                    |
+| --------------------- | ------------------------------------------------------------ |
+| Mouse + botão direito | Rotacionar câmera                                            |
+| WASD                  | Mover câmera                                                 |
+| Scroll do mouse       | Zoom in/out                                                  |
+| F                     | Focar no veículo selecionado                                 |
+| C                     | Alternar entre modos de câmera (livre, seguir veículo, topo) |
 
 ### 4.3. Cenários Pré-configurados
 
@@ -257,25 +269,27 @@ O simulador inclui diversos cenários pré-configurados para testes e demonstra�
 #### 4.3.1. Carregando um Cenário
 
 Via Interface Gráfica:
+
 1. Clique em "Arquivo" > "Carregar Cenário"
 2. Selecione o cenário desejado
 3. Clique em "Carregar"
 
 Via Console de Comandos:
+
 ```
 load_scenario("urban_rush_hour")
 ```
 
 #### 4.3.2. Cenários Disponíveis
 
-| Cenário | Descrição |
-|---------|-----------|
-| `urban_rush_hour` | Centro urbano em horário de pico com alto tráfego |
-| `highway_fleet` | Frota em rodovia com diferentes condições de velocidade |
-| `residential_area` | Área residencial com tráfego moderado e muitas paradas |
-| `mixed_conditions` | Combinação de ambientes urbanos e rodovias |
-| `safety_violations` | Cenário com alta incidência de violações de segurança |
-| `extreme_weather` | Condições climáticas adversas (chuva, neblina) |
+| Cenário             | Descrição                                               |
+| ------------------- | ------------------------------------------------------- |
+| `urban_rush_hour`   | Centro urbano em horário de pico com alto tráfego       |
+| `highway_fleet`     | Frota em rodovia com diferentes condições de velocidade |
+| `residential_area`  | Área residencial com tráfego moderado e muitas paradas  |
+| `mixed_conditions`  | Combinação de ambientes urbanos e rodovias              |
+| `safety_violations` | Cenário com alta incidência de violações de segurança   |
+| `extreme_weather`   | Condições climáticas adversas (chuva, neblina)          |
 
 ### 4.4. Criação de Cenários Personalizados
 
@@ -338,16 +352,16 @@ simulator.start()
 
 O simulador pode gerar diversos eventos de segurança para testar o sistema GuardDrive FleetShield:
 
-| Evento | Descrição | Parâmetros Configuráveis |
-|--------|-----------|--------------------------|
-| `seatbelt_violation` | Não uso do cinto de segurança | Duração, frequência |
-| `harsh_braking` | Freada brusca | Intensidade, duração |
-| `harsh_acceleration` | Aceleração brusca | Intensidade, duração |
-| `speeding` | Excesso de velocidade | Percentual acima do limite |
-| `sharp_turn` | Curva fechada em alta velocidade | Ângulo, velocidade |
-| `collision` | Colisão com outro veículo ou objeto | Intensidade, tipo |
-| `distracted_driving` | Condução distraída | Tipo, duração |
-| `fatigue` | Fadiga do motorista | Nível, progressão |
+| Evento               | Descrição                           | Parâmetros Configuráveis   |
+| -------------------- | ----------------------------------- | -------------------------- |
+| `seatbelt_violation` | Não uso do cinto de segurança       | Duração, frequência        |
+| `harsh_braking`      | Freada brusca                       | Intensidade, duração       |
+| `harsh_acceleration` | Aceleração brusca                   | Intensidade, duração       |
+| `speeding`           | Excesso de velocidade               | Percentual acima do limite |
+| `sharp_turn`         | Curva fechada em alta velocidade    | Ângulo, velocidade         |
+| `collision`          | Colisão com outro veículo ou objeto | Intensidade, tipo          |
+| `distracted_driving` | Condução distraída                  | Tipo, duração              |
+| `fatigue`            | Fadiga do motorista                 | Nível, progressão          |
 
 ### 5.2. Configuração de Eventos
 
@@ -556,11 +570,11 @@ O simulador permite exportar dados para análise posterior:
 
 #### 7.2.1. Formatos de Exportação
 
-| Formato | Descrição | Uso Recomendado |
-|---------|-----------|-----------------|
-| CSV | Dados tabulares simples | Análise em Excel, Python, R |
-| JSON | Estrutura hierárquica | Integração com aplicações web |
-| SQLite | Banco de dados local | Consultas complexas e relacionamentos |
+| Formato | Descrição                  | Uso Recomendado                            |
+| ------- | -------------------------- | ------------------------------------------ |
+| CSV     | Dados tabulares simples    | Análise em Excel, Python, R                |
+| JSON    | Estrutura hierárquica      | Integração com aplicações web              |
+| SQLite  | Banco de dados local       | Consultas complexas e relacionamentos      |
 | Parquet | Formato colunar comprimido | Grandes volumes de dados, análise em Spark |
 
 #### 7.2.2. Exportação via Interface
@@ -765,6 +779,7 @@ simulator.start_demo()
 **Problema**: O simulador está lento ou com baixo FPS.
 
 **Possíveis Causas e Soluções**:
+
 - **Hardware insuficiente**: Reduza a qualidade gráfica em `config.yaml`
 - **Muitos veículos**: Diminua o número de veículos simulados
 - **Vazamento de memória**: Reinicie o simulador após longas sessões
@@ -775,6 +790,7 @@ simulator.start_demo()
 **Problema**: Erros ao integrar com o SDK GuardDrive FleetShield.
 
 **Possíveis Causas e Soluções**:
+
 - **Credenciais inválidas**: Verifique API key e organization ID
 - **Ambiente incorreto**: Confirme se está usando o ambiente correto (sandbox/production)
 - **Versões incompatíveis**: Atualize o simulador e o SDK para as versões mais recentes
@@ -785,6 +801,7 @@ simulator.start_demo()
 **Problema**: Veículos se comportando de forma estranha ou irrealista.
 
 **Possíveis Causas e Soluções**:
+
 - **Configurações de física**: Ajuste parâmetros de física no arquivo de configuração
 - **Colisões**: Ative detecção de colisão mais precisa (aumenta uso de CPU)
 - **Malha viária inconsistente**: Verifique e repare a malha viária no editor
@@ -800,18 +817,20 @@ Configure o nível de log em `config.yaml`:
 
 ```yaml
 general:
-  log_level: debug  # error, warn, info, debug, trace
+  log_level: debug # error, warn, info, debug, trace
   log_file: ./logs/simulator.log
 ```
 
 #### 9.2.2. Visualização de Logs
 
 Via Interface Gráfica:
+
 1. Clique em "Ferramentas" > "Console de Logs"
 2. Selecione o nível de log desejado
 3. Filtre por categoria ou texto
 
 Via Linha de Comando:
+
 ```bash
 # Visualizar logs em tempo real
 tail -f ./logs/simulator.log
@@ -859,4 +878,4 @@ Se você encontrar problemas que não consegue resolver:
 
 ---
 
-*Este documento é parte da documentação oficial do Simulador GuardDrive FleetShield v1.0.*
+_Este documento é parte da documentação oficial do Simulador GuardDrive FleetShield v1.0._

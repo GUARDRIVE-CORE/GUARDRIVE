@@ -51,6 +51,7 @@
 A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, uma interface de gestão e análise de dados que permite o monitoramento em tempo real e histórico da conformidade dos dispositivos de segurança veicular. O dashboard é projetado para gestores de frota, seguradoras, órgãos reguladores e outros stakeholders autorizados.
 
 ### 8.1. Visão Geral da Frota
+
 - **Funcionalidade**: Apresentação resumida do status atual da frota
 - **Elementos**:
   - Contadores de veículos (total, ativos, inativos)
@@ -63,6 +64,7 @@ A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, u
   - Contextualização geográfica da operação
 
 ### 8.2. Conformidade da Frota
+
 - **Funcionalidade**: Análise detalhada dos níveis de conformidade dos dispositivos de segurança
 - **Elementos**:
   - Gráfico circular mostrando percentuais de conformidade
@@ -75,6 +77,7 @@ A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, u
   - Base para programas de incentivo e melhoria contínua
 
 ### 8.3. Alertas e Notificações
+
 - **Funcionalidade**: Sistema de alertas em tempo real sobre eventos relevantes
 - **Elementos**:
   - Notificações de não conformidade detectada
@@ -87,6 +90,7 @@ A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, u
   - Registro cronológico de eventos para auditoria
 
 ### 8.4. Análise Histórica
+
 - **Funcionalidade**: Visualização e análise de dados históricos de conformidade
 - **Elementos**:
   - Gráficos de linha temporal com múltiplas variáveis
@@ -99,6 +103,7 @@ A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, u
   - Identificação de fatores correlacionados com não conformidade
 
 ### 8.5. Relatórios
+
 - **Funcionalidade**: Geração de relatórios padronizados e personalizados
 - **Elementos**:
   - Modelos pré-configurados (diário, semanal, mensal, trimestral)
@@ -111,6 +116,7 @@ A Figura 8 apresenta o Dashboard Analítico do sistema GuardDrive FleetShield, u
   - Base para tomada de decisão estratégica
 
 ### 8.6. Visualização Geoespacial
+
 - **Funcionalidade**: Representação geográfica de dados de conformidade
 - **Elementos**:
   - Mapa de calor mostrando áreas de alta/baixa conformidade
@@ -126,4 +132,4 @@ O Dashboard Analítico é projetado com interface responsiva, permitindo acesso 
 
 O sistema implementa controles de acesso baseados em perfis, garantindo que cada usuário visualize apenas os dados pertinentes à sua função e nível de autorização, em conformidade com regulamentações de privacidade e proteção de dados.
 
-*Nota: Este diagrama representa a interface conceitual do dashboard. A implementação específica pode variar conforme requisitos do cliente, plataforma tecnológica e integrações com sistemas existentes.*
+_Nota: Este diagrama representa a interface conceitual do dashboard. A implementação específica pode variar conforme requisitos do cliente, plataforma tecnológica e integrações com sistemas existentes._

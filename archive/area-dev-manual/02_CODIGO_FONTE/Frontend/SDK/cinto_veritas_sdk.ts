@@ -3,7 +3,7 @@
  * @description SDK principal do Sistema de Cintos Inteligentes
  * @version 1.0.0
  * @copyright 2025 Symbeon
- * 
+ *
  * GuarDrive | Uma Iniciativa Symbeon
  * SealSafe v3.7 - Sistema Veicular Modular para Auditoria de Segurança
  */
@@ -15,7 +15,7 @@ namespace guardrive.sealsafe.cintoVeritas {
    */
   export interface SensorCore {
     // Módulo Base (100) - Sensores e Monitoramento
-    status: 'ACTIVE' | 'INACTIVE' | 'ERROR';
+    status: "ACTIVE" | "INACTIVE" | "ERROR";
     force: number; // Sensor piezoelétrico 0-100N (113)
     acceleration: {
       x: number;
@@ -34,14 +34,14 @@ namespace guardrive.sealsafe.cintoVeritas {
     // Interface de Comunicação Segura
     // Gateway OBD-II + CAN-BUS (120, 121)
     canBusConnect(): Promise<boolean>;
-    
+
     // Sistema de Criptografia (130, 131)
     encrypt(data: any): Buffer; // AES-256-GCM
     decrypt(data: Buffer): any;
-    
+
     // TPM 2.0 (122)
     verifyIntegrity(): Promise<boolean>;
-    
+
     // Certificação ECC P-384
     generateSignature(data: Buffer): Promise<Buffer>;
     verifySignature(data: Buffer, signature: Buffer): Promise<boolean>;
@@ -94,7 +94,7 @@ namespace guardrive.sealsafe.cintoVeritas {
     red: number;
     green: number;
     blue: number;
-  }
+  };
 
   /**
    * Classe principal do SDK do Cinto Veritas
@@ -115,19 +115,19 @@ namespace guardrive.sealsafe.cintoVeritas {
       // Implementação da autenticação
       return "token_jwt";
     }
-    
+
     // WebSocket tempo real (311)
     async startMonitoring(): Promise<WebSocket> {
       // Implementação do monitoramento em tempo real
       return new WebSocket("wss://api.guardrive.symbeon.io/monitor");
     }
-    
+
     // Biblioteca C++ com mTLS (320)
     async initializeSecureChannel(): Promise<boolean> {
       // Implementação do canal seguro
       return true;
     }
-    
+
     // Framework Python containerizado (321)
     async deployContainer(config: ContainerConfig): Promise<void> {
       // Implementação da implantação de container
@@ -163,27 +163,31 @@ namespace guardrive.sealsafe.cintoVeritas {
 // Exemplo de uso do SDK
 const exemplo = () => {
   const sdk = new guardrive.sealsafe.cintoVeritas.CintoVeritasSDK();
-  
+
   // Autenticação
-  sdk.authenticate({
-    clientId: "montadora_123",
-    clientSecret: "chave_secreta"
-  }).then(token => {
-    console.log("Autenticado com sucesso:", token);
-    
-    // Iniciar monitoramento
-    return sdk.startMonitoring();
-  }).then(ws => {
-    console.log("Monitoramento iniciado");
-    
-    // Receber dados em tempo real
-    ws.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-      console.log("Dados recebidos:", data);
-    };
-  }).catch(error => {
-    console.error("Erro:", error);
-  });
+  sdk
+    .authenticate({
+      clientId: "montadora_123",
+      clientSecret: "chave_secreta",
+    })
+    .then((token) => {
+      console.log("Autenticado com sucesso:", token);
+
+      // Iniciar monitoramento
+      return sdk.startMonitoring();
+    })
+    .then((ws) => {
+      console.log("Monitoramento iniciado");
+
+      // Receber dados em tempo real
+      ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        console.log("Dados recebidos:", data);
+      };
+    })
+    .catch((error) => {
+      console.error("Erro:", error);
+    });
 };
 
 /**

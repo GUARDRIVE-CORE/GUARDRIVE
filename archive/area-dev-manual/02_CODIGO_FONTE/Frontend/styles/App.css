@@ -1,24 +1,24 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Mobile-First CSS Variables */
 :root {
-  --primary-50: #ECFDF5;
-  --primary-500: #00D4AA;
-  --primary-600: #00B894;
-  --primary-900: #064E3B;
-  
-  --secondary-50: #EFF6FF;
-  --secondary-500: #1E3A8A;
-  --secondary-900: #1E3A8A;
-  
-  --accent-50: #FFFBEB;
-  --accent-500: #F59E0B;
-  --accent-900: #92400E;
-  
-  --neutral-50: #F9FAFB;
-  --neutral-500: #6B7280;
+  --primary-50: #ecfdf5;
+  --primary-500: #00d4aa;
+  --primary-600: #00b894;
+  --primary-900: #064e3b;
+
+  --secondary-50: #eff6ff;
+  --secondary-500: #1e3a8a;
+  --secondary-900: #1e3a8a;
+
+  --accent-50: #fffbeb;
+  --accent-500: #f59e0b;
+  --accent-900: #92400e;
+
+  --neutral-50: #f9fafb;
+  --neutral-500: #6b7280;
   --neutral-900: #111827;
 }
 
@@ -31,7 +31,13 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    sans-serif;
   line-height: 1.6;
   color: var(--neutral-900);
   background-color: #f8fafc;
@@ -41,13 +47,18 @@ body {
 }
 
 /* Mobile Touch Optimizations */
-button, a, input, select, textarea {
+button,
+a,
+input,
+select,
+textarea {
   touch-action: manipulation;
   -webkit-user-select: none;
   user-select: none;
 }
 
-input, textarea {
+input,
+textarea {
   -webkit-user-select: text;
   user-select: text;
 }
@@ -96,7 +107,8 @@ input, textarea {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -263,7 +275,11 @@ input, textarea {
 
 /* Mobile Gradients */
 .bg-gradient-mobile-primary {
-  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-600) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-500) 0%,
+    var(--primary-600) 100%
+  );
 }
 
 .bg-gradient-mobile-hero {
@@ -276,11 +292,15 @@ input, textarea {
 }
 
 .shadow-mobile-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .shadow-mobile-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Mobile Responsive Utilities */
@@ -288,16 +308,16 @@ input, textarea {
   .text-mobile-hero {
     @apply text-xl;
   }
-  
+
   .text-mobile-title {
     @apply text-lg;
   }
-  
+
   .btn-mobile-primary,
   .btn-mobile-secondary {
     @apply text-base px-4 py-3 min-h-[48px];
   }
-  
+
   .card-mobile-metric {
     @apply p-4;
   }
@@ -308,17 +328,16 @@ input, textarea {
   .dark-mode {
     @apply bg-gray-900 text-white;
   }
-  
+
   .dark-mode .card-mobile {
     @apply bg-gray-800 border-gray-700;
   }
-  
+
   .dark-mode .mobile-header {
     @apply bg-gray-800 border-gray-700;
   }
-  
+
   .dark-mode .bottom-nav {
     @apply bg-gray-800 border-gray-700;
   }
 }
-

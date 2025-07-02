@@ -85,4 +85,4 @@ O módulo compreende os seguintes componentes principais:
 
 O módulo sensor é projetado com redundância estratégica, permitindo operação confiável mesmo em caso de falha parcial de sensores individuais. A arquitetura modular facilita manutenção e atualizações, além de permitir configurações específicas para diferentes tipos de dispositivos de segurança veicular.
 
-*Nota: Este diagrama representa a arquitetura conceitual do módulo sensor. A implementação física específica pode variar conforme o tipo de dispositivo de segurança e cenário de aplicação.*
+_Nota: Este diagrama representa a arquitetura conceitual do módulo sensor. A implementação física específica pode variar conforme o tipo de dispositivo de segurança e cenário de aplicação._

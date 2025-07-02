@@ -54,6 +54,7 @@
 A Figura 5 ilustra diferentes cenários de implementação do sistema GuardDrive FleetShield, demonstrando sua versatilidade e adaptabilidade para diversos tipos de veículos e configurações. Cada cenário apresenta características específicas de instalação, integração e funcionalidades.
 
 ### 5.1. Veículo de Passeio
+
 - **Configuração**: Instalação compacta e discreta, integrada ao cinto de segurança padrão do veículo
 - **Componentes**: Módulo sensor (1) instalado no mecanismo do cinto, dispositivo visual externo (3) posicionado no para-brisa ou janela lateral para visibilidade externa
 - **Características**:
@@ -64,6 +65,7 @@ A Figura 5 ilustra diferentes cenários de implementação do sistema GuardDrive
   - Baixo consumo energético, podendo operar com bateria própria de longa duração
 
 ### 5.2. Veículo Comercial
+
 - **Configuração**: Instalação robusta para ambiente de uso intensivo, com múltiplos pontos de monitoramento
 - **Componentes**: Módulos sensores (1) em todos os cintos e dispositivos de segurança, dispositivo visual externo (3) em posição de alta visibilidade
 - **Características**:
@@ -74,6 +76,7 @@ A Figura 5 ilustra diferentes cenários de implementação do sistema GuardDrive
   - Alimentação integrada ao sistema elétrico do veículo
 
 ### 5.3. Transporte Público
+
 - **Configuração**: Sistema escalável para monitoramento de múltiplos assentos, com verificação centralizada
 - **Componentes**: Módulos sensores (1) em cada assento/posição, dispositivo visual externo (3) centralizado na entrada do veículo
 - **Características**:
@@ -84,6 +87,7 @@ A Figura 5 ilustra diferentes cenários de implementação do sistema GuardDrive
   - Dashboard para motorista/cobrador com status de todos os assentos
 
 ### 5.4. Versões do Sistema
+
 - **Retrofit**: Versão adaptável para instalação em veículos existentes
   - Universal: compatível com diferentes marcas e modelos
   - Instalação não invasiva, sem modificações estruturais no veículo
@@ -100,4 +104,4 @@ Ambas as versões (Retrofit e OEM) mantêm a mesma funcionalidade core e compati
 
 O sistema é projetado com arquitetura modular que permite adaptação a diferentes cenários de uso, tipos de veículos e requisitos específicos, mantendo a integridade das funcionalidades essenciais de monitoramento, verificação externa e registro blockchain.
 
-*Nota: Este diagrama representa configurações conceituais do sistema. A implementação específica pode variar conforme o tipo de veículo, requisitos regulatórios e preferências do cliente.*
+_Nota: Este diagrama representa configurações conceituais do sistema. A implementação específica pode variar conforme o tipo de veículo, requisitos regulatórios e preferências do cliente._

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -8,21 +8,27 @@ import {
   RefreshControl,
   TouchableOpacity,
   Dimensions,
-} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import Icon from 'react-native-vector-icons/Feather';
-import { LineChart, PieChart } from 'react-native-chart-kit';
-import Card, { CardHeader, CardBody } from '../components/Card';
-import Button from '../components/Button';
-import { colors, typography, spacing, borderRadius, layout } from '../styles/theme';
+} from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+import Icon from "react-native-vector-icons/Feather";
+import { LineChart, PieChart } from "react-native-chart-kit";
+import Card, { CardHeader, CardBody } from "../components/Card";
+import Button from "../components/Button";
+import {
+  colors,
+  typography,
+  spacing,
+  borderRadius,
+  layout,
+} from "../styles/theme";
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 
 const DashboardScreen = ({ navigation }) => {
   const [refreshing, setRefreshing] = useState(false);
   const [userData, setUserData] = useState({
-    name: 'João Silva',
-    company: 'Transportes ABC',
+    name: "João Silva",
+    company: "Transportes ABC",
     avatar: null,
   });
   const [fleetData, setFleetData] = useState({
@@ -35,7 +41,7 @@ const DashboardScreen = ({ navigation }) => {
     co2Saved: 2.3,
     tokens: 45,
     score: 8.7,
-    trend: '+12%',
+    trend: "+12%",
   });
 
   useEffect(() => {
@@ -44,7 +50,7 @@ const DashboardScreen = ({ navigation }) => {
 
   const loadDashboardData = async () => {
     // Simular carregamento de dados
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   };
 
   const onRefresh = async () => {
@@ -64,14 +70,14 @@ const DashboardScreen = ({ navigation }) => {
       borderRadius: borderRadius.md,
     },
     propsForDots: {
-      r: '4',
-      strokeWidth: '2',
+      r: "4",
+      strokeWidth: "2",
       stroke: colors.primary,
     },
   };
 
   const emissionsData = {
-    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+    labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
     datasets: [
       {
         data: [2.1, 1.8, 2.5, 2.0, 1.9, 2.3],
@@ -83,21 +89,21 @@ const DashboardScreen = ({ navigation }) => {
 
   const vehicleStatusData = [
     {
-      name: 'Ativos',
+      name: "Ativos",
       population: 12,
       color: colors.success,
       legendFontColor: colors.gray600,
       legendFontSize: 12,
     },
     {
-      name: 'Alertas',
+      name: "Alertas",
       population: 2,
       color: colors.warning,
       legendFontColor: colors.gray600,
       legendFontSize: 12,
     },
     {
-      name: 'Manutenção',
+      name: "Manutenção",
       population: 1,
       color: colors.error,
       legendFontColor: colors.gray600,
@@ -105,7 +111,14 @@ const DashboardScreen = ({ navigation }) => {
     },
   ];
 
-  const StatCard = ({ icon, title, value, subtitle, color = colors.primary, onPress }) => (
+  const StatCard = ({
+    icon,
+    title,
+    value,
+    subtitle,
+    color = colors.primary,
+    onPress,
+  }) => (
     <Card style={styles.statCard} onPress={onPress}>
       <View style={styles.statHeader}>
         <View style={[styles.statIcon, { backgroundColor: `${color}20` }]}>
@@ -155,7 +168,7 @@ const DashboardScreen = ({ navigation }) => {
             </View>
             <TouchableOpacity
               style={styles.notificationButton}
-              onPress={() => navigation.navigate('Notifications')}
+              onPress={() => navigation.navigate("Notifications")}
             >
               <Icon name="bell" size={24} color={colors.white} />
               {fleetData.alerts > 0 && (
@@ -179,7 +192,7 @@ const DashboardScreen = ({ navigation }) => {
                 title="Veículos Ativos"
                 value={`${fleetData.activeVehicles}/${fleetData.totalVehicles}`}
                 color={colors.success}
-                onPress={() => navigation.navigate('Fleet')}
+                onPress={() => navigation.navigate("Fleet")}
               />
               <StatCard
                 icon="alert-triangle"
@@ -187,7 +200,7 @@ const DashboardScreen = ({ navigation }) => {
                 value={fleetData.alerts}
                 subtitle="Requer atenção"
                 color={colors.warning}
-                onPress={() => navigation.navigate('Alerts')}
+                onPress={() => navigation.navigate("Alerts")}
               />
               <StatCard
                 icon="tool"
@@ -195,7 +208,7 @@ const DashboardScreen = ({ navigation }) => {
                 value={fleetData.maintenance}
                 subtitle="Agendada"
                 color={colors.error}
-                onPress={() => navigation.navigate('Maintenance')}
+                onPress={() => navigation.navigate("Maintenance")}
               />
               <StatCard
                 icon="shield"
@@ -203,7 +216,7 @@ const DashboardScreen = ({ navigation }) => {
                 value="95%"
                 subtitle="ESG Score"
                 color={colors.primary}
-                onPress={() => navigation.navigate('ESG')}
+                onPress={() => navigation.navigate("ESG")}
               />
             </View>
           </View>
@@ -276,25 +289,25 @@ const DashboardScreen = ({ navigation }) => {
               <QuickAction
                 icon="plus"
                 title="Adicionar Veículo"
-                onPress={() => navigation.navigate('AddVehicle')}
+                onPress={() => navigation.navigate("AddVehicle")}
                 color={colors.primary}
               />
               <QuickAction
                 icon="search"
                 title="Localizar Frota"
-                onPress={() => navigation.navigate('Map')}
+                onPress={() => navigation.navigate("Map")}
                 color={colors.secondary}
               />
               <QuickAction
                 icon="file-text"
                 title="Relatórios"
-                onPress={() => navigation.navigate('Reports')}
+                onPress={() => navigation.navigate("Reports")}
                 color={colors.accent}
               />
               <QuickAction
                 icon="settings"
                 title="Configurações"
-                onPress={() => navigation.navigate('Settings')}
+                onPress={() => navigation.navigate("Settings")}
                 color={colors.gray600}
               />
             </View>
@@ -303,9 +316,7 @@ const DashboardScreen = ({ navigation }) => {
           {/* CTA */}
           <Card style={styles.ctaCard}>
             <CardHeader>
-              <Text style={styles.ctaTitle}>
-                Maximize seu Impacto ESG
-              </Text>
+              <Text style={styles.ctaTitle}>Maximize seu Impacto ESG</Text>
               <Text style={styles.ctaSubtitle}>
                 Descubra como otimizar suas métricas de sustentabilidade
               </Text>
@@ -314,8 +325,10 @@ const DashboardScreen = ({ navigation }) => {
               <Button
                 title="Ver Oportunidades"
                 variant="secondary"
-                onPress={() => navigation.navigate('ESGOpportunities')}
-                icon={<Icon name="trending-up" size={20} color={colors.white} />}
+                onPress={() => navigation.navigate("ESGOpportunities")}
+                icon={
+                  <Icon name="trending-up" size={20} color={colors.white} />
+                }
               />
             </CardBody>
           </Card>
@@ -339,22 +352,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
   },
   headerContent: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   userInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     flex: 1,
   },
   avatar: {
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    justifyContent: "center",
+    alignItems: "center",
     marginRight: spacing.md,
   },
   userDetails: {
@@ -372,19 +385,19 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   notificationButton: {
-    position: 'relative',
+    position: "relative",
     padding: spacing.sm,
   },
   notificationBadge: {
-    position: 'absolute',
+    position: "absolute",
     top: 4,
     right: 4,
     backgroundColor: colors.error,
     borderRadius: 10,
     minWidth: 20,
     height: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   notificationBadgeText: {
     fontSize: 12,
@@ -404,29 +417,29 @@ const styles = StyleSheet.create({
     marginBottom: spacing.lg,
   },
   statsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     gap: spacing.md,
   },
   statCard: {
     flex: 1,
-    minWidth: '45%',
+    minWidth: "45%",
   },
   statHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
     marginBottom: spacing.sm,
   },
   statIcon: {
     width: 48,
     height: 48,
     borderRadius: 24,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   statValue: {
-    fontSize: typography.fontSize['2xl'],
+    fontSize: typography.fontSize["2xl"],
     fontFamily: typography.fontFamily.bold,
     color: colors.gray900,
   },
@@ -445,12 +458,12 @@ const styles = StyleSheet.create({
     padding: spacing.xl,
   },
   esgMetrics: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    justifyContent: "space-around",
     marginBottom: spacing.lg,
   },
   esgMetric: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   esgValue: {
     fontSize: typography.fontSize.xl,
@@ -465,9 +478,9 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
   },
   esgTrend: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     gap: spacing.xs,
   },
   esgTrendText: {
@@ -477,20 +490,20 @@ const styles = StyleSheet.create({
   },
   chartCard: {
     padding: spacing.md,
-    alignItems: 'center',
+    alignItems: "center",
   },
   chart: {
     borderRadius: borderRadius.md,
   },
   quickActions: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     gap: spacing.md,
   },
   quickAction: {
     flex: 1,
-    minWidth: '45%',
-    alignItems: 'center',
+    minWidth: "45%",
+    alignItems: "center",
     padding: spacing.lg,
     backgroundColor: colors.white,
     borderRadius: borderRadius.lg,
@@ -500,15 +513,15 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: spacing.sm,
   },
   quickActionText: {
     fontSize: typography.fontSize.sm,
     fontFamily: typography.fontFamily.semiBold,
     color: colors.gray700,
-    textAlign: 'center',
+    textAlign: "center",
   },
   ctaCard: {
     backgroundColor: colors.gray900,
@@ -529,4 +542,3 @@ const styles = StyleSheet.create({
 });
 
 export default DashboardScreen;
-

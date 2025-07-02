@@ -1,6 +1,7 @@
 # Requisitos e Objetivos - GuardDrive FleetShield
 
 ## Metadados
+
 - **Projeto**: GuardDrive FleetShield - Sistema Digital Completo
 - **Versão**: 1.0
 - **Data**: 02/06/2025
@@ -15,6 +16,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 ## 2. Requisitos Funcionais
 
 ### 2.1. Core do Sistema
+
 - Sistema de gestão completa de frotas com foco em segurança veicular
 - Monitoramento em tempo real de múltiplos parâmetros de segurança
 - Verificação externa confiável via QR dinâmico e indicadores visuais
@@ -23,6 +25,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Geração de relatórios de conformidade e ESG verificáveis
 
 ### 2.2. Frontend
+
 - Interface web responsiva para gestores de frota
 - Dashboard principal com visão consolidada da frota
 - Visualização detalhada por veículo/motorista
@@ -32,6 +35,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Gestão de usuários e permissões
 
 ### 2.3. Backend
+
 - API REST/GraphQL para comunicação com frontend e sistemas externos
 - Processamento de dados dos sensores em tempo real
 - Algoritmos de análise preditiva para manutenção e segurança
@@ -40,6 +44,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Gestão de dispositivos e configurações
 
 ### 2.4. Inteligência Artificial
+
 - Análise preditiva de riscos de segurança
 - Detecção de anomalias em comportamento de direção
 - Otimização de rotas considerando segurança e eficiência
@@ -47,6 +52,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Análise de padrões para recomendações de segurança
 
 ### 2.5. Blockchain e Tokenização
+
 - Registro imutável de eventos de segurança
 - Smart contracts para automação de conformidade
 - Tokenização de métricas ESG
@@ -56,6 +62,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 ## 3. Requisitos Não-Funcionais
 
 ### 3.1. Segurança
+
 - Autenticação OAuth2/JWT
 - Controle de acesso baseado em papéis (RBAC)
 - Criptografia de dados em repouso e em trânsito
@@ -63,6 +70,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Auditoria de eventos críticos
 
 ### 3.2. Performance
+
 - Processamento de dados em tempo real com latência < 500ms
 - Suporte a milhares de dispositivos simultâneos
 - Escalabilidade horizontal para crescimento da base de usuários
@@ -70,6 +78,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Cache eficiente para consultas frequentes
 
 ### 3.3. Disponibilidade e Confiabilidade
+
 - Disponibilidade de 99.9% (SLA)
 - Recuperação de desastres com RPO ≤ 15 min e RTO ≤ 1h
 - Backups automáticos e replicação multi-região
@@ -77,6 +86,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Failover automático para sistemas críticos
 
 ### 3.4. Compliance
+
 - Conformidade com LGPD/GDPR
 - Auditabilidade completa de operações críticas
 - Rastreabilidade de dados sensíveis
@@ -85,16 +95,17 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 
 ## 4. Objetivos de Alto Nível (OKRs) - Ano 1
 
-| Objetivo | Key Results (mensuráveis) |
-|----------|---------------------------|
-| MVP funcional | - Repositório público no GitHub<br>- Deploy em ambiente de nuvem<br>- 100 usuários ativos<br>- Cobertura de testes > 80% |
-| Feedback do mercado | - ≥90% satisfação em piloto com clientes selecionados<br>- 30 entrevistas com stakeholders-chave<br>- Implementação de 5 melhorias baseadas em feedback<br>- NPS > 50 |
-| Base de receita inicial | - 3 canais de monetização ativos<br>- 5 contratos com frotas corporativas<br>- 2 parcerias com seguradoras<br>- USD 250k em receita recorrente anual |
-| Expansão de produto | - Integração com 3 sistemas de gestão de frotas populares<br>- Suporte a 5 tipos diferentes de veículos<br>- API pública com documentação completa<br>- Marketplace inicial com 5 extensões |
+| Objetivo                | Key Results (mensuráveis)                                                                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MVP funcional           | - Repositório público no GitHub<br>- Deploy em ambiente de nuvem<br>- 100 usuários ativos<br>- Cobertura de testes > 80%                                                                    |
+| Feedback do mercado     | - ≥90% satisfação em piloto com clientes selecionados<br>- 30 entrevistas com stakeholders-chave<br>- Implementação de 5 melhorias baseadas em feedback<br>- NPS > 50                       |
+| Base de receita inicial | - 3 canais de monetização ativos<br>- 5 contratos com frotas corporativas<br>- 2 parcerias com seguradoras<br>- USD 250k em receita recorrente anual                                        |
+| Expansão de produto     | - Integração com 3 sistemas de gestão de frotas populares<br>- Suporte a 5 tipos diferentes de veículos<br>- API pública com documentação completa<br>- Marketplace inicial com 5 extensões |
 
 ## 5. Novos Objetivos Estratégicos
 
 ### 5.1. Curto Prazo (Ano 1)
+
 - Desenvolvimento do MVP com funcionalidades core
 - Validação do produto com early adopters
 - Estabelecimento de base de clientes inicial
@@ -102,6 +113,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Construção de infraestrutura escalável
 
 ### 5.2. Médio Prazo (Anos 2-3)
+
 - Expansão para mercados internacionais (LatAm → EUA/UE)
 - Desenvolvimento de aplicativo móvel
 - Criação de marketplace de plug-ins e extensões
@@ -109,6 +121,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Parcerias estratégicas com seguradoras e fabricantes
 
 ### 5.3. Longo Prazo (Anos 4-5)
+
 - Consolidação como plataforma global de segurança veicular
 - Expansão para novos verticais (veículos autônomos, transporte público)
 - Monetização avançada via AI-as-a-Service e dados premium
@@ -118,6 +131,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 ## 6. Premissas e Considerações
 
 ### 6.1. Tecnológicas
+
 - A solução será cloud-native para garantir escalabilidade
 - Arquitetura de microserviços para desenvolvimento ágil
 - Priorização de tecnologias open-source maduras
@@ -125,6 +139,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Design modular permitindo expansão incremental
 
 ### 6.2. Mercado
+
 - Crescente demanda por soluções de segurança veicular verificável
 - Aumento da regulamentação em segurança e ESG
 - Disposição de seguradoras para oferecer descontos baseados em dados
@@ -132,6 +147,7 @@ Com base no prompt-mestre recebido, estamos avançando para o desenvolvimento co
 - Competição ainda fragmentada e sem solução end-to-end
 
 ### 6.3. Financeiras
+
 - Modelo de receita recorrente (SaaS) como base
 - Monetização adicional via hardware, serviços e marketplace
 - Necessidade de investimento inicial para desenvolvimento

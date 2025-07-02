@@ -27,12 +27,14 @@ Este SDK permite que desenvolvedores, fabricantes de veículos, gestores de frot
 ## Requisitos
 
 ### Desenvolvimento
+
 - Python 3.8+
 - Node.js 14+
 - Web3.js ou ethers.js para interações blockchain
 - Docker e Docker Compose para ambiente de desenvolvimento completo
 
 ### Produção
+
 - Servidor com suporte a HTTPS
 - Conexão estável com a internet
 - Acesso à rede blockchain GuardDrive (credenciais fornecidas separadamente)
@@ -57,11 +59,13 @@ pip install guardrive-sdk
 ### Instalação Manual
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/guardrive/guardrive-sdk.git
 ```
 
 2. Instale as dependências:
+
 ```bash
 cd guardrive-sdk
 pip install -r requirements.txt
@@ -69,6 +73,7 @@ npm install
 ```
 
 3. Configure as variáveis de ambiente:
+
 ```bash
 cp .env.example .env
 # Edite o arquivo .env com suas credenciais
@@ -107,30 +112,31 @@ guardrive-sdk/
 
 ```javascript
 // JavaScript (Frontend)
-import { SelfbeltConnector } from 'guardrive-sdk';
+import { SelfbeltConnector } from "guardrive-sdk";
 
 const connector = new SelfbeltConnector({
-  apiKey: 'YOUR_API_KEY',
-  deviceId: 'SELFBELT_DEVICE_ID'
+  apiKey: "YOUR_API_KEY",
+  deviceId: "SELFBELT_DEVICE_ID",
 });
 
-connector.connect()
-  .then(device => {
-    console.log('Conectado ao dispositivo:', device.info);
-    
+connector
+  .connect()
+  .then((device) => {
+    console.log("Conectado ao dispositivo:", device.info);
+
     // Receber atualizações de status em tempo real
-    device.onStatusUpdate(status => {
-      console.log('Status atualizado:', status);
-      
+    device.onStatusUpdate((status) => {
+      console.log("Status atualizado:", status);
+
       if (status.beltConnected && status.beltPositionCorrect) {
-        console.log('Cinto conectado corretamente!');
+        console.log("Cinto conectado corretamente!");
       } else {
-        console.log('Cinto não conectado ou posicionado incorretamente!');
+        console.log("Cinto não conectado ou posicionado incorretamente!");
       }
     });
   })
-  .catch(error => {
-    console.error('Erro ao conectar:', error);
+  .catch((error) => {
+    console.error("Erro ao conectar:", error);
   });
 ```
 
@@ -146,18 +152,18 @@ connector = SelfbeltConnector(
 try:
     device = connector.connect()
     print(f"Conectado ao dispositivo: {device.info}")
-    
+
     # Função de callback para atualizações de status
     def on_status_update(status):
         print(f"Status atualizado: {status}")
-        
+
         if status.belt_connected and status.belt_position_correct:
             print("Cinto conectado corretamente!")
         else:
             print("Cinto não conectado ou posicionado incorretamente!")
-    
+
     device.on_status_update(on_status_update)
-    
+
 except Exception as e:
     print(f"Erro ao conectar: {e}")
 ```
@@ -166,34 +172,35 @@ except Exception as e:
 
 ```javascript
 // JavaScript (Frontend)
-import { QRVerifier } from 'guardrive-sdk';
+import { QRVerifier } from "guardrive-sdk";
 
 const verifier = new QRVerifier({
-  apiKey: 'YOUR_API_KEY'
+  apiKey: "YOUR_API_KEY",
 });
 
 // Função para verificar QR code escaneado
 function verifyQRCode(qrData) {
-  verifier.verify(qrData)
-    .then(result => {
-      console.log('Verificação concluída:', result);
-      
+  verifier
+    .verify(qrData)
+    .then((result) => {
+      console.log("Verificação concluída:", result);
+
       if (result.isValid) {
-        console.log('QR válido!');
-        console.log('Status do cinto:', result.beltStatus);
-        console.log('Timestamp:', new Date(result.timestamp));
-        console.log('Veículo:', result.vehicleInfo);
+        console.log("QR válido!");
+        console.log("Status do cinto:", result.beltStatus);
+        console.log("Timestamp:", new Date(result.timestamp));
+        console.log("Veículo:", result.vehicleInfo);
       } else {
-        console.log('QR inválido ou expirado!');
+        console.log("QR inválido ou expirado!");
       }
     })
-    .catch(error => {
-      console.error('Erro na verificação:', error);
+    .catch((error) => {
+      console.error("Erro na verificação:", error);
     });
 }
 
 // Exemplo de uso com scanner de QR
-document.getElementById('qrScanner').addEventListener('scan', (event) => {
+document.getElementById("qrScanner").addEventListener("scan", (event) => {
   verifyQRCode(event.data);
 });
 ```
@@ -211,7 +218,7 @@ def verify_qr_code(qr_data):
     try:
         result = verifier.verify(qr_data)
         print(f"Verificação concluída: {result}")
-        
+
         if result.is_valid:
             print("QR válido!")
             print(f"Status do cinto: {result.belt_status}")
@@ -219,7 +226,7 @@ def verify_qr_code(qr_data):
             print(f"Veículo: {result.vehicle_info}")
         else:
             print("QR inválido ou expirado!")
-            
+
     except Exception as e:
         print(f"Erro na verificação: {e}")
 
@@ -232,36 +239,35 @@ verify_qr_code(qr_data)
 
 ```javascript
 // JavaScript (Frontend)
-import { BlockchainConnector, ESGTokenManager } from 'guardrive-sdk';
+import { BlockchainConnector, ESGTokenManager } from "guardrive-sdk";
 
 // Conectar à blockchain GuardDrive
 const blockchain = new BlockchainConnector({
-  apiKey: 'YOUR_API_KEY',
-  network: 'testnet' // ou 'mainnet'
+  apiKey: "YOUR_API_KEY",
+  network: "testnet", // ou 'mainnet'
 });
 
 // Inicializar gerenciador de tokens ESG
 const tokenManager = new ESGTokenManager({
-  blockchain: blockchain
+  blockchain: blockchain,
 });
 
 // Verificar saldo de tokens ESG
 async function checkESGBalance(walletAddress) {
   try {
     const balance = await tokenManager.getBalance(walletAddress);
-    console.log('Saldo de tokens ESG:', balance);
-    
+    console.log("Saldo de tokens ESG:", balance);
+
     // Obter detalhes dos tokens
     const tokenDetails = await tokenManager.getTokenDetails(walletAddress);
-    console.log('Detalhes dos tokens:', tokenDetails);
-    
+    console.log("Detalhes dos tokens:", tokenDetails);
+
     // Tokens podem ser categorizados por tipo de impacto
-    console.log('Impacto ambiental:', tokenDetails.environmental);
-    console.log('Impacto social:', tokenDetails.social);
-    console.log('Impacto de governança:', tokenDetails.governance);
-    
+    console.log("Impacto ambiental:", tokenDetails.environmental);
+    console.log("Impacto social:", tokenDetails.social);
+    console.log("Impacto de governança:", tokenDetails.governance);
   } catch (error) {
-    console.error('Erro ao verificar saldo:', error);
+    console.error("Erro ao verificar saldo:", error);
   }
 }
 
@@ -269,25 +275,24 @@ async function checkESGBalance(walletAddress) {
 async function checkTransactionHistory(walletAddress) {
   try {
     const history = await blockchain.getTransactionHistory(walletAddress);
-    console.log('Histórico de transações:', history);
-    
+    console.log("Histórico de transações:", history);
+
     // Filtrar por tipo de transação
-    const mintEvents = history.filter(tx => tx.type === 'mint');
-    console.log('Eventos de emissão:', mintEvents);
-    
-    const transferEvents = history.filter(tx => tx.type === 'transfer');
-    console.log('Eventos de transferência:', transferEvents);
-    
-    const retireEvents = history.filter(tx => tx.type === 'retire');
-    console.log('Eventos de aposentadoria:', retireEvents);
-    
+    const mintEvents = history.filter((tx) => tx.type === "mint");
+    console.log("Eventos de emissão:", mintEvents);
+
+    const transferEvents = history.filter((tx) => tx.type === "transfer");
+    console.log("Eventos de transferência:", transferEvents);
+
+    const retireEvents = history.filter((tx) => tx.type === "retire");
+    console.log("Eventos de aposentadoria:", retireEvents);
   } catch (error) {
-    console.error('Erro ao verificar histórico:', error);
+    console.error("Erro ao verificar histórico:", error);
   }
 }
 
 // Exemplo de uso
-const walletAddress = '0x1234567890123456789012345678901234567890';
+const walletAddress = "0x1234567890123456789012345678901234567890";
 checkESGBalance(walletAddress);
 checkTransactionHistory(walletAddress);
 ```
@@ -312,16 +317,16 @@ def check_esg_balance(wallet_address):
     try:
         balance = token_manager.get_balance(wallet_address)
         print(f"Saldo de tokens ESG: {balance}")
-        
+
         # Obter detalhes dos tokens
         token_details = token_manager.get_token_details(wallet_address)
         print(f"Detalhes dos tokens: {token_details}")
-        
+
         # Tokens podem ser categorizados por tipo de impacto
         print(f"Impacto ambiental: {token_details.environmental}")
         print(f"Impacto social: {token_details.social}")
         print(f"Impacto de governança: {token_details.governance}")
-        
+
     except Exception as e:
         print(f"Erro ao verificar saldo: {e}")
 
@@ -330,17 +335,17 @@ def check_transaction_history(wallet_address):
     try:
         history = blockchain.get_transaction_history(wallet_address)
         print(f"Histórico de transações: {history}")
-        
+
         # Filtrar por tipo de transação
         mint_events = [tx for tx in history if tx.type == "mint"]
         print(f"Eventos de emissão: {mint_events}")
-        
+
         transfer_events = [tx for tx in history if tx.type == "transfer"]
         print(f"Eventos de transferência: {transfer_events}")
-        
+
         retire_events = [tx for tx in history if tx.type == "retire"]
         print(f"Eventos de aposentadoria: {retire_events}")
-        
+
     except Exception as e:
         print(f"Erro ao verificar histórico: {e}")
 
@@ -474,16 +479,16 @@ O SDK fornece uma API REST completa para integração com sistemas externos:
 
 ### Endpoints Principais
 
-| Endpoint | Método | Descrição |
-|----------|--------|-----------|
-| `/api/v1/devices` | GET | Listar dispositivos disponíveis |
-| `/api/v1/devices/{device_id}` | GET | Obter informações de um dispositivo específico |
-| `/api/v1/devices/{device_id}/status` | GET | Obter status atual de um dispositivo |
-| `/api/v1/devices/{device_id}/history` | GET | Obter histórico de um dispositivo |
-| `/api/v1/verification/qr/{qr_code}` | GET | Verificar QR code |
-| `/api/v1/tokens/balance/{wallet_address}` | GET | Obter saldo de tokens ESG |
-| `/api/v1/tokens/details/{wallet_address}` | GET | Obter detalhes dos tokens ESG |
-| `/api/v1/tokens/transactions/{wallet_address}` | GET | Obter histórico de transações |
+| Endpoint                                       | Método | Descrição                                      |
+| ---------------------------------------------- | ------ | ---------------------------------------------- |
+| `/api/v1/devices`                              | GET    | Listar dispositivos disponíveis                |
+| `/api/v1/devices/{device_id}`                  | GET    | Obter informações de um dispositivo específico |
+| `/api/v1/devices/{device_id}/status`           | GET    | Obter status atual de um dispositivo           |
+| `/api/v1/devices/{device_id}/history`          | GET    | Obter histórico de um dispositivo              |
+| `/api/v1/verification/qr/{qr_code}`            | GET    | Verificar QR code                              |
+| `/api/v1/tokens/balance/{wallet_address}`      | GET    | Obter saldo de tokens ESG                      |
+| `/api/v1/tokens/details/{wallet_address}`      | GET    | Obter detalhes dos tokens ESG                  |
+| `/api/v1/tokens/transactions/{wallet_address}` | GET    | Obter histórico de transações                  |
 
 ### Exemplo de Uso da API REST
 
@@ -509,46 +514,47 @@ O SDK também suporta comunicação via MQTT para atualizações em tempo real:
 
 ### Tópicos Principais
 
-| Tópico | Descrição |
-|--------|-----------|
-| `guardrive/devices/{device_id}/status` | Atualizações de status do dispositivo |
-| `guardrive/devices/{device_id}/events` | Eventos do dispositivo (conexão/desconexão, alertas) |
-| `guardrive/vehicles/{vehicle_id}/status` | Atualizações de status do veículo |
-| `guardrive/blockchain/events` | Eventos da blockchain (mint, transfer, retire) |
+| Tópico                                   | Descrição                                            |
+| ---------------------------------------- | ---------------------------------------------------- |
+| `guardrive/devices/{device_id}/status`   | Atualizações de status do dispositivo                |
+| `guardrive/devices/{device_id}/events`   | Eventos do dispositivo (conexão/desconexão, alertas) |
+| `guardrive/vehicles/{vehicle_id}/status` | Atualizações de status do veículo                    |
+| `guardrive/blockchain/events`            | Eventos da blockchain (mint, transfer, retire)       |
 
 ### Exemplo de Uso MQTT
 
 ```javascript
 // JavaScript (Frontend)
-import { MQTTClient } from 'guardrive-sdk';
+import { MQTTClient } from "guardrive-sdk";
 
 const client = new MQTTClient({
-  apiKey: 'YOUR_API_KEY',
-  clientId: 'my-app-client'
+  apiKey: "YOUR_API_KEY",
+  clientId: "my-app-client",
 });
 
 // Conectar ao broker MQTT
-client.connect()
+client
+  .connect()
   .then(() => {
-    console.log('Conectado ao broker MQTT');
-    
+    console.log("Conectado ao broker MQTT");
+
     // Assinar tópico de status de dispositivo
     client.subscribe(`guardrive/devices/SB12345/status`, (message) => {
-      console.log('Status atualizado:', message);
+      console.log("Status atualizado:", message);
     });
-    
+
     // Assinar tópico de eventos de dispositivo
     client.subscribe(`guardrive/devices/SB12345/events`, (message) => {
-      console.log('Evento recebido:', message);
-      
-      if (message.type === 'alert' && message.severity === 'high') {
-        console.log('Alerta de alta severidade!');
+      console.log("Evento recebido:", message);
+
+      if (message.type === "alert" && message.severity === "high") {
+        console.log("Alerta de alta severidade!");
         // Notificar usuário
       }
     });
   })
-  .catch(error => {
-    console.error('Erro ao conectar ao broker MQTT:', error);
+  .catch((error) => {
+    console.error("Erro ao conectar ao broker MQTT:", error);
   });
 ```
 
@@ -568,7 +574,7 @@ def on_status(message):
 # Função de callback para eventos
 def on_event(message):
     print(f"Evento recebido: {message}")
-    
+
     if message.type == "alert" and message.severity == "high":
         print("Alerta de alta severidade!")
         # Notificar usuário
@@ -597,32 +603,43 @@ O SDK inclui componentes para criação de dashboards e interfaces de visualiza�
 
 ```javascript
 // JavaScript (Frontend)
-import { Dashboard, BeltStatusWidget, VehicleMap, ESGImpactChart } from 'guardrive-sdk/web';
+import {
+  Dashboard,
+  BeltStatusWidget,
+  VehicleMap,
+  ESGImpactChart,
+} from "guardrive-sdk/web";
 
 // Criar dashboard
 const dashboard = new Dashboard({
-  containerId: 'dashboard-container',
-  apiKey: 'YOUR_API_KEY',
-  refreshInterval: 5000  // 5 segundos
+  containerId: "dashboard-container",
+  apiKey: "YOUR_API_KEY",
+  refreshInterval: 5000, // 5 segundos
 });
 
 // Adicionar widget de status do cinto
-dashboard.addWidget(new BeltStatusWidget({
-  deviceId: 'SB12345',
-  position: { x: 0, y: 0, width: 2, height: 1 }
-}));
+dashboard.addWidget(
+  new BeltStatusWidget({
+    deviceId: "SB12345",
+    position: { x: 0, y: 0, width: 2, height: 1 },
+  }),
+);
 
 // Adicionar mapa de veículos
-dashboard.addWidget(new VehicleMap({
-  fleetId: 'FLEET001',
-  position: { x: 0, y: 1, width: 4, height: 2 }
-}));
+dashboard.addWidget(
+  new VehicleMap({
+    fleetId: "FLEET001",
+    position: { x: 0, y: 1, width: 4, height: 2 },
+  }),
+);
 
 // Adicionar gráfico de impacto ESG
-dashboard.addWidget(new ESGImpactChart({
-  walletAddress: '0x1234567890123456789012345678901234567890',
-  position: { x: 2, y: 0, width: 2, height: 1 }
-}));
+dashboard.addWidget(
+  new ESGImpactChart({
+    walletAddress: "0x1234567890123456789012345678901234567890",
+    position: { x: 2, y: 0, width: 2, height: 1 },
+  }),
+);
 
 // Inicializar dashboard
 dashboard.init();
@@ -633,44 +650,53 @@ dashboard.init();
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GuardDrive Dashboard</title>
-  <link rel="stylesheet" href="https://cdn.guardrive.com/sdk/web/v1/guardrive-sdk.css">
-</head>
-<body>
-  <div id="dashboard-container" style="width: 100%; height: 100vh;"></div>
-  
-  <script src="https://cdn.guardrive.com/sdk/web/v1/guardrive-sdk.js"></script>
-  <script>
-    // Configurar dashboard
-    const dashboard = new GuardDrive.Dashboard({
-      containerId: 'dashboard-container',
-      apiKey: 'YOUR_API_KEY',
-      refreshInterval: 5000
-    });
-    
-    // Adicionar widgets
-    dashboard.addWidget(new GuardDrive.BeltStatusWidget({
-      deviceId: 'SB12345',
-      position: { x: 0, y: 0, width: 2, height: 1 }
-    }));
-    
-    dashboard.addWidget(new GuardDrive.VehicleMap({
-      fleetId: 'FLEET001',
-      position: { x: 0, y: 1, width: 4, height: 2 }
-    }));
-    
-    dashboard.addWidget(new GuardDrive.ESGImpactChart({
-      walletAddress: '0x1234567890123456789012345678901234567890',
-      position: { x: 2, y: 0, width: 2, height: 1 }
-    }));
-    
-    // Inicializar dashboard
-    dashboard.init();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuardDrive Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.guardrive.com/sdk/web/v1/guardrive-sdk.css"
+    />
+  </head>
+  <body>
+    <div id="dashboard-container" style="width: 100%; height: 100vh;"></div>
+
+    <script src="https://cdn.guardrive.com/sdk/web/v1/guardrive-sdk.js"></script>
+    <script>
+      // Configurar dashboard
+      const dashboard = new GuardDrive.Dashboard({
+        containerId: "dashboard-container",
+        apiKey: "YOUR_API_KEY",
+        refreshInterval: 5000,
+      });
+
+      // Adicionar widgets
+      dashboard.addWidget(
+        new GuardDrive.BeltStatusWidget({
+          deviceId: "SB12345",
+          position: { x: 0, y: 0, width: 2, height: 1 },
+        }),
+      );
+
+      dashboard.addWidget(
+        new GuardDrive.VehicleMap({
+          fleetId: "FLEET001",
+          position: { x: 0, y: 1, width: 4, height: 2 },
+        }),
+      );
+
+      dashboard.addWidget(
+        new GuardDrive.ESGImpactChart({
+          walletAddress: "0x1234567890123456789012345678901234567890",
+          position: { x: 2, y: 0, width: 2, height: 1 },
+        }),
+      );
+
+      // Inicializar dashboard
+      dashboard.init();
+    </script>
+  </body>
 </html>
 ```
 
@@ -768,4 +794,4 @@ Este SDK é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais de
 
 ---
 
-*Metadata de Rastreabilidade Simbólica: GD-SDK-2025-001*
+_Metadata de Rastreabilidade Simbólica: GD-SDK-2025-001_

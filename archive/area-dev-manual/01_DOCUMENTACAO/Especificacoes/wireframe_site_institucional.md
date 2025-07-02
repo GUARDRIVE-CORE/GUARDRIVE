@@ -9,6 +9,7 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
 ## Estrutura do Site
 
 ### Menu Principal
+
 - Home
 - Produto
 - Tecnologia
@@ -16,6 +17,7 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
 - Contato & Parcerias
 
 ### Elementos Fixos
+
 - Logo GuardDrive (topo esquerdo)
 - Menu de navegação (topo direito)
 - Botão CTA "Solicitar Demonstração" (topo direito)
@@ -27,17 +29,21 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
 ## Página Inicial (Home)
 
 ### Hero Section
+
 **Wireframe:** Banner em tela cheia com imagem de fundo minimalista, título centralizado, subtítulo e botão CTA.
 
 **Copywriting:**
+
 - **Título:** Inovação em Segurança para a Mobilidade do Amanhã
 - **Subtítulo:** Transformando a segurança veicular com tecnologia inteligente, verificável e conectada
 - **CTA:** Conheça o Selfbelt
 
 ### Seção: Sobre a GuardDrive
+
 **Wireframe:** Bloco de texto à esquerda, imagem institucional à direita, ícones com números-chave abaixo.
 
 **Copywriting:**
+
 - **Título:** Quem Somos
 - **Texto:** A GuardDrive é uma empresa de tecnologia automotiva dedicada a desenvolver soluções inovadoras para aumentar a segurança veicular e transformar a mobilidade urbana. Combinamos hardware avançado, software inteligente e blockchain para criar dispositivos que não apenas protegem vidas, mas também fornecem dados verificáveis e auditáveis para todo o ecossistema de mobilidade.
 - **Números-chave:**
@@ -46,9 +52,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **100%** verificável e auditável
 
 ### Seção: Nosso Produto Principal
+
 **Wireframe:** Imagem do Selfbelt à esquerda, texto à direita com ícones de benefícios abaixo.
 
 **Copywriting:**
+
 - **Título:** Selfbelt - Dispositivo Adaptativo de Segurança Veicular
 - **Texto:** O Selfbelt é um dispositivo revolucionário que monitora, verifica e registra o uso correto de cintos de segurança em tempo real. Utilizando sensores adaptativos e conexão com a rede urbana, o Selfbelt oferece uma solução completa para prevenção, monitoramento e rastreabilidade, integrando tecnologia blockchain, IA embarcada e módulos urbanos.
 - **CTA:** Saiba mais sobre o Selfbelt
@@ -59,9 +67,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - Integração com sistemas urbanos
 
 ### Seção: Diferenciais Tecnológicos
+
 **Wireframe:** Três colunas com ícones, títulos e textos curtos.
 
 **Copywriting:**
+
 - **Coluna 1:**
   - **Título:** Segurança Inteligente
   - **Texto:** Sensores avançados e IA embarcada para detecção precisa e adaptativa do uso correto de cintos de segurança.
@@ -73,9 +83,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Texto:** Registro imutável em blockchain garantindo autenticidade e auditabilidade de todos os dados coletados.
 
 ### Seção: Para Quem
+
 **Wireframe:** Três blocos horizontais com imagem à esquerda e texto à direita, alternando posições.
 
 **Copywriting:**
+
 - **Bloco 1:**
   - **Título:** Montadoras
   - **Texto:** Diferencie seus veículos com tecnologia de ponta em segurança, atenda a regulações futuras e ofereça dados valiosos para seus clientes.
@@ -90,9 +102,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **CTA:** Soluções Corporativas
 
 ### Seção: Depoimentos
+
 **Wireframe:** Slider com cards contendo foto, nome, cargo, empresa e depoimento.
 
 **Copywriting:**
+
 - **Depoimento 1:**
   - **Nome:** [Nome do Executivo]
   - **Cargo:** Diretor de Inovação
@@ -110,9 +124,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Texto:** "Desde a implementação do Selfbelt em nossa frota, observamos uma redução significativa em acidentes e custos relacionados, além de melhorias mensuráveis no comportamento dos motoristas."
 
 ### Seção: Contato Rápido
+
 **Wireframe:** Formulário simples à direita, texto e informações de contato à esquerda.
 
 **Copywriting:**
+
 - **Título:** Vamos Conversar
 - **Texto:** Estamos prontos para discutir como a GuardDrive pode transformar a segurança veicular para sua organização. Entre em contato para uma demonstração ou para saber mais sobre nossas soluções.
 - **Formulário:**
@@ -124,9 +140,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - Botão "Enviar"
 
 ### Rodapé
+
 **Wireframe:** Logo à esquerda, links de navegação no centro, redes sociais e contato à direita.
 
 **Copywriting:**
+
 - **Slogan:** Inovação em segurança para a mobilidade do amanhã
 - **Links:** Home, Produto, Tecnologia, Compliance, Contato, Política de Privacidade
 - **Contato:** info@guarddrive.com | +55 (XX) XXXX-XXXX
@@ -137,9 +155,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
 ## Página de Produto
 
 ### Hero Section
+
 **Wireframe:** Imagem do Selfbelt em destaque, título, subtítulo e especificações técnicas básicas.
 
 **Copywriting:**
+
 - **Título:** Selfbelt - Dispositivo Adaptativo de Segurança Veicular
 - **Subtítulo:** Monitoramento inteligente, verificação externa e registro imutável para cintos de segurança
 - **Especificações:**
@@ -149,9 +169,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - Compatível com todos os modelos de veículos
 
 ### Seção: Como Funciona
+
 **Wireframe:** Diagrama visual do processo em 4 etapas, com ícones e textos explicativos.
 
 **Copywriting:**
+
 - **Título:** Como o Selfbelt Funciona
 - **Etapa 1:**
   - **Título:** Monitoramento
@@ -167,9 +189,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Texto:** Todos os dados são assinados digitalmente e registrados em blockchain, garantindo autenticidade e auditabilidade.
 
 ### Seção: Características Técnicas
+
 **Wireframe:** Tabs horizontais com diferentes categorias, cada uma exibindo especificações detalhadas.
 
 **Copywriting:**
+
 - **Tab 1: Hardware**
   - **Sensores:** Pressão, tensão, aceleração, temperatura
   - **Processador:** Microcontrolador seguro de baixo consumo
@@ -204,9 +228,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Interoperabilidade:** Compatível com padrões abertos
 
 ### Seção: Modelos e Versões
+
 **Wireframe:** Cards horizontais com imagem, título, descrição e especificações para cada versão.
 
 **Copywriting:**
+
 - **Card 1:**
   - **Título:** Selfbelt Standard
   - **Descrição:** Versão básica para retrofit em veículos existentes.
@@ -232,9 +258,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Ideal para:** Órgãos de trânsito, prefeituras, polícias rodoviárias
 
 ### Seção: Benefícios por Setor
+
 **Wireframe:** Três colunas com ícones, títulos e listas de benefícios.
 
 **Copywriting:**
+
 - **Coluna 1: Montadoras**
   - Diferenciação de produto
   - Conformidade com regulações futuras
@@ -260,9 +288,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - Integração com sistemas de gestão existentes
 
 ### Seção: Casos de Uso
+
 **Wireframe:** Slider com cards contendo imagem, título e descrição de casos de uso reais ou hipotéticos.
 
 **Copywriting:**
+
 - **Caso 1:**
   - **Título:** Frota Corporativa Reduz Acidentes em 45%
   - **Descrição:** Uma empresa de logística implementou o Selfbelt em sua frota de 500 veículos e observou uma redução de 45% em acidentes relacionados ao não uso de cintos de segurança em apenas 6 meses.
@@ -276,9 +306,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Descrição:** Uma grande seguradora implementou um programa de descontos baseados no uso correto de cintos de segurança, utilizando dados verificáveis do Selfbelt, resultando em maior satisfação do cliente e redução de sinistros.
 
 ### Seção: FAQ
+
 **Wireframe:** Acordeão com perguntas e respostas expandíveis.
 
 **Copywriting:**
+
 - **Pergunta 1:** Como o Selfbelt é instalado?
   - **Resposta:** O Selfbelt pode ser instalado de duas formas: como retrofit em veículos existentes, através de um adaptador universal que se conecta ao cinto atual, ou integrado diretamente na fabricação por montadoras parceiras.
 
@@ -295,9 +327,11 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - **Resposta:** A bateria do Selfbelt tem duração média de 5 anos em uso normal. O dispositivo inclui gerenciamento inteligente de energia e alertas quando a bateria está próxima do fim da vida útil.
 
 ### Seção: CTA Final
+
 **Wireframe:** Banner em largura total com imagem de fundo, título, subtítulo e botão CTA.
 
 **Copywriting:**
+
 - **Título:** Transforme a Segurança da Sua Frota Hoje
 - **Subtítulo:** Entre em contato para uma demonstração personalizada do Selfbelt
 - **CTA:** Solicitar Demonstração
@@ -307,24 +341,30 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
 ## Página de Tecnologia
 
 ### Hero Section
+
 **Wireframe:** Imagem técnica de fundo, título, subtítulo e animação/vídeo breve da tecnologia em ação.
 
 **Copywriting:**
+
 - **Título:** Tecnologia de Ponta para Segurança Confiável
 - **Subtítulo:** Combinando hardware avançado, software inteligente e blockchain para transformar a segurança veicular
 
 ### Seção: Nossa Abordagem Tecnológica
+
 **Wireframe:** Texto introdutório seguido de diagrama visual da arquitetura tecnológica.
 
 **Copywriting:**
+
 - **Título:** Uma Abordagem Integrada
 - **Texto:** Na GuardDrive, acreditamos que a verdadeira inovação em segurança veicular requer uma abordagem integrada que combine hardware de precisão, software inteligente e infraestrutura confiável. Nossa arquitetura tecnológica foi projetada para garantir precisão, confiabilidade e verificabilidade em cada etapa do processo.
 - **Diagrama:** Arquitetura em camadas mostrando a integração entre hardware, software, blockchain e sistemas externos.
 
 ### Seção: Hardware
+
 **Wireframe:** Imagem explodida do dispositivo à esquerda, texto e especificações à direita.
 
 **Copywriting:**
+
 - **Título:** Hardware de Precisão
 - **Texto:** Nossos dispositivos são projetados com os mais altos padrões de qualidade e precisão. Utilizamos sensores de última geração, microcontroladores seguros e componentes de grau automotivo para garantir desempenho confiável mesmo nas condições mais adversas.
 - **Características:**
@@ -334,4 +374,4 @@ Este documento apresenta a estrutura completa (wireframe) e o conteúdo textual 
   - Design modular para fácil manutenção e atualização
   - Resistência a condições extremas (temperatura, umidade, vibração)
   - Bat
-(Content truncated due to size limit. Use line ranges to read in chunks)
+    (Content truncated due to size limit. Use line ranges to read in chunks)

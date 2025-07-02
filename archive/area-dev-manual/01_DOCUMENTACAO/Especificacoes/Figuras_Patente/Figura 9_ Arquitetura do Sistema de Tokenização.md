@@ -48,6 +48,7 @@
 A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive FleetShield, componente responsável por converter dados verificados de segurança veicular em ativos digitais (tokens), criando incentivos econômicos e mecanismos de recompensa baseados em comportamento seguro verificável.
 
 ### 9.1. Motor de Tokenização
+
 - **Funcionalidade**: Núcleo do sistema que processa dados verificados e os converte em tokens
 - **Componentes**:
   - **Módulo de Conversão**: Transforma dados de segurança verificados em representações digitais quantificáveis
@@ -61,6 +62,7 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
   - Escalabilidade para grandes volumes de dados
 
 ### 9.2. Smart Contracts
+
 - **Funcionalidade**: Contratos inteligentes que governam a criação, distribuição e transação de tokens
 - **Componentes**:
   - **Registry Contract**: Registra dispositivos, veículos e usuários autorizados
@@ -75,6 +77,7 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
   - Atualizável através de mecanismos de governança
 
 ### 9.3. Carteira Digital
+
 - **Funcionalidade**: Interface para usuários armazenarem, visualizarem e transacionarem seus tokens
 - **Componentes**:
   - **Módulo de Armazenamento**: Gerencia chaves privadas e acesso seguro
@@ -88,6 +91,7 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
   - Suporte a múltiplos tipos de tokens e certificados
 
 ### 9.4. Marketplace
+
 - **Funcionalidade**: Plataforma para listagem, compra, venda e troca de tokens de segurança
 - **Componentes**:
   - **Sistema de Listagem**: Permite oferta de tokens com descrições e preços
@@ -102,6 +106,7 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
   - Conformidade com regulamentações aplicáveis
 
 ### 9.5. Sistema de Integração
+
 - **Funcionalidade**: Conecta o sistema de tokenização com sistemas externos e parceiros
 - **Componentes**:
   - **APIs**: Interfaces programáticas para integração com sistemas externos
@@ -116,6 +121,7 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
   - Monitoramento e logging abrangentes
 
 ### 9.6. Fluxo de Tokens e Recompensas
+
 - **Funcionalidade**: Representa o ciclo completo de criação e utilização de valor no ecossistema
 - **Etapas**:
   - **Comportamento Seguro**: Uso correto de dispositivos de segurança gera dados verificados
@@ -133,4 +139,4 @@ A Figura 9 ilustra a arquitetura do Sistema de Tokenização (6) do GuardDrive F
 
 O Sistema de Tokenização é projetado para ser modular, escalável e adaptável a diferentes contextos regulatórios e de mercado. A arquitetura permite implementação em blockchain permissionada para ambientes corporativos ou blockchain pública para maior transparência e interoperabilidade, conforme requisitos específicos de cada implementação.
 
-*Nota: Este diagrama representa a arquitetura conceitual do sistema de tokenização. A implementação específica pode variar conforme requisitos regulatórios, plataforma blockchain escolhida e modelo de negócio adotado.*
+_Nota: Este diagrama representa a arquitetura conceitual do sistema de tokenização. A implementação específica pode variar conforme requisitos regulatórios, plataforma blockchain escolhida e modelo de negócio adotado._

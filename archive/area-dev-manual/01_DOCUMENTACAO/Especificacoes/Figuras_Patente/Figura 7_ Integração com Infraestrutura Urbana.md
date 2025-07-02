@@ -49,6 +49,7 @@
 A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elementos de infraestrutura urbana inteligente, ilustrando como o sistema se comunica e interage com diversos componentes de uma smart city para maximizar a eficácia da verificação de segurança veicular.
 
 ### 7.1. Câmeras de Fiscalização
+
 - **Funcionalidade**: Câmeras fixas ou móveis equipadas com capacidade de leitura do código QR dinâmico e reconhecimento dos indicadores LED do dispositivo visual externo
 - **Integração**:
   - Leitura automática do status do dispositivo de segurança em veículos em movimento
@@ -60,6 +61,7 @@ A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elemen
   - Cobertura ampla de vias e cruzamentos estratégicos
 
 ### 7.2. Semáforos Inteligentes
+
 - **Funcionalidade**: Semáforos equipados com sensores e capacidade de comunicação com veículos
 - **Integração**:
   - Leitura do status de segurança durante paradas em cruzamentos
@@ -71,6 +73,7 @@ A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elemen
   - Integração com sistemas de gestão de tráfego
 
 ### 7.3. Pedágios Automáticos
+
 - **Funcionalidade**: Sistemas de cobrança automática de pedágio com capacidade de leitura do dispositivo visual externo
 - **Integração**:
   - Verificação do status de segurança durante passagem pelo pedágio
@@ -82,6 +85,7 @@ A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elemen
   - Dados para análise de padrões de uso em diferentes rotas
 
 ### 7.4. Estacionamentos Inteligentes
+
 - **Funcionalidade**: Estacionamentos equipados com sistemas de gestão automatizada e sensores
 - **Integração**:
   - Verificação do status de segurança na entrada/saída
@@ -93,6 +97,7 @@ A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elemen
   - Integração com sistemas de gestão de frotas corporativas
 
 ### 7.5. Centrais de Monitoramento
+
 - **Funcionalidade**: Centros de controle que agregam e analisam dados de múltiplas fontes
 - **Integração**:
   - Recebimento e processamento de dados de conformidade em tempo real
@@ -104,6 +109,7 @@ A Figura 7 demonstra a integração do sistema GuardDrive FleetShield com elemen
   - Dados para políticas públicas de segurança viária
 
 ### 7.6. Comunicação V2X (Vehicle-to-Everything)
+
 - **Funcionalidade**: Sistemas de comunicação entre veículos e infraestrutura
 - **Integração**:
   - Transmissão do status de segurança para outros veículos e infraestrutura
@@ -118,4 +124,4 @@ A integração com infraestrutura urbana amplia significativamente o alcance e a
 
 O sistema é projetado com interfaces abertas e protocolos padronizados, permitindo integração com diferentes tecnologias de infraestrutura urbana existentes e futuras, garantindo compatibilidade e longevidade da solução.
 
-*Nota: Este diagrama representa a integração conceitual com infraestrutura urbana. A implementação específica pode variar conforme tecnologias disponíveis, regulamentações locais e parcerias estabelecidas.*
+_Nota: Este diagrama representa a integração conceitual com infraestrutura urbana. A implementação específica pode variar conforme tecnologias disponíveis, regulamentações locais e parcerias estabelecidas._

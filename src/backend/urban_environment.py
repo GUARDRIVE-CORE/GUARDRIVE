@@ -1,7 +1,7 @@
-import random
-import time
 import json
 import logging
+import random
+import time
 from datetime import datetime
 
 # Configuração de logging

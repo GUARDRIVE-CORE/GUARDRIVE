@@ -27,6 +27,7 @@ Esta combinação permite o desenvolvimento de um firmware seguro, confiável e 
 O firmware do SealSafe é organizado em módulos funcionais bem definidos:
 
 **Módulo de Aquisição de Dados**: Responsável pela interface com todos os sensores do sistema, incluindo:
+
 - Comunicação com barramento OBD-II/CAN do veículo
 - Leitura de sensores analógicos e digitais (reed switch, temperatura)
 - Processamento de dados do sensor NDIR de CO₂
@@ -34,6 +35,7 @@ O firmware do SealSafe é organizado em módulos funcionais bem definidos:
 - Filtragem e validação preliminar dos dados coletados
 
 **Módulo de Processamento e Análise**: Implementa algoritmos para:
+
 - Detecção de eventos de segurança (frenagens bruscas, uso do cinto)
 - Cálculo de métricas ambientais (emissão de CO₂)
 - Análise de padrões de condução
@@ -41,6 +43,7 @@ O firmware do SealSafe é organizado em módulos funcionais bem definidos:
 - Estimativa de offset de carbono
 
 **Módulo de Segurança**: Gerencia todos os aspectos criptográficos do dispositivo:
+
 - Geração e armazenamento seguro de chaves
 - Assinatura digital de dados (ECDSA e Dilithium)
 - Verificação de integridade do sistema
@@ -48,6 +51,7 @@ O firmware do SealSafe é organizado em módulos funcionais bem definidos:
 - Implementação de algoritmos pós-quânticos
 
 **Módulo de Comunicação**: Gerencia todas as interfaces de comunicação:
+
 - Pilha BLE para comunicação com aplicativo móvel
 - Cliente Wi-Fi para conexão com backend
 - Implementação LoRa para comunicação de longo alcance
@@ -55,18 +59,21 @@ O firmware do SealSafe é organizado em módulos funcionais bem definidos:
 - Protocolos de comunicação segura (TLS, DTLS)
 
 **Módulo de Interface com Usuário**: Controla os elementos visuais do dispositivo:
+
 - Renderização de conteúdo no display e-ink
 - Geração dinâmica de códigos QR
 - Controle dos LEDs RGB de status
 - Feedback visual para eventos do sistema
 
 **Módulo de Gerenciamento de Energia**: Otimiza o consumo energético do dispositivo:
+
 - Implementação de modos de baixo consumo
 - Escalonamento dinâmico de frequência da CPU
 - Desligamento seletivo de periféricos
 - Monitoramento da alimentação do veículo
 
 **Módulo de Atualização e Diagnóstico**: Permite a manutenção remota do sistema:
+
 - Atualizações seguras over-the-air (OTA)
 - Logs de diagnóstico
 - Telemetria do sistema
@@ -115,42 +122,49 @@ O backend expõe interfaces bem definidas para comunicação com dispositivos e 
 O backend é composto por diversos componentes especializados:
 
 **API Gateway**: Ponto de entrada único para todas as requisições, responsável por:
+
 - Roteamento de requisições
 - Autenticação e autorização
 - Rate limiting
 - Logging e monitoramento
 
 **Serviço de Dispositivos**: Gerencia o ciclo de vida dos dispositivos SealSafe:
+
 - Registro e provisionamento
 - Gerenciamento de configurações
 - Monitoramento de status
 - Atualizações de firmware
 
 **Serviço de Dados**: Processa e armazena os dados coletados:
+
 - Validação de assinaturas digitais
 - Armazenamento estruturado
 - Agregação e análise
 - Exportação e backup
 
 **Serviço Blockchain**: Interface com a infraestrutura Hyperledger Besu:
+
 - Submissão de transações
 - Monitoramento de confirmações
 - Verificação de integridade
 - Recuperação de provas
 
 **Serviço de Tokenização**: Implementa a lógica de tokenização ESG:
+
 - Cálculo de créditos de carbono
 - Emissão de tokens
 - Gerenciamento de staking
 - Interface com mercados externos
 
 **Serviço de Análise**: Processa dados para extração de insights:
+
 - Cálculo de métricas de segurança
 - Análise de padrões de emissão
 - Detecção de anomalias
 - Geração de relatórios
 
 **Serviço de Notificação**: Gerencia comunicações com usuários e sistemas:
+
 - Envio de alertas
 - Notificações push
 - Emails transacionais
