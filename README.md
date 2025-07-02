@@ -7,7 +7,8 @@
 [![MCP](https://img.shields.io/badge/mcp-universal-purple)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-> **🚀 Intelligent vehicle system with blockchain, ESG tokenization and universal MCP ecosystem**
+> **🚀 Intelligent vehicle system with blockchain, ESG tokenization and universal MCP ecosystem**  
+> **🤖 Adaptive AI: Intelligent learning system with ethical frameworks and safe evolution algorithms**
 
 📚 **[Documentação em Português](docs/README-PT.md) | [Portuguese Documentation](docs/README-PT.md)**
 
@@ -132,11 +133,13 @@ guardrive-mcp setup --client=warp
 
 ## 🛠️ **Features & Modules**
 
-### 🧠 **AI & Machine Learning**
-- Vehicle behavior prediction
-- Route optimization
-- Risk assessment
-- Anomaly detection
+### 🧠 **AI & Machine Learning (Adaptive AI)**
+- **Intelligent Learning**: Self-improving AI networks with safe adaptation constraints
+- **Ethical Framework**: AI decision-making with built-in ethical guidelines
+- **Vehicle Behavior Prediction**: Advanced adaptive learning algorithms
+- **Route Optimization**: Intelligent route planning with real-time adaptation
+- **Risk Assessment**: Continuous learning risk evaluation
+- **Anomaly Detection**: Pattern recognition with adaptive algorithms
 
 ### ⛓️ **Blockchain Integration**
 - Immutable event logging
