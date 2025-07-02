@@ -1,4 +1,4 @@
-# GUARDRIVE - Plataforma Inteligente com Blockchain & ESG
+# GUARDRIVE - Intelligent Platform with Blockchain & ESG
 
 [![Platform](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/GUARDRIVE-CORE/GUARDRIVE)
 [![Rust](https://img.shields.io/badge/rust-performance--critical-orange)](https://www.rust-lang.org)
@@ -7,43 +7,45 @@
 [![MCP](https://img.shields.io/badge/mcp-universal-purple)](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-> **🚀 Sistema veicular inteligente com blockchain, tokenização ESG e ecosystem MCP universal**
+> **🚀 Intelligent vehicle system with blockchain, ESG tokenization and universal MCP ecosystem**
 
-## 🌟 **Ecossistema GUARDRIVE-CORE**
+📚 **[Documentação em Português](docs/README-PT.md) | [Portuguese Documentation](docs/README-PT.md)**
 
-A organização GUARDRIVE-CORE mantém um ecossistema integrado e organizado:
+## 🌟 **GUARDRIVE-CORE Ecosystem**
 
-### 📦 **Repositórios Principais**
+The GUARDRIVE-CORE organization maintains an integrated and organized ecosystem:
 
-#### 🔥 **[GUARDRIVE](https://github.com/GUARDRIVE-CORE/GUARDRIVE)** (Este repositório)
-- **Descrição**: Plataforma principal com blockchain & ESG tokenization
-- **Função**: Core da aplicação, workspace de desenvolvimento
-- **Tecnologias**: 🦀 Rust, 🐍 Python, 🟨 JavaScript, ⛓️ Blockchain, 🌱 ESG
+### 📦 **Main Repositories**
+
+#### 🔥 **[GUARDRIVE](https://github.com/GUARDRIVE-CORE/GUARDRIVE)** (This repository)
+- **Description**: Main platform with blockchain & ESG tokenization
+- **Function**: Application core, development workspace
+- **Technologies**: 🦀 Rust, 🐍 Python, 🟨 JavaScript, ⛓️ Blockchain, 🌱 ESG
 
 #### 🔌 **[GUARDRIVE-MCP](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP)**
-- **Descrição**: Universal Model Context Protocol servers
-- **Função**: Ecosystem MCP para AI-IDE integration
-- **Tecnologias**: 🟨 JavaScript, Node.js, MCP Protocol (+ 🦀 Rust bridge planned)
-- **Clientes**: Warp, VS Code, Cursor, Claude Desktop
+- **Description**: Universal Model Context Protocol servers
+- **Function**: MCP ecosystem for AI-IDE integration
+- **Technologies**: 🟨 JavaScript, Node.js, MCP Protocol (+ 🦀 Rust bridge planned)
+- **Clients**: Warp, VS Code, Cursor, Claude Desktop
 
-#### 🐍 **[GUARDRIVE-SDK](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)** ✅ Oficial
-- **Descrição**: SDK Python oficial para integração
-- **Função**: SDK unificado para todas as integrações
-- **Tecnologias**: 🐍 Python 3.9+, AsyncIO, Pydantic V2 (+ 🦀 Rust FFI)
+#### 🐍 **[GUARDRIVE-SDK](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)** ✅ Official
+- **Description**: Official Python SDK for integration
+- **Function**: Unified SDK for all integrations
+- **Technologies**: 🐍 Python 3.9+, AsyncIO, Pydantic V2 (+ 🦀 Rust FFI)
 
 #### 📚 **[guardrive-examples](https://github.com/GUARDRIVE-CORE/guardrive-examples)**
-- **Descrição**: Hub de exemplos e guias
-- **Função**: Documentação prática e tutorials
-- **Tecnologias**: TypeScript, Examples, Guides
+- **Description**: Examples and guides hub
+- **Function**: Practical documentation and tutorials
+- **Technologies**: TypeScript, Examples, Guides
 
-### ⚠️ **Repositórios Depreciados**
+### ⚠️ **Deprecated Repositories**
 
-#### ~~GUARDRIVE_SDK~~ → **Migre para [GUARDRIVE-SDK](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)**
-- **Status**: Depreciado em 2025-06-30
-- **Motivo**: Consolidação - repositórios idênticos
-- **Ação**: Use `GUARDRIVE-SDK` (nome mais claro)
+#### ~~GUARDRIVE_SDK~~ → **Migrate to [GUARDRIVE-SDK](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK)**
+- **Status**: Deprecated on 2025-06-30
+- **Reason**: Consolidation - identical repositories
+- **Action**: Use `GUARDRIVE-SDK` (clearer name)
 
-## 🏗️ **Arquitetura Multi-Linguagem**
+## 🏗️ **Multi-Language Architecture**
 
 ```
 GUARDRIVE PLATFORM (Multi-Language Architecture)
@@ -160,63 +162,63 @@ guardrive-mcp setup --client=warp
 - Code quality gates
 - CI/CD orchestration
 
-## 🎯 **Reorganização Recente**
+## 🎯 **Recent Reorganization**
 
-### ✅ **Consolidação Realizada (2025-06-30)**
+### ✅ **Consolidation Completed (2025-06-30)**
 
-1. **SDKs Unificados**
-   - `GUARDRIVE_SDK` → Depreciado
-   - `GUARDRIVE-SDK` → Oficial
-   - Eliminação de duplicatas
+1. **Unified SDKs**
+   - `GUARDRIVE_SDK` → Deprecated
+   - `GUARDRIVE-SDK` → Official
+   - Eliminated duplicates
 
-2. **Repositórios Clarificados**
-   - GUARDRIVE: Plataforma principal
-   - GUARDRIVE-MCP: Ecosystem MCP universal
-   - guardrive-examples: Hub de exemplos
+2. **Clarified Repositories**
+   - GUARDRIVE: Main platform
+   - GUARDRIVE-MCP: Universal MCP ecosystem
+   - guardrive-examples: Examples hub
 
-3. **Nomenclatura Consistente**
-   - Convenções GitHub seguidas
-   - Hífen para separação
-   - Nomes descritivos
+3. **Consistent Naming**
+   - GitHub conventions followed
+   - Hyphen for separation
+   - Descriptive names
 
-### 📋 **Próximos Passos**
+### 📋 **Next Steps**
 
-- [ ] Migrar exemplos MCP para guardrive-examples
-- [ ] Documentação centralizada
-- [ ] CI/CD pipelines consistentes
+- [ ] Migrate MCP examples to guardrive-examples
+- [ ] Centralized documentation
+- [ ] Consistent CI/CD pipelines
 - [ ] Release automation
 
-## 📚 **Documentação**
+## 📚 **Documentation**
 
-- **[Platform Docs](docs/)** - Documentação da plataforma
-- **[SDK Docs](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK/docs)** - SDK Python
+- **[Platform Docs](docs/)** - Platform documentation
+- **[SDK Docs](https://github.com/GUARDRIVE-CORE/GUARDRIVE-SDK/docs)** - Python SDK
 - **[MCP Docs](https://github.com/GUARDRIVE-CORE/GUARDRIVE-MCP/docs)** - MCP servers
-- **[Examples](https://github.com/GUARDRIVE-CORE/guardrive-examples)** - Exemplos práticos
+- **[Examples](https://github.com/GUARDRIVE-CORE/guardrive-examples)** - Practical examples
 
 ## 🤝 **Contributing**
 
-1. Fork o repositório apropriado
-2. Crie uma feature branch
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
+1. Fork the appropriate repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## 📄 **License**
 
-Este projeto está licenciado sob a MIT License - veja [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
-## 🔗 **Links Importantes**
+## 🔗 **Important Links**
 
-- **Organização**: [GUARDRIVE-CORE](https://github.com/GUARDRIVE-CORE)
-- **Website**: [guardrive.dev](https://guardrive.dev) *(em desenvolvimento)*
-- **Documentation**: [docs.guardrive.dev](https://docs.guardrive.dev) *(em desenvolvimento)*
-- **Discord**: [Join our community](https://discord.gg/guardrive) *(em desenvolvimento)*
+- **Organization**: [GUARDRIVE-CORE](https://github.com/GUARDRIVE-CORE)
+- **Website**: [guardrive.dev](https://guardrive.dev) *(under development)*
+- **Documentation**: [docs.guardrive.dev](https://docs.guardrive.dev) *(under development)*
+- **Discord**: [Join our community](https://discord.gg/guardrive) *(under development)*
 
 ---
 
-**🌟 Desenvolvido com ❤️ pela equipe GUARDRIVE-CORE**
+**🌟 Developed with ❤️ by GUARDRIVE-CORE team**
 
-*Última atualização: 2025-06-30 - Consolidação e reorganização do ecosystem*
+*Last update: 2025-06-30 - Ecosystem consolidation and reorganization*
 
