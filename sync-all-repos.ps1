@@ -1,11 +1,12 @@
 # GUARDRIVE Repository Sync Script
 # Sincroniza todos os repositórios GUARDRIVE
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 Write-Host "=== GUARDRIVE Repository Sync ===" -ForegroundColor Cyan
 Write-Host "Sincronizando repositórios entre diferentes locais..." -ForegroundColor Yellow
 
 # Configuração
-$mainRepo = "C:\Users\João\Desktop\PROJETOS\GUARDRIVE"
+$mainRepo = Get-Location
 $orgRepo = "C:\Users\João\Desktop\PROJETOS\GUARDRIVE-ORG\GUARDRIVE"
 $pendriveRepo = "E:\GUARDRIVE-CORE\GUARDRIVE"
 
