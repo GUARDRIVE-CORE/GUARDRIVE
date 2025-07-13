@@ -1,23 +1,15 @@
 {
   "mcpServers": {
-    "guardrive-mcp-custom": {
-      "command": "node",
-      "args": ["./guardrive-mcp-core/warp-bridge.js"],
-      "env": {
-        "NODE_ENV": "production",
-        "GUARDRIVE_MCP_MODE": "bridge"
-      }
-    },
     "guardrive-devops": {
       "command": "node",
-      "args": ["./devops-orchestrator/index.js"],
+      "args": ["./mcp/guardrive-devops/index.js"],
       "env": {
         "NODE_ENV": "production"
       }
     },
     "guardrive-monitor": {
       "command": "node",
-      "args": ["./system-monitor/index.js"],
+      "args": ["./mcp/guardrive-monitor/index.js"],
       "env": {
         "NODE_ENV": "production"
       }

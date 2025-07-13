@@ -22,14 +22,14 @@ $mcp_config = @{
     "mcpServers" = @{
         "guardrive-devops" = @{
             "command" = "node"
-            "args" = @("$projectPath\devops-orchestrator\index.js")
+            "args" = @("$projectPath\mcp\guardrive-devops\index.js")
             "env" = @{
                 "NODE_ENV" = "production"
             }
         }
         "guardrive-monitor" = @{
             "command" = "node"
-            "args" = @("$projectPath\system-monitor\index.js")
+            "args" = @("$projectPath\mcp\guardrive-monitor\index.js")
             "env" = @{
                 "NODE_ENV" = "production"
             }
@@ -43,8 +43,8 @@ $mcp_config_json | Out-File -FilePath $mcp_config_path -Encoding utf8
 
 Write-Host "`n✅ Configuração MCP salva em: $mcp_config_path" -ForegroundColor Green
 Write-Host "🔧 Detalhes:" -ForegroundColor Yellow
-Write-Host "   - DevOps Orchestrator: $projectPath\devops-orchestrator\index.js"
-Write-Host "   - System Monitor: $projectPath\system-monitor\index.js"
+Write-Host "   - DevOps Orchestrator: $projectPath\mcp\guardrive-devops\index.js"
+Write-Host "   - System Monitor: $projectPath\mcp\guardrive-monitor\index.js"
 
 Write-Host "`n🎯 MCP Servers configurados com sucesso!" -ForegroundColor Cyan
 Write-Host "   Abra o Warp Terminal e use os comandos:" -ForegroundColor White
